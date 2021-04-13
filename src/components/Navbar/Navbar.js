@@ -1,6 +1,9 @@
 import React from "react";
 import {Link} from 'react-router-dom'
+import Logout from "../Logout/Logout";
 import "./Navbar.css";
+
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark ">
@@ -31,8 +34,10 @@ const Navbar = () => {
               Testcases
             </Link>
           </li>
-        </ul>
-      </div>
+          </ul>
+          
+        </div>
+        <Logout/>
     </div>
   </nav>
   );
