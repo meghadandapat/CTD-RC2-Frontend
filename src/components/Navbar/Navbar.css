@@ -1,0 +1,19 @@
+.navbar .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    color: rgb(190,195,193) !important;
+    font-family: 'Roboto Slab', serif;
+   
+  }
+  nav{
+    background-color: rgb(49,64,67);
+  }
+  .nav-link:hover{
+    text-decoration: underline;
+  }
+  
+  .navbar .nav-item.active {
+    border-left: #444 3px solid;
+  }
