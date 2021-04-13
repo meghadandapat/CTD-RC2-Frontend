@@ -14,10 +14,10 @@ const Testcase = () => {
     <Container fluid>
       <Row>
         <Col md={8}>         
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-center">
            {List1}
           </Row>
-          <Row  className="justify-content-md-center">           
+          <Row  className="justify-content-center">           
           {List2}
           </Row>
           <Row>
