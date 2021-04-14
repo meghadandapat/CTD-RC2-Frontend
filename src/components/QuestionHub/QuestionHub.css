@@ -1,0 +1,13 @@
+body{
+    overflow-x: hidden;
+}
+.Cards{
+    margin-top: 1vh;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.qhub{
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+}
