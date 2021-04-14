@@ -8,8 +8,8 @@ const TestcaseCard = (props) => {
 
     return (<Card className="card-preview">
           <Card.Body >
-            <Card.Title className="card-heading">Testcase {props.val}</Card.Title>
-            <Card.Text>
+            <Card.Title className="card-heading" style={{textAlign: 'center'}}>Testcase {props.val}</Card.Title>
+            <Card.Text style={{textAlign: 'center'}}>
              Pass
             </Card.Text>            
           </Card.Body>

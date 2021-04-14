@@ -24,11 +24,7 @@ import  './Login.css';
                  </form>
 
                  <br></br><br></br>
-                 <footer className="footer">
-                 <span className="footer__date">
-                  {`© PICT IEEE STUDENT BRANCH ${new Date().getFullYear()}`}
-              </span>
-               </footer>
+                 
         </section>
     )
 }
