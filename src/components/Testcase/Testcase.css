@@ -2,4 +2,18 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-top: 10vh;
+    justify-content: center;
+    text-align: center;
+}
+.console{
+    margin-top: 7vh;
+    width: 50% !important;
+    height: 50vh !important;
+    padding-top: 0 !important;
+    transition: none !important;
+}
+.console:focus {
+    border: none !important;
+    box-shadow: none !important;
+
 }
