@@ -1,13 +1,39 @@
-body{
+.qhub{
     overflow-x: hidden;
+    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
 }
 .Cards{
     margin-top: 1vh;
-}
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-.qhub{
-    margin-top: 5vh;
+    
+  }
+  h1{
     margin-bottom: 4vh;
-}
+  }
+  
+  .qhubcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+    text-align: center;
+    
+  }
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);*/
+  
+  h6,h1{
+    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    
+  }
+
+  .progress{
+    background-image: linear-gradient(to top right, #152238  0%, #031025 100%);
+  }
+
+  .btn{
+    background-image: linear-gradient(to top right, #ff5f6d 0%, #ffc371 100%);
+    
+  }
+
+  .attempt{
+    color: #152238;
+  }
