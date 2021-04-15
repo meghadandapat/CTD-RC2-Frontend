@@ -1,0 +1,15 @@
+.qcard{
+    height: 7vh;
+    margin-bottom: 5px;
+    margin-top: 20px;
+
+}
+.scard{
+    height: 10vh;
+    margin: 2px;
+    text-align: center;
+}
+.btn1{
+    margin-top: -6px;
+    margin-right: -50px;
+}
