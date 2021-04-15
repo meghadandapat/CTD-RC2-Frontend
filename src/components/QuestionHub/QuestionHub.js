@@ -1,6 +1,6 @@
-import './QuestionHub.css';
-import { ProgressBar, Button } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './Quehub.css';
+import { ProgressBar} from 'react-bootstrap';
+
 import Cards from "./Cards";
 
 

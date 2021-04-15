@@ -1,6 +1,6 @@
 import { ProgressBar} from "react-bootstrap";
 import { useState } from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import React from 'react';
 import "./Submissions.css";
 import QueCard from "./QueCard";
