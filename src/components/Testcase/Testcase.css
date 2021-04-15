@@ -4,16 +4,30 @@
     margin-top: 10vh;
     justify-content: center;
     text-align: center;
+    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+
+ 
 }
+
 .console{
-    margin-top: 7vh;
-    width: 50% !important;
-    height: 50vh !important;
-    padding-top: 0 !important;
-    transition: none !important;
+    background-color: rgb(42,45,62) !important; 
+    border: none;
+    overflow-y: visible;
+    outline: none;
+    color:#79E5E7;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    
 }
 .console:focus {
     border: none !important;
     box-shadow: none !important;
+    outline: 0 !important;
+    color:#79E5E7;
 
 }

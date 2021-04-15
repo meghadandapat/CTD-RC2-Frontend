@@ -1,6 +1,7 @@
 .qhub{
     overflow-x: hidden;
     background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+   
   }
   .Cards{
       margin-top: 1vh;
@@ -22,6 +23,7 @@
       background: -webkit-linear-gradient(#ff5f6d, #ffc371);
       -webkit-background-clip: text;
       -webkit-text-fill-color:transparent;
+      background-clip: text;
       
     }
   
