@@ -1,15 +1,40 @@
+.sub{
+    overflow-x: hidden;
+    color: white;
+}
 .qcard{
+    overflow: hidden;
+    color: white;
     height: 7vh;
     margin-bottom: 5px;
     margin-top: 20px;
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+}
+.table{
+    color: white;
+    border: 1px solid #152238;
+}
+tr{
+    border:0px;
 }
 .scard{
+    overflow: hidden;
+    color: white;
     height: 10vh;
     margin: 2px;
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
 }
 .btn1{
     margin-top: -6px;
     margin-right: -50px;
 }
+.space{
+    margin-bottom: 10vh;
+}
+
+@media only screen and (max-width: 600px) {
+
+  }

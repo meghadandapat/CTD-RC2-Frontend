@@ -120,6 +120,7 @@ const Submissions = () => {
                     />}
                 </div>
             ))}
+            <div className="space"></div>
         </div>
     );
 }
