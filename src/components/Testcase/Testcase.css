@@ -1,19 +1,25 @@
-.scoreandstatus{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 10vh;
-    justify-content: center;
+.console-label, .scoreandstatus{
     text-align: center;
     background: -webkit-linear-gradient(#ff5f6d, #ffc371);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color:transparent;
-
- 
 }
-
+.console-label{
+  width: 100%;
+  margin-top: 5vh;
+  font-size: 1.5rem;
+}
+.scoreandstatus{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10vh;
+   
+}
 .console{
-    background-color: rgb(42,45,62) !important; 
+    /* background-color: rgb(42,45,62) !important;  */
+    background-image: linear-gradient(to top right, #152238  0%, #031025 100%)!important;
+    width:20vw;
     border: none;
     overflow-y: visible;
     outline: none;
