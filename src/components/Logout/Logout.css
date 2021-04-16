@@ -1,0 +1,9 @@
+.modal-content{
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+color: white;
+
+}
+ .modal-footer{
+    border: none  !important
+}

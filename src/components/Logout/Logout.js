@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import {Button, Modal} from 'react-bootstrap'
+import { Button, Modal } from 'react-bootstrap'
+import './Logout.css'
 
 const Logout = () => {
   const [show, setShow] = useState(false);
