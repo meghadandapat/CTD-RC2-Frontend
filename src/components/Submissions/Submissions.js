@@ -9,17 +9,17 @@ import SubCard from "./SubCard";
 
 const Submissions = () => {
     const [que1, setQue1] = useState([
-        {id:1, time:'00:00', progress:70 },
+        {id:1, time:'00:00', progress:10 },
         {id:2, time:'00:00', progress:70 },
     ]);
 
     const [que2, setQue2] = useState([
-        {id:1, time:'00:00', progress:70 },
+        {id:1, time:'00:00', progress:50 },
     ]);  
 
     const [que3, setQue3] = useState([
-        {id:1, time:'00:00', progress:70 },
-        {id:2, time:'00:00', progress:70 },
+        {id:1, time:'00:00', progress:0 },
+        {id:2, time:'00:00', progress:20 },
     ]);
 
     const [que4, setQue4] = useState([
