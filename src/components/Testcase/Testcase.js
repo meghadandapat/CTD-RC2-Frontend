@@ -20,10 +20,10 @@ const Testcase = () => {
         </Col>
         <Col lg={4}>
           <Row className="justify-content-center">
-            <Form>
+            <Form style={{ width: "70%"}}>
           <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label className="console-label">Console</Form.Label>
-          <Form.Control as="textarea" rows={10} className="console" readOnly value="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with deskto" />
+          <Form.Control as="textarea" rows={15} className="console" readOnly value="Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type  specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with deskto specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with deskto" />
         </Form.Group>
         </Form>
           </Row>
