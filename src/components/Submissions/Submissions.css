@@ -2,10 +2,15 @@
     overflow-x: hidden;
     color: white;
 }
+.quetext{
+    
+    width: max-content;
+    margin-top: -12px;
+}
 .qcard{
     overflow: hidden;
     color: white;
-    height: 7vh;
+    height: 50%;
     margin-bottom: 5px;
     margin-top: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -20,7 +25,7 @@
 .scard{
     overflow: hidden;
     color: white;
-    height: 10vh;
+    height: 60%;
     margin: 2px;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
