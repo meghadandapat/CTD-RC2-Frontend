@@ -36,7 +36,9 @@ const Instructions = () => {
                  
                 </ul>
               </Card.Text>
-              <Button variant="primary">Proceed</Button>
+              <Card.Footer style={{ textAlign: "center", backgroundColor:"#152238"}}>
+                <Button>Proceed</Button>
+              </Card.Footer>
             </Card.Body>
           </Card>
         </Col>
