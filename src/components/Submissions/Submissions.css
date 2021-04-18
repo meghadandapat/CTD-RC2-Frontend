@@ -1,6 +1,6 @@
 .sub{
     overflow-x: hidden;
-    color: white;
+   
 }
 .quetext{
     
@@ -17,9 +17,19 @@
     /* background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
     background-color:#6c6f74;
 }
+.btn{
+    color: #152238 !important;
+}
 .table{
-    color: white;
+   
     margin-top: -7px;
+    
+}
+.subtext{
+    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent; 
+
 }
 
 .scard{
@@ -27,6 +37,7 @@
     color: white;
     height: 60%;
     margin: 2px;
+    
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to top right, #152238 0%, #152238 100%);

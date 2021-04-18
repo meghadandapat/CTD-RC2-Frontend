@@ -8,7 +8,7 @@ const Logout = () => {
   const handleShow = () => setShow(true);
     return (
   <div>
-        <Button variant="primary" onClick={handleShow}>
+        <Button variant="default" className="mybtn" onClick={handleShow}>
           Logout
         </Button>
         <Modal
@@ -24,8 +24,8 @@ const Logout = () => {
            Are you sure you want to Log out?
           </Modal.Body>
             <Modal.Footer>
-            <Button variant="primary">Yes</Button>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="default" className="mybtn">Yes</Button>
+            <Button variant="default" className="mybtn" onClick={handleClose}>
               No
             </Button>
             

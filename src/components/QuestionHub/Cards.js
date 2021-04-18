@@ -11,7 +11,7 @@ const Cards = ({qno, progbar, attempts, button}) => {
                     <div className="card qhubcard">
                         <div className="card-body">
                             <Table responsive className="table table-borderless">
-                                <thead>
+                                <tbody>
                                     <tr>
                                         <td></td>
                                         <td className="questno">
@@ -30,7 +30,7 @@ const Cards = ({qno, progbar, attempts, button}) => {
                                         <td></td>
                                         
                                     </tr>
-                                </thead>
+                                </tbody>
                             </Table>
                             
                         </div>

@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import React from 'react';
 import  './Login.css';
  const Login =() =>
 {
@@ -18,7 +18,7 @@ import  './Login.css';
             <br></br>
             <br></br>
              <button style={{padding:'0.5rem', height:'5vh'}}>
-                 <a href="#" role="button"><b>Submit</b></a>
+                 Submit
                  </button>
                  </table>
                  </form>

@@ -8,17 +8,17 @@ const SubCard = ({attemptNo, time, progbar, button}) => {
           <div className="card scard">
             <div className="card-body">
             <Table responsive className="table table-borderless">
-              <thead>
+              <tbody>
                 <tr>
-                  <td><p>{attemptNo}</p></td>
-                  <td><p>{time}</p></td>
+                  <td><p className="subtext">{attemptNo}</p></td>
+                  <td><p className="subtext">{time}</p></td>
                   <td><p className="progbar">{progbar}</p></td>
                   <td>{button === "yes" && (
-                    <div className="btn btn-dark btn1">Attempt</div>
+                    <div className="btn  btn1 sub-button">View</div>
                   )}</td>
                 </tr>
 
-              </thead>
+              </tbody>
             </Table>
               {/* <div className="row contents">
               <div className="col-sm-1"></div>

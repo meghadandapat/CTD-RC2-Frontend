@@ -11,7 +11,7 @@ const TitleCard = () => {
                     <div className="card qhubcard">
                         <div className="card-body mb-2">
                             <Table responsive className="table table-borderless">
-                                <thead>
+                                <tbody>
                                     <tr>
                                         <td></td>
                                         <td className="questno justify-content-left">
@@ -27,7 +27,7 @@ const TitleCard = () => {
                                         <td></td>
                                         
                                     </tr>
-                                </thead>
+                                </tbody>
                             </Table>
                             
                         </div>

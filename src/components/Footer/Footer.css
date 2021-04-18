@@ -1,4 +1,6 @@
 .footer{
-  
+    background-color: #6c757d;
+    color: #fff;
+    font-weight: bold;
     justify-content: center;
 }

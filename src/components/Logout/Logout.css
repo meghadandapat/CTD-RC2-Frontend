@@ -7,3 +7,10 @@ color: white;
  .modal-footer{
     border: none  !important
 }
+/* 
+    .mybtn, .mybtn:focus{
+        outline: none !important;
+        border:none !important;
+    
+     } */
+     
