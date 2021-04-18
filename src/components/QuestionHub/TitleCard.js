@@ -1,32 +1,29 @@
 import { Table } from 'react-bootstrap';
 import './Card.css';
-const Cards = ({qno, progbar, attempts, button}) => {
+const TitleCard = () => {
     return ( 
-        <div className="Cards">
+        <div className="titlecard">
             <div className="row">
                 <div className="col-sm-1">
 
                 </div>
                 <div className="col-sm-10">
                     <div className="card qhubcard">
-                        <div className="card-body">
+                        <div className="card-body mb-2">
                             <Table responsive className="table table-borderless">
                                 <thead>
                                     <tr>
                                         <td></td>
-                                        <td className="questno">
-                                            <h6>{qno}</h6>
+                                        <td className="questno justify-content-left">
+                                            <h6>SrNo.</h6>
                                         </td>
                                         <td className="progressb">
-                                            <h6>{progbar}</h6>
+                                            <h6>Progress</h6>
                                         </td>
                                         <td className="attempno">
-                                            <h6>{attempts}</h6>
+                                            <h6>Attempts</h6>
                                         </td>
-                                        <td className="attempb">
-                                            {button==="yes" && <div className="btn btn-dark"><div class="attempt">Attempt</div></div>}
-                                            
-                                        </td>
+                                        <td className="attempb"></td>
                                         <td></td>
                                         
                                     </tr>
@@ -41,8 +38,7 @@ const Cards = ({qno, progbar, attempts, button}) => {
                 </div>
             </div>
         </div>
-
      );
 }
  
-export default Cards;
+export default TitleCard;
