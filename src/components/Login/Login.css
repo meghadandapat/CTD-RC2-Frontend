@@ -1,7 +1,71 @@
-a {
-    box-sizing: border-box;
-  }
-  
-  table {
-    border-radius: "25px";
-  }
+.dbox {
+  height: 99vh;
+}
+/* .cbox {
+  border: 1px solid black;
+  height: 89.5vh;
+} */
+
+.main {
+  text-align: center;
+}
+
+.head {
+  text-align: center;
+  margin-left: 6rem;
+  width: 20em;
+}
+
+.head1 {
+  margin-left: 6rem;
+  width: 20em;
+}
+
+.head2 {
+  margin-left: 6rem;
+  width: 20em;
+}
+
+.wid {
+  width: 10rem;
+  background-color: orange;
+  padding: 0.5em;
+  border-color: orange;
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border: 2px solid dodgerblue;
+}
+
+.rid {
+  float: left;
+}
+
+.login-card {
+  margin-top: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-card:hover {
+  margin-top: 3em;
+  transform: scale(1.05);
+  /* transform: translateY(-50px); */
+}
+
+.illustration {
+  margin-top: 1em;
+  margin-right: -3em;
+  z-index: 1;
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.illustration:hover {
+  transform: scale(1.05);
+}
+
+.mid {
+  margin-bottom: 3em;
+  text-align: center;
+}
