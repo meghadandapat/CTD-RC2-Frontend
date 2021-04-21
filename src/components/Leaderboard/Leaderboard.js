@@ -23,8 +23,8 @@ const Leaderboard = () => {
                 </thead>
                 
                     {data.map((data)=>(
-                        data.rank%2!=0 &&<tr className="tablerow"><LeaderRow rank={data.rank} username={data.username} score={data.score} /></tr>||
-                        data.rank%2!=0 || <tr className="tablerow"><LeaderRow rank={data.rank} username={data.username} score={data.score} /></tr>
+                        data.rank%2!==0 && <tr className="tablerow"><LeaderRow rank={data.rank} username={data.username} score={data.score} /></tr> ||
+                        data.rank%2!==0 || <tr className="tablerow"><LeaderRow rank={data.rank} username={data.username} score={data.score} /></tr>
                     ))}
                 
             </Table>

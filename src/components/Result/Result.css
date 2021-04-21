@@ -1,9 +1,10 @@
-.result{
+.resultcard{
     width: 22vw;
-    margin-top: 2vh;
+    margin-bottom: 4vh;
     margin-left: 15vw;
     z-index: -1;
-    height: 23.5vh;
+   height: 20vh;
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .resultpage{

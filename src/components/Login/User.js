@@ -1,5 +1,5 @@
 import React ,{useState}from 'react';
-import Radio from '@material-ui/core/Radio';
+// import Radio from '@material-ui/core/Radio';
 
 const User = () => {
     const[name, setName] = useState("");
@@ -46,7 +46,7 @@ const User = () => {
                         </div>
               
                 <div class="form-grp">
-                    <Radio/>Junior  <Radio/>Senior
+                   
                    <br/>
                    <button className="wid" type="btn" alt="button">Login</button>
                   </div>

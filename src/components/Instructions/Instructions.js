@@ -10,7 +10,7 @@ const Instructions = () => {
           <Card className="instruction-card" >
             <Card.Body>
               <Card.Title style={{ textAlign: "center" }}>Instructions</Card.Title>
-              <Card.Text>
+              <div>
                 <ul>
                   <li>
                     Possession the unpleasing simplicity her uncommonly.Off say
@@ -35,7 +35,7 @@ const Instructions = () => {
                   </li>
                  
                 </ul>
-              </Card.Text>
+              </div>
               <Card.Footer style={{ textAlign: "center", backgroundColor:"#152238"}}>
                 <Button>Proceed</Button>
               </Card.Footer>
