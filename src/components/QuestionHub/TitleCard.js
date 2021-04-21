@@ -8,20 +8,20 @@ const TitleCard = () => {
 
                 </div>
                 <div className="col-sm-10">
-                    <div className="card qhubcard">
+                    <div className="card title">
                         <div className="card-body mb-2">
                             <Table responsive className="table table-borderless">
                                 <tbody>
                                     <tr>
                                         <td></td>
                                         <td className="questno justify-content-left">
-                                            <h6>SrNo.</h6>
+                                            <p>SrNo.</p>
                                         </td>
                                         <td className="progressb">
-                                            <h6>Progress</h6>
+                                            <p>Progress</p>
                                         </td>
                                         <td className="attempno">
-                                            <h6>Attempts</h6>
+                                            <p>Attempts</p>
                                         </td>
                                         <td className="attempb"></td>
                                         <td></td>

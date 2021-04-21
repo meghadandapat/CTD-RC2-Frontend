@@ -1,7 +1,7 @@
 .qhub{
   overflow-x: hidden;
   margin-bottom: 8vh;
-  margin-top: 6vh;
+  margin-top: 3vh;
 }
 .Cards{
     margin-top: -1.7em;
@@ -17,11 +17,15 @@
   }
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);*/
   
+.title{
+    overflow: hidden;
+    height: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    /* background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
+    background-color:#6c6f74;
+}
+
 h6,h1{
-    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-    
     
   }
 
