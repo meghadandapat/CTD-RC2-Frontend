@@ -7,6 +7,8 @@ import Navbar from './components/Navbar/Navbar';
 import Login from './components/Login/Login';
 import Instructions from './components/Instructions/Instructions';
 import Footer from './components/Footer/Footer';
+import Leaderboard from './components/Leaderboard/Leaderboard';
+import Result from './components/Result/Result';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
     <Route path="/testcases" component={Testcase} />
     <Route path="/questionhub" component={QuestionHub} />
     <Route path="/instructions" component={Instructions} />
+    <Route path="/leaderboard" component={Leaderboard} />
+    <Route path="/result" component={Result} />
     </Switch>      
     </Router>
     <Footer/>    

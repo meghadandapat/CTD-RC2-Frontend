@@ -1,0 +1,16 @@
+.tablerow:nth-child(odd) {
+    background-color: #f2f2f2;
+  }
+  .tablerow:nth-child(even) {
+    background-color: #152238;
+    color: white;
+  }
+.leaderboard{
+    padding: 5px;
+    width: 49vw;
+}
+
+.data{
+    width:14vw;
+    justify-content: center;
+}
