@@ -1,21 +1,55 @@
-.questno{
+.cardquestno{
     width:15vw;
     text-align: center;
+    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
   }
   
-  .progressb{
+  .cardprogressb{
     width:30vw;
     text-align: center;
+    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
   }
   
-  .attempno{
+  .cardattempno{
+    width:15vw;
+    text-align: center;
+    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+  }
+  
+  .cardattempb{
     width:15vw;
     text-align: center;
   }
   
-  .attempb{
-    width:15vw;
-    text-align: center;
-  }
-  
+/*Title card*/
+
+.questno{
+  width:15vw;
+  text-align: center;
+  color: white !important;
+}
+
+.progressb{
+  width:30vw;
+  text-align: center;
+  color: white !important;
+}
+
+.attempno{
+  width:15vw;
+  text-align: center;
+  color: white !important;
+}
+
+.attempb{
+  width:15vw;
+  text-align: center;
+}
+
   

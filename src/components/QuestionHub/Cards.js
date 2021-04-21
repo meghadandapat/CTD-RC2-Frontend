@@ -14,16 +14,16 @@ const Cards = ({qno, progbar, attempts, button}) => {
                                 <tbody>
                                     <tr>
                                         <td></td>
-                                        <td className="questno">
+                                        <td className="cardquestno">
                                             <h6>{qno}</h6>
                                         </td>
-                                        <td className="progressb">
+                                        <td className="cardprogressb">
                                             <h6>{progbar}</h6>
                                         </td>
-                                        <td className="attempno">
+                                        <td className="cardattempno">
                                             <h6>{attempts}</h6>
                                         </td>
-                                        <td className="attempb">
+                                        <td className="cardattempb">
                                             {button==="yes" && <div className="btn btn-dark"><div class="attempt">Attempt</div></div>}
                                             
                                         </td>
