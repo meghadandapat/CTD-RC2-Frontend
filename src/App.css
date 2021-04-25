@@ -18,6 +18,14 @@
     border-radius: 10px;
 }
 
-
+.Button:focus,
+.Button:active {
+  box-shadow: none;
+}
+.score:focus,
+.score:active {
+  box-shadow: none;
+  
+}
 
 
