@@ -9,6 +9,7 @@ import Instructions from './components/Instructions/Instructions';
 import Footer from './components/Footer/Footer';
 import Leaderboard from './components/Leaderboard/Leaderboard';
 import Result from './components/Result/Result';
+import Codingpage from './components/Coding/Codingpage';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <Route path="/instructions" component={Instructions} />
     <Route path="/leaderboard" component={Leaderboard} />
     <Route path="/result" component={Result} />
+    <Route path="/coding" component={Codingpage} />
     </Switch>      
     </Router>
     <Footer/>    
