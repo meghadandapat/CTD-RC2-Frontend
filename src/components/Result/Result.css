@@ -1,13 +1,30 @@
 .resultcard{
     width: 22vw;
     margin-bottom: 4vh;
-    margin-left: 15vw;
+    margin-left: 5vw;
+    text-align: center;
     z-index: -1;
-   height: 20vh;
-    
+    height: 20vh;    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 .resultpage{
     margin-top: 0em;
     overflow-x: hidden;
+}
+.svgs{
+    width: 180px;
+    height: 180px;
+    color: white;
+}
+.svg-down{
+    margin-top: 20vh;
+}
+.silver{
+    margin-left: 5vw;
+}
+.bronze{
+    margin-left: -5vw;
+}
+.svg-rank{
+    color: white;
 }
