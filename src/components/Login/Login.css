@@ -1,4 +1,4 @@
-.dbox {
+/* .dbox {
   height: 99vh;
 }
 /* .cbox {
@@ -6,7 +6,7 @@
   height: 89.5vh;
 } */
 
-.main {
+/* .main {
   text-align: center;
 }
 
@@ -51,7 +51,7 @@
   margin-top: 3em;
   transform: scale(1.05);
   /* transform: translateY(-50px); */
-}
+/* }
 
 .illustration {
   margin-top: 1em;
@@ -68,4 +68,112 @@
 .mid {
   margin-bottom: 3em;
   text-align: center;
+}   */
+
+.dbox {
+  height: 99vh;
+}
+/* .cbox {
+  border: 1px solid black;
+  height: 89.5vh;
+} */
+
+/* .container {
+  background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+  color: #ff5f6d;
+} */
+
+.main {
+  text-align: center;
+}
+
+.grid-container {
+  grid-row-gap: 50px;
+}
+
+.head {
+  text-align: center;
+  margin-left: 6rem;
+  width: 20em;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.head1 {
+  margin-left: 6rem;
+  width: 20em;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.head2 {
+  margin-left: 6rem;
+  width: 20em;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.wid {
+  width: 10rem;
+  padding: 0.5em;
+  background-image: linear-gradient(to top right, #ff5f6d 0%, #ffc371 100%);
+  cursor: pointer;
+}
+
+.form-control:focus {
+  border: 2px solid black;
+}
+
+.icon {
+  padding: 10px;
+  background: #6c6f74;
+  color: #ff5f6d 0%, #ffc371 100%;
+  min-width: 50px;
+  text-align: center;
+}
+
+.login-card {
+  margin-top: 4.5em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #152238;
+  color: #ff5f6d;
+}
+
+.login-card:hover {
+  margin-top: 5.5em;
+  transform: scale(1.05);
+  /* transform: translateY(-50px); */
+}
+
+.illustration {
+  margin-top: 2em;
+  margin-right: -3em;
+  z-index: 1;
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #152238;
+  height: max-content;
+  align-items: center;
+}
+.jpeg {
+  background-color: #152238;
+  height: 400px;
+}
+
+.illustration:hover {
+  transform: scale(1.05);
+}
+
+.mid {
+  margin-bottom: 3em;
+  text-align: center;
+  color: #ff5f6d 0%, #ffc371 100%;
+}
+
+.radio {
+  color: #ff5f6d 0%, #ffc371 100%;
+  margin-bottom: 15px;
 }

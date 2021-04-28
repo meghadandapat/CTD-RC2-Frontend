@@ -14,8 +14,7 @@ import illusion from '../assets/illusion.jpg';
               <div className="card illustration">
               <div className="card-body">
              
-             <img src={illusion} className="illusion-container"></img>
-             </div>
+             <img src={illusion} className="illusion-container"></img></div>
              </div></div>
            <div class="col-sm-6 cbox">
            <User/>
@@ -26,3 +25,4 @@ import illusion from '../assets/illusion.jpg';
      )
 }
 export default Login;
+
