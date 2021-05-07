@@ -1,11 +1,12 @@
 .resultcard{
-    width: 22vw;
+    height: 500px;
+    width: 380px;
     margin-bottom: 4vh;
-    margin-left: 5vw;
+    margin-left: 12vw;
     text-align: center;
     z-index: -1;
-    height: 20vh;    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
 }
 .resultpage{
     margin-top: 0em;
@@ -19,12 +20,28 @@
 .svg-down{
     margin-top: 20vh;
 }
-.silver{
-    margin-left: 5vw;
-}
-.bronze{
-    margin-left: -5vw;
-}
+
 .svg-rank{
     color: white;
+    text-align: center;
+}
+.res-text{
+    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent; 
+    margin: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .resultcard{
+        height: 400px;
+        width: 280px;
+        margin-bottom: 4vh;      
+        
+    }
+    .svg-down{
+        margin-top: 2vh;
+    }
+    .bronze{
+        margin-bottom: 70px;
+    }
 }

@@ -12,23 +12,21 @@ const Result = () => {
         <div className="fluid-container resultpage ">
              
             <div className="row" style={{marginTop:"7vh"}}>
-                <div className="col-sm-4 ">
-                    <div className="row"><Resultcards header="Username" result="ABC"/></div>
-                    <div className="row"><Resultcards header="Rank" result="1"/></div>
-                    <div className="row"><Resultcards header="Score" result="80"/></div>
+                <div className="col-sm-5 ">
+                    <div className="row "><Resultcards username="xyz" rank="111" score="40" /></div>
                 </div>
-                <div className="col-sm-8">
+                <div className="col-sm-7">
                     <div className="row ">
-                        <div className="col">
-                        <img className="svgs silver svg-down" src ={silver} alt="My Happy SVG"/>
+                        <div className="col text-center">
+                        <img className="svgs  svg-down" src ={silver} alt="My Happy SVG"/>
                         <p className="svg-rank">Megha Dandapat</p>
                         </div>
-                        <div className="col">
+                        <div className="col text-center">
                         <img className="svgs" src ={gold} alt="My Happy SVG"/>
                         <p className="svg-rank">Megha Dandapat</p>
                         </div>
-                        <div className="col">
-                        <img className="svgs bronze svg-down" src ={bronze} alt="My Happy SVG"/>
+                        <div className="col bronze text-center">
+                        <img className="svgs svg-down" src ={bronze} alt="My Happy SVG"/>
                         <p className="svg-rank">Megha Dandapat</p>
                         </div>
                     

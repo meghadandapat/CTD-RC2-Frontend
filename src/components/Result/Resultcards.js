@@ -1,13 +1,13 @@
 import './Result.css';
-const Resultcards = ({header, result}) => {
+const Resultcards = ({username, rank, score}) => {
     return ( 
-        <div className="resultcard">
-            <div className="card result">
-                <div className="card-header">
-                    <h2>{header}</h2>
-                </div>
-                <div className="card-body">
-                    <h2>{result}</h2>
+        <div className="resultcards ">
+            <div className="card resultcard">
+                <div className="card-body rbody">
+                   <h3 className="res-text" >Username: {username}</h3> 
+                   <h3 className="res-text">Rank: {rank}</h3>
+                   <h3 className="res-text">Score: {score}</h3>
+
                 </div>
             </div>
         </div>
