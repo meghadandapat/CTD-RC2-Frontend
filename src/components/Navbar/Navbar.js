@@ -2,6 +2,7 @@ import React from "react";
 import {Link} from 'react-router-dom'
 import Logout from "../Logout/Logout";
 import "./Navbar.css";
+import Timer from "../Timer/Timer";
 
 
 const Navbar = () => {
@@ -37,6 +38,7 @@ const Navbar = () => {
           </ul>
           
         </div>
+        <Timer/>
         <Logout/>
     </div>
   </nav>

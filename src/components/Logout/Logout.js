@@ -8,7 +8,7 @@ const Logout = () => {
   const handleShow = () => setShow(true);
     return (
   <div>
-        <Button variant="default" className="mybtn" onClick={handleShow}>
+        <Button variant="default" className="mybtn" onClick={handleShow} style={{marginLeft: "1rem"}}>
           Logout
         </Button>
         <Modal
