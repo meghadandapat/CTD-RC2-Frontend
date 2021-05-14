@@ -13,8 +13,11 @@ import illusion from '../assets/illusion.jpg';
            <div class="col-sm-6 cbox">
               <div className="card illustration">
               <div className="card-body">
-             
-             <img src={illusion} className="illusion-container"></img></div>
+                <div className="rc2Title">
+                  <h1 className="rc2Title1">Reverse Coding </h1>
+                  <h1 className="rc2Title2">2.0</h1>
+                </div>
+             </div>
              </div></div>
            <div class="col-sm-6 cbox">
            <User/>
