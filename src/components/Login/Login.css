@@ -95,7 +95,7 @@
   width: 20em;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.6em;
 }
 
 .head1 {
@@ -103,7 +103,7 @@
   width: 20em;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.6em;
 }
 
 .head2 {
@@ -111,7 +111,7 @@
   width: 20em;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1.6em;
 }
 
 .wid {
@@ -138,7 +138,6 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: #152238;
   color: #ff5f6d;
-  margin-left: -3em;
 }
 
 
