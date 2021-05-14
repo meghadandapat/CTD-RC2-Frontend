@@ -38,6 +38,11 @@ h6,h1{
     
   }
 
+.btn:hover{
+  background-image: linear-gradient(to top right,  #ffc371 0%, #ff5f6d 100%);
+
+}
+
 .attempt{
     color: #152238;
   }
