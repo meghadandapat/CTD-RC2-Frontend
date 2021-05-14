@@ -24,12 +24,12 @@ const User = () => {
         <div className="login"> 
         <div className="card login-card">
               <div className="card-header mid">
-                <h1>Welcome!</h1></div>
+                <h1 className="rc2title">REVERSE CODING 2.0</h1></div>
                  <div className="card-body">
                          <form action="" className="main">
                                  <div class="input-container head">
                                    <i class="fa fa-user icon"></i>
-                        <input type="required" class="form-control" name="name" id="name" placeholder= "Username" value={name} onChange = {
+                        <input type="required" name="name" className="form-control fields" id="name" placeholder= "Username" value={name} onChange = {
                         (e) => setName(e.target.value)
                     }></input>
                     </div>
@@ -37,7 +37,7 @@ const User = () => {
                      <div class="input-container head1">
                           <i class="fa fa-envelope icon"></i>
                     <label htmlFor="email"></label>
-                    <input class='fas fa-envelope-open' type="text" name="email"  class="form-control" id="email" placeholder= "Email" value={email} onChange = {
+                    <input class='fas fa-envelope-open' type="text" name="email" className="form-control fields" id="email" placeholder= "Email" value={email} onChange = {
                         (e) => setEmail(e.target.value)}></input>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const User = () => {
                           <i class="fa fa-key icon"></i>
                          
                     <label htmlFor="password"></label> 
-                    <input type="password" name="password" class="form-control" id="password" placeholder= "Password"  autoComplete="off" value={password} 
+                    <input type="password" name="password" className="form-control fields" id="password" placeholder= "Password"  autoComplete="off" value={password} 
                     onChange = {
                         (e) => setPassword(e.target.value)}></input>
                         </div>

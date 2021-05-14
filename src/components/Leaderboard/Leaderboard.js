@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import ReactPaginate from 'react-paginate';
 import TitleLeader from "./TitleLeader";
+import UserRank from "./UserRank";
 
 const Leaderboard = () => {
     const [data, setData] = useState([
@@ -32,7 +33,7 @@ const Leaderboard = () => {
                         data.rank%2!==0 && <tr className="tablerow"><LeaderRow data={data}/></tr> ||
                         data.rank%2!==0 || <tr className="tablerow"><LeaderRow data={data} /></tr>
                     ))}
-                
+                <UserRank/>
             </Table>
             <ReactPaginate
                 previousLabel={"previous"}

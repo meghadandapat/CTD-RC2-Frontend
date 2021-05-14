@@ -90,15 +90,21 @@
 }
 
 .head {
+  
   text-align: center;
   margin-left: 6rem;
   width: 20em;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.6em;
+  outline: none;
+  background: none;
+  margin-top: 1vh;
 }
 
 .head1 {
+  
+  text-align: center;
   margin-left: 6rem;
   width: 20em;
   display: -ms-flexbox;
@@ -107,11 +113,13 @@
 }
 
 .head2 {
+  
+  text-align: center;
   margin-left: 6rem;
   width: 20em;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1.6em;
+  margin-bottom: 1.4em;
 }
 
 .wid {
@@ -119,25 +127,39 @@
   padding: 0.5em;
   background-image: linear-gradient(to top right, #ff5f6d 0%, #ffc371 100%);
   cursor: pointer;
+  align-items: center;
 }
 
-.form-control:focus {
+/*.form-control:focus {
   border: 2px solid black;
-}
+}*/
 
 .icon {
-  padding: 10px;
+  padding-right: 3vh;
+  padding-top: 1.5vh;
   background: #6c6f74;
-  color: #ff5f6d 0%, #ffc371 100%;
-  min-width: 50px;
+  background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
   text-align: center;
+  font-size: 3.2vh;
+
+}
+
+.fields{
+  background-color: #152238;
 }
 
 .login-card {
-  margin-top: 2.7em;
+  margin-top: 2.3em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: #152238;
   color: #ff5f6d;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+  width:45vw;
+  justify-content: center;
 }
 
 
@@ -154,19 +176,14 @@
 }
 
 
-.rc2Title{
+.rc2title{
   background: -webkit-linear-gradient(#ff5f6d, #ffc371);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
-
-  margin-top: 3em;
-  margin-bottom: 3em;
-  
+  /* color:white; */
 }
 
-.rc2Title2{
-  margin-left: 2.5em;
-}
+
 
 
 .mid {
@@ -176,5 +193,6 @@
 
 .radio {
   color: #ff5f6d 0%, #ffc371 100%;
-  margin-bottom: 15px;
+  margin-bottom: 2vh;
+  align-items:center;
 }
