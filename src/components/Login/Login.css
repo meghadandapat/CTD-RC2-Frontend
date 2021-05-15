@@ -85,41 +85,43 @@
   text-align: center;
 }
 
-.grid-container {
-  grid-row-gap: 50px;
-}
+
 
 .head {
-  
-  text-align: center;
+  text-align: left;
   margin-left: 6rem;
-  width: 20em;
+  width: 25vw;
+  height: 6vh;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.6em;
   outline: none;
   background: none;
-  margin-top: 1vh;
+  margin-top: 2vh;
+  border: none;
+  position: relative;
 }
 
 .head1 {
-  
-  text-align: center;
-  margin-left: 6rem;
-  width: 20em;
+  width: 25vw;
+  height: 6vh;
+  text-align: left;
+  margin-left: 6rem;;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.6em;
+  position: relative;
 }
 
 .head2 {
-  
-  text-align: center;
+  width: 25vw;
+  height: 6vh;
+  text-align: left;
   margin-left: 6rem;
-  width: 20em;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.4em;
+  position: relative;
 }
 
 .wid {
@@ -128,15 +130,15 @@
   background-image: linear-gradient(to top right, #ff5f6d 0%, #ffc371 100%);
   cursor: pointer;
   align-items: center;
+  text-align: center;
 }
 
-/*.form-control:focus {
-  border: 2px solid black;
-}*/
+.form-control:focus {
+  background-color: #152238;
+}
 
 .icon {
-  padding-right: 3vh;
-  padding-top: 1.5vh;
+  padding-right: 2vh;
   background: #6c6f74;
   background: -webkit-linear-gradient(#ff5f6d, #ffc371);
     -webkit-background-clip: text;
@@ -163,7 +165,7 @@
 }
 
 
-.illustration {
+/* .illustration {
   margin-top: 8em;
   margin-right: -3em;
   z-index: -1;
@@ -173,7 +175,7 @@
   height: max-content;
   align-items: center;
   width:30em;
-}
+} */
 
 
 .rc2title{
@@ -181,6 +183,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
   /* color:white; */
+  font-size: 7vh;
 }
 
 
@@ -188,6 +191,7 @@
 
 .mid {
   text-align: center;
+  align-items: center;
   color: #ff5f6d 0%, #ffc371 100%;
 }
 
@@ -195,4 +199,22 @@
   color: #ff5f6d 0%, #ffc371 100%;
   margin-bottom: 2vh;
   align-items:center;
+  text-align: center;
+}
+@media only screen and (max-width: 600px){
+  .login-card{
+    width: 80vw;
+  }
+  .head{
+    width:40vw;
+  }
+  .head1{
+    width:40vw;
+  }
+  .head2{
+    width:40vw;
+  }
+  .rc2title{
+    font-size: 4vh;
+  }
 }

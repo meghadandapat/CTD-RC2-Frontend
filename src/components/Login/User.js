@@ -22,6 +22,8 @@ const User = () => {
 
     return (
         <div className="login"> 
+        <div className="row">
+          <div className="col-sm">
         <div className="card login-card">
               <div className="card-header mid">
                 <h1 className="rc2title">REVERSE CODING 2.0</h1></div>
@@ -73,6 +75,9 @@ const User = () => {
                  
             </form>
         </div> 
+        </div>
+        
+        </div>
         </div>
         </div>
 
