@@ -24,7 +24,7 @@ const Cards = ({qno, progbar, attempts, button}) => {
                                             <h6>{attempts}</h6>
                                         </td>
                                         <td className="cardattempb">
-                                            {button==="yes" && <div className="btn btn-dark"><div class="attempt">Attempt</div></div>}
+                                            {button==="yes" && <div className="btn qbtn btn-dark"><div class="attempt">Attempt</div></div>}
                                             
                                         </td>
                                         <td></td>

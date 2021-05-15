@@ -6,19 +6,19 @@ body{
   background-color: #031025;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   color: white;
-  height: 6vh;
+  height: 30%;
 }
 .tablerow:nth-child(odd) {
   background-color: #152238;
   color: white;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-  height: 6vh;
+  height: 30%;
 }
 
 .tabletitle{
   background-color: #6c6f74;
   color: #152238;
-  height: 5vh;
+  height: 30%;
 }
 
 .leaderboard{
@@ -42,24 +42,27 @@ body{
 .data{
   width:5vw;
   justify-content: center;
-  height: 0.05em;
+  height: 0.01vh;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  font-size: 2vh;
 }
 
 .datauser{
   width:12vw;
   justify-content: center;
-  height: 0.05em;
+  height: 0.01vh;
   text-align: center;
+  font-size: 2vh;
 }
 
 .datascore{
   width:12vw;
   justify-content: center;
-  height: 0.05em;
+  height:0.01vh;
   text-align: center;
+  font-size: 2vh;
 }
 
 .tuser,.tscore,.trank{
@@ -70,6 +73,7 @@ body{
   background-color: #6c6f74;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   color:white ;
+  
 }
 
 .pagination {

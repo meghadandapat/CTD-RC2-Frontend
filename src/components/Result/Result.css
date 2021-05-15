@@ -1,7 +1,7 @@
 .resultcard{
     /* height: 500px;*/
-    width: 350px; 
-    height: 140px;
+    width: 20vw; 
+    height: 20vh;
     margin-bottom: 4vh;
     margin-left: 12vw;
     text-align: center;
@@ -30,7 +30,8 @@
     background: -webkit-linear-gradient(#ff5f6d, #ffc371);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent; 
-    margin: 30px;
+    margin: 4vh;
+    font-size: 3.8vh;
 }
 @media only screen and (max-width: 600px) {
     .resultcard{
@@ -39,11 +40,12 @@
         margin-bottom: 4vh;       */
         height: 120px;
         width: 280px;
-        margin-left: 50px;
+        margin: 4vw 20vw;
         
     }
     .res-text{
         margin: 20px;
+        font-size: 3.5vh;
     }
     .svg-down{
         margin-top: 2vh;

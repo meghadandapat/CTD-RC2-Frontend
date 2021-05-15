@@ -1,10 +1,10 @@
 .qhub{
   overflow-x: hidden;
-  margin-bottom: 8vh;
+  margin-bottom: 6vh;
   margin-top: 3vh;
 }
 .Cards{
-    margin-top: -1.7em;
+    margin-top: -1.8em;
        
   }
   
@@ -13,7 +13,7 @@
 .qhubcard{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
-    height: 70%;
+    height: 68%;
   }
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);*/
   
@@ -38,6 +38,10 @@
 .btn:hover{
   background-image: linear-gradient(to top right,  #ffc371 0%, #ff5f6d 100%);
 
+}
+
+.qbtn{
+  margin-top: -0.8vh;
 }
 
 .attempt{

@@ -89,7 +89,7 @@
 
 .head {
   text-align: left;
-  margin-left: 6rem;
+  margin-left: 8rem;
   width: 25vw;
   height: 6vh;
   display: -ms-flexbox;
@@ -106,7 +106,7 @@
   width: 25vw;
   height: 6vh;
   text-align: left;
-  margin-left: 6rem;;
+  margin-left: 8rem;;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.6em;
@@ -117,7 +117,7 @@
   width: 25vw;
   height: 6vh;
   text-align: left;
-  margin-left: 6rem;
+  margin-left: 8rem;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.4em;
@@ -162,6 +162,7 @@
   height: 70vh;
   width:45vw;
   justify-content: center;
+  
 }
 
 
