@@ -52,4 +52,20 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 600px){
+  .questno{
+    font-size: 1.5vh;
+  }
   
+  .progressb{
+    font-size: 1.5vh;
+  }
+  
+  .attempno{
+    font-size: 1.5vh;
+  }
+  
+  .attempb{
+    font-size: 1.5vh;
+  }
+}

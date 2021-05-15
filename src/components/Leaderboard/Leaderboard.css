@@ -24,11 +24,10 @@ body{
 .leaderboard{
   padding: 5px;
   width:max-content;
-  margin-bottom: 3em;
-  margin-top: 2em;
+  margin-top: 1.5vh;
   margin-left: auto;
   margin-right: auto;
-  
+  margin-bottom: 6vh;
 }
 
 
@@ -36,12 +35,13 @@ body{
 .leadertable {
   border-collapse: separate;
   border-spacing: 0 0.3em;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .data{
   width:5vw;
+  justify-content: center;
   height: 0.05em;
   margin-left: auto;
   margin-right: auto;
@@ -50,15 +50,16 @@ body{
 
 .datauser{
   width:12vw;
-  text-align: center;
+  justify-content: center;
   height: 0.05em;
-
+  text-align: center;
 }
 
 .datascore{
   width:12vw;
-  text-align: center;
+  justify-content: center;
   height: 0.05em;
+  text-align: center;
 }
 
 .tuser,.tscore,.trank{
@@ -73,12 +74,13 @@ body{
 
 .pagination {
   margin-top: 0px;
-  margin-left: 20em;
+  margin-left: 25vw;
   margin-right: auto;
   display: flex;
   list-style: none;
   outline: none;
   color:#6c6f74;
+  height: 4vh;
  }
   
  .pagination>.active>a {

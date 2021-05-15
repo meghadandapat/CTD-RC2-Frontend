@@ -19,15 +19,12 @@
   
 .title{
     overflow: hidden;
-    height: 70%;
+    height: 60%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     /* background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
     background-color:#6c6f74;
+    margin-bottom:-3vh ;
 }
-
-h6,h1{
-    
-  }
 
 .progress{
     background-image: linear-gradient(to top right, #152238  0%, #031025 100%);
@@ -47,10 +44,8 @@ h6,h1{
     color: #152238;
   }
 
-/*@media only screen and (min-width: 1020px) {
-  .Cards{
-    margin-top: -1.5%;
-    
+@media only screen and (max-width: 600px){
+  .attempt{
+    font-size: 1.5vh;
   }
-}*/
-  
+} 
