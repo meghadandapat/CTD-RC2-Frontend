@@ -33,18 +33,21 @@
   width:15vw;
   text-align: center;
   color: white !important;
+  margin-top: -3vh;
 }
 
 .progressb{
   width:30vw;
   text-align: center;
   color: white !important;
+  margin-top: -3vh;
 }
 
 .attempno{
   width:15vw;
   text-align: center;
   color: white !important;
+  margin-top: -3vh;
 }
 
 .attempb{

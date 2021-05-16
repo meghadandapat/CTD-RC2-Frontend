@@ -15,13 +15,13 @@ const Cards = ({qno, progbar, attempts, button}) => {
                                     <tr>
                                         <td></td>
                                         <td className="cardquestno">
-                                            <h6>{qno}</h6>
+                                            <h6 className="quecontent">{qno}</h6>
                                         </td>
                                         <td className="cardprogressb">
-                                            <h6>{progbar}</h6>
+                                            <h6 className="quecontent">{progbar}</h6>
                                         </td>
                                         <td className="cardattempno">
-                                            <h6>{attempts}</h6>
+                                            <h6 className="quecontent">{attempts}</h6>
                                         </td>
                                         <td className="cardattempb">
                                             {button==="yes" && <div className="btn qbtn btn-dark"><div class="attempt">Attempt</div></div>}
