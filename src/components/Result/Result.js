@@ -12,15 +12,17 @@ const Result = () => {
         <div className="fluid-container resultpage ">
              
             <div className="row" style={{marginTop:"7vh"}}>
-                <div className="col-sm-5 ">
+                <div className="col-sm-4 ">
                     <div className="row "><Resultcards username="xyz" rank="111" score="40" /></div>
                 </div>
-                <div className="col-sm-7">
+                <div className="col-sm-8">
                     <div className="row ">
                         <div className="col text-center">
                         <img className="svgs  svg-down" src ={silver} alt="My Happy SVG"/>
                         <p className="svg-rank">Megha Dandapat</p>
                         </div>
+                    </div>
+                    <div className="row row2">
                         <div className="col text-center">
                         <img className="svgs" src ={gold} alt="My Happy SVG"/>
                         <p className="svg-rank">Megha Dandapat</p>
@@ -29,8 +31,8 @@ const Result = () => {
                         <img className="svgs svg-down" src ={bronze} alt="My Happy SVG"/>
                         <p className="svg-rank">Megha Dandapat</p>
                         </div>
-                    
                     </div>
+                    
 
                     {/* <div className="row">
                     <img className="svgs" src ={silver} alt="My Happy SVG"/>2. Varada kalaskar</div>

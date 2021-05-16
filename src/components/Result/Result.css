@@ -14,14 +14,16 @@
     overflow-x: hidden;
 }
 .svgs{
-    width: 180px;
-    height: 180px;
+    width: 30vw;
+    height: 30vh;
     color: white;
 }
 .svg-down{
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
 }
-
+.row2{
+    margin-top: -6vh;
+}
 .svg-rank{
     color: white;
     text-align: center;

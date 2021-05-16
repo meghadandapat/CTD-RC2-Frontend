@@ -9,7 +9,7 @@
    
   }
   nav{
-    background-color: #6c757d;
+    background-color:rgba(0,0,0,0);
   }
   .nav-link:hover{
     text-decoration: underline;

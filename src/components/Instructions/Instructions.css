@@ -4,3 +4,31 @@
     color: #fff;
 
 }
+
+.instructions{
+    color:white;
+    
+}
+
+.instrtitle{
+    font-size: 13vh;
+    text-align: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.instrcontent{
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+    text-align: justify;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 3vh;
+}
+li{
+    margin-top: 1vh;
+}
+
+.instrbutton{
+    font-size: 6vh;
+}
