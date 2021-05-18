@@ -10,7 +10,7 @@ const TitleCard = () => {
                 <div className="col-sm-10">
                     <div className="card title">
                         <div className="card-body mb-2">
-                            <Table responsive className="table table-borderless">
+                            <Table responsive className="table table-borderless title-table">
                                 <tbody>
                                     <tr>
                                         <td></td>

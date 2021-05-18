@@ -8,7 +8,7 @@ import Timer from "../Timer/Timer";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-sm ">
-    <div className="container">
+    <div className="container nav-continer">
  
       <button
         className="navbar-toggler"
@@ -18,7 +18,7 @@ const Navbar = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarCollapse">
-        <ul className="navbar-nav ml-auto">
+        <ul className="navbar-nav ml-auto justify-content-right">
           <li className="nav-item">
             <Link to="/submissions" className="nav-link">
               Submissions
@@ -30,11 +30,6 @@ const Navbar = () => {
             </Link>
           </li>
         
-          <li className="nav-item">
-            {/* <Link to="/testcases" className="nav-link">
-              Testcases
-            </Link> */}
-          </li>
           </ul>
           
         </div>

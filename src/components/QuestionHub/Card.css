@@ -25,6 +25,7 @@
   .cardattempb{
     width:15vw;
     text-align: center;
+    
   }
   
 /*Title card*/
@@ -33,26 +34,30 @@
   width:15vw;
   text-align: center;
   color: white !important;
-  margin-top: -3vh;
+  /* margin-top: -4vh; */
 }
 
 .progressb{
   width:30vw;
   text-align: center;
   color: white !important;
-  margin-top: -3vh;
+  /* margin-top: -5vh; */
 }
 
 .attempno{
   width:15vw;
   text-align: center;
   color: white !important;
-  margin-top: -3vh;
+  /* margin-top: -4vh; */
 }
 
 .attempb{
   width:15vw;
   text-align: center;
+}
+
+.title-table{
+  margin-top: -1%;
 }
 
 @media only screen and (max-width: 600px){
@@ -72,3 +77,10 @@
     font-size: 1.5vh;
   }
 }
+
+@media only screen and (min-width: 1900px){
+  .title-table{
+    margin-top: 1%;
+  }
+  
+} 

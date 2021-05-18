@@ -1,8 +1,9 @@
 .qhub{
   overflow-x: hidden;
+  overflow-y: hidden;
   margin-bottom: 5vh;
   margin-top: 3vh;
-  height: 700px;
+  height: 80vh;
 }
 .Cards{
     /* margin-top: -1.8em; */
@@ -16,12 +17,12 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
     /* height: 68%; */
-    height:5.8em;
+    height:10vh;
   }
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);*/
   
 .title{
-    height: 5em;
+    height:10vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     /* background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
     background-color:#6c6f74;
@@ -44,7 +45,7 @@
 }
 
 .qbtn{
-  /* margin-top: -0.8vh; */
+  margin-top: -1.5vh;
 }
 .quecontent{
   font-size: 1.1em;
@@ -56,5 +57,11 @@
 @media only screen and (max-width: 600px){
   .attempt{
     font-size: 1.5vh;
+  }
+} 
+
+@media only screen and (min-width: 1900px){
+  .qbtn{
+    margin-top: -0.1vh;
   }
 } 
