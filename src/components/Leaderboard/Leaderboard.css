@@ -42,27 +42,27 @@ body{
 .data{
   width:5vw;
   justify-content: center;
-  height: 0.01vh;
+  height: 0.5vh;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-size: 2vh;
+
 }
 
 .datauser{
   width:12vw;
   justify-content: center;
-  height: 0.01vh;
+  height: 0.5vh;
   text-align: center;
-  font-size: 2vh;
+
 }
 
 .datascore{
   width:12vw;
   justify-content: center;
-  height:0.01vh;
+  height:0.5vh;
   text-align: center;
-  font-size: 2vh;
+  
 }
 
 .tuser,.tscore,.trank{
