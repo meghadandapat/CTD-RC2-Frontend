@@ -1,6 +1,17 @@
-import React ,{useState}from 'react';
+// React
+
+import React, { useState }from 'react';
+import { useHistory } from 'react-router-dom';
 import Radio from '@material-ui/core/Radio';
+
+// Material UI
+
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+
+// Local Imports
+
+import axiosInstance from '../../axios';
+import { login } from '../utils';
 
 const theme = createMuiTheme({
   palette: {
@@ -8,16 +19,47 @@ const theme = createMuiTheme({
     secondary: { main: '#ffc371' }, 
   },
 });
+
 const User = () => {
-    const[name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-     
+    const history = useHistory();
+
+    const initialFormData = Object.freeze({
+      username: '',
+      password: '',
+    });
+
     const [gender,setGender] = useState("Senior");
     const handleGender=(e)=>{
         console.warn(e.target.value)
         setGender(e.target.value)
 
+    }
+
+    const [formData, updateFormData] = useState(initialFormData);
+     
+    const handleChange = (e) => {
+      updateFormData({
+        ...formData,
+        [e.target.name]: e.target.value.trim(),
+      });
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      console.log(formData);
+
+      axiosInstance
+              .post('/api/token/', {
+                username: formData.username,
+                password: formData.password,
+              })
+              .then((res) => {
+                login(res);
+                axiosInstance.defaults.headers['Authorization'] =
+                      'JWT ' + localStorage.getItem('access_token');
+                history.push('/instructions');
+                console.log(res.status);
+              });
     }
 
     return (
@@ -31,29 +73,18 @@ const User = () => {
                          <form action="" className="main">
                                  <div class="input-container head">
                                    <i class="fa fa-user icon"></i>
-                        <input type="required" name="name" className="form-control fields" id="name" placeholder= "Username" value={name} onChange = {
-                        (e) => setName(e.target.value)
-                    }></input>
+                        <input type="required" name="username" className="form-control fields" id="username" placeholder= "Username" onChange = { handleChange }></input>
                     </div>
                 <div>
-                     <div class="input-container head1">
-                          <i class="fa fa-envelope icon"></i>
-                    <label htmlFor="email"></label>
-                    <input class='fas fa-envelope-open' type="text" name="email" className="form-control fields" id="email" placeholder= "Email" value={email} onChange = {
-                        (e) => setEmail(e.target.value)}></input>
-                        </div>
                     </div>
-             
-
                 <div>
                      <div class="input-container head2">
                           
                           <i class="fa fa-key icon"></i>
                          
                     <label htmlFor="password"></label> 
-                    <input type="password" name="password" className="form-control fields" id="password" placeholder= "Password"  autoComplete="off" value={password} 
-                    onChange = {
-                        (e) => setPassword(e.target.value)}></input>
+                    <input type="password" name="password" className="form-control fields" id="password" placeholder= "Password"  autoComplete="off" 
+                    onChange = { handleChange }></input>
                         </div>
                         </div>
                         
@@ -69,7 +100,7 @@ const User = () => {
                          </div>
                          </MuiThemeProvider>
                     </div>
-                   <button className="wid" type="btn" alt="button">Login</button>
+                   <button className="wid" type="btn" alt="button" onClick={ handleSubmit }>Login</button>
                   </div>
                   
                  

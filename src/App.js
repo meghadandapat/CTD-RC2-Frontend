@@ -10,6 +10,8 @@ import Footer from './components/Footer/Footer';
 import Leaderboard from './components/Leaderboard/Leaderboard';
 import Result from './components/Result/Result';
 import Codingpage from './components/Coding/Codingpage';
+import PrivateRoute from './components/utils/PrivateRoute';
+import PublicRoute from './components/utils/PublicRoute';
 
 
 function App() {
@@ -18,14 +20,14 @@ function App() {
     <Router>
     <Navbar />
     <Switch>
-    <Route exact path="/" component={Login} />
-    <Route path="/submissions" component={Submissions} />
-    <Route path="/testcases" component={Testcase} />
-    <Route path="/questionhub" component={QuestionHub} />
-    <Route path="/instructions" component={Instructions} />
-    <Route path="/leaderboard" component={Leaderboard} />
-    <Route path="/result" component={Result} />
-    <Route path="/coding" component={Codingpage} />
+    <PublicRoute restricted={false} exact path="/" component={Login} />
+    <PrivateRoute exact path="/submissions" component={Submissions} />
+    <PrivateRoute exact path="/testcases" component={Testcase} />
+    <PrivateRoute exact path="/questionhub" component={QuestionHub} />
+    <PrivateRoute exact path="/instructions" component={Instructions} />
+    <PrivateRoute exact path="/leaderboard" component={Leaderboard} />
+    <PublicRoute restricted={false} exact path="/result" component={Result} />
+    <PrivateRoute exact path="/coding" component={Codingpage} />
     </Switch>      
     </Router>
     <Footer/>    

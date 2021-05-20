@@ -1,8 +1,19 @@
+// React
+
 import React from "react";
+import {Card, Button, Row, Col, Container} from 'react-bootstrap';
+
+// CSS
+
 import "./Instructions.css";
-import {Card, Button, Row, Col, Container} from 'react-bootstrap'
+
+// Local Imports
+
+import axiosInstance from '../../axios';
+
 
 const Instructions = () => {
+
   return (
     //   <Container style={{ height: "80vh", display:"flex"}}>
     //       <Row style={{ alignItems: "center" }}>

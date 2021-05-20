@@ -1,8 +1,20 @@
-import React, { useState } from 'react'
-import { Button, Modal } from 'react-bootstrap'
-import './Logout.css'
+import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { Button, Modal } from 'react-bootstrap';
+import './Logout.css';
+import { logout } from '../utils/index';
 
 const Logout = () => {
+
+  const history = useHistory();
+
+  const handleYes = (e) => {
+    e.preventDefault();
+    logout();
+    history.push('/result');
+    handleClose();
+  }
+
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -24,7 +36,7 @@ const Logout = () => {
            Are you sure you want to Log out?
           </Modal.Body>
             <Modal.Footer>
-            <Button variant="default" className="mybtn">Yes</Button>
+            <Button variant="default" className="mybtn" onClick={handleYes}>Yes</Button>
             <Button variant="default" className="mybtn" onClick={handleClose}>
               No
             </Button>
