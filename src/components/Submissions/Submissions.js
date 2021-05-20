@@ -42,8 +42,7 @@ const Submissions = () => {
                     {que1.id!==0 && <SubCard
                     attemptNo={que1.id}
                     time={que1.time}
-                    progbar={<ProgressBar
-                        variant="secondary"
+                    progbar={<ProgressBar animated
                         now={que1.progress}
                       />}
                     button="yes"   
@@ -56,8 +55,7 @@ const Submissions = () => {
                     {que2.id!==0 && <SubCard
                     attemptNo={que2.id}
                     time={que2.time}
-                    progbar={<ProgressBar
-                        variant="secondary"
+                    progbar={<ProgressBar animated
                         now={que2.progress}
                       />}
                     button="yes"   
@@ -70,8 +68,7 @@ const Submissions = () => {
                     {que3.id!==0 && <SubCard
                     attemptNo={que3.id}
                     time={que3.time}
-                    progbar={<ProgressBar
-                        variant="secondary"
+                    progbar={<ProgressBar animated
                         now={que3.progress}
                       />}
                     button="yes"   
@@ -84,8 +81,7 @@ const Submissions = () => {
                     {que4.id!==0 && <SubCard
                     attemptNo={que4.id}
                     time={que4.time}
-                    progbar={<ProgressBar
-                        variant="secondary"
+                    progbar={<ProgressBar animated
                         now={que4.progress}
                       />}
                     button="yes"   
@@ -98,8 +94,7 @@ const Submissions = () => {
                     {que5.id!==0 && <SubCard
                     attemptNo={que5.id}
                     time={que5.time}
-                    progbar={<ProgressBar
-                        variant="secondary"
+                    progbar={<ProgressBar animated
                         now={que5.progress}
                       />}
                     button="yes"   
@@ -112,8 +107,7 @@ const Submissions = () => {
                     {que6.id!==0 && <SubCard
                     attemptNo={que6.id}
                     time={que6.time}
-                    progbar={<ProgressBar
-                        variant="secondary"
+                    progbar={<ProgressBar animated
                         now={que6.progress}
                       />}
                     button="yes"   

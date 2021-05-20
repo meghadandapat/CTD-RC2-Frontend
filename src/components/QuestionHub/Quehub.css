@@ -31,12 +31,16 @@
 }
 
 .progress{
-    background-image: linear-gradient(to top right, #152238  0%, #031025 100%);
+    /* background-image: linear-gradient(to top right, #f6f6f2  0%, #818894 100%); */
     height: 1.5em;
   }
 
+.progress-bar{
+  background-color: #388087;
+}
+
 .btn{
-    background-image: linear-gradient(to top right, #ff5f6d 0%, #ffc371 100%);
+    background-image: linear-gradient(to top right, #6fb3b8 0%, #6fb3b8 100%);
   }
 
 .btn:hover{
