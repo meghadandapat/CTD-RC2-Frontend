@@ -1,9 +1,16 @@
+// React
+
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+
+// Local Imports
+
 import QuestionBox from './QuestionBox'
 import InputBox from './InputBox';
 import OutputBox from './OutputBox';
 import CodeEditor from './CodeEditor';
+
+
 const Codingpage = () => {
     return (
         <Container fluid >

@@ -1,5 +1,12 @@
+// React
+
 import { Table } from 'react-bootstrap';
+
+// CSS
+
 import './Card.css';
+
+
 const Cards = ({qno, progbar, attempts, button}) => {
     return ( 
         <div className="Cards">

@@ -1,5 +1,12 @@
+// React
+
 import { Table } from 'react-bootstrap';
+
+// CSS
+
 import './Card.css';
+
+
 const TitleCard = () => {
     return ( 
         <div className="titlecard">

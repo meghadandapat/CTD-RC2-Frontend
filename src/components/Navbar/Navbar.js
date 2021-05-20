@@ -1,7 +1,15 @@
+// React
+
 import React from "react";
-import {Link} from 'react-router-dom'
-import Logout from "../Logout/Logout";
+import {Link} from 'react-router-dom';
+
+// CSS
+
 import "./Navbar.css";
+
+// Local Imports
+
+import Logout from "../Logout/Logout";
 import Timer from "../Timer/Timer";
 
 

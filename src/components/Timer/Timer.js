@@ -1,5 +1,12 @@
+// React
+
 import React from "react";
+
+// CSS
+
 import "./Timer.css";
+
+
 // function component
 const AnimatedCard = ({ animation, digit }) => {
   return (

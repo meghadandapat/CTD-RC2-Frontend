@@ -1,5 +1,13 @@
+// React
+
 import React, { Component } from 'react';
+
+// Ace
+
 import AceEditor from "react-ace";
+
+// Local Imports
+
 import 'brace/mode/java'
 import 'brace/mode/c_cpp'
 import 'brace/mode/python'

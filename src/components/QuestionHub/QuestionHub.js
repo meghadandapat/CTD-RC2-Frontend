@@ -1,9 +1,17 @@
-import './Quehub.css';
+// React
+
+import { useState } from 'react';
 import { ProgressBar} from 'react-bootstrap';
+
+// CSS
+
+import './Quehub.css';
+
+// Local Imports
 
 import Cards from "./Cards";
 import TitleCard from './TitleCard';
-import { useState } from 'react';
+
 
 
 const QuestionHub = () => {

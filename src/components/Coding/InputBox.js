@@ -1,6 +1,11 @@
+// React
+
 import React from 'react'
-import "./Box.css";
 import { Card, Form } from 'react-bootstrap';
+
+// CSS
+
+import "./Box.css";
 
 export default function InputBox() {
     return (

@@ -1,4 +1,8 @@
+// CSS
+
 import './Result.css';
+
+
 const Resultcards = ({username, rank, score}) => {
     return ( 
         <div className="resultcards ">

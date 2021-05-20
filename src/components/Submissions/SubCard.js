@@ -1,4 +1,8 @@
+// React
+
 import { Table } from "react-bootstrap";
+
+
 const SubCard = ({attemptNo, time, progbar, button}) => {
     return (
         <div className="subcard">

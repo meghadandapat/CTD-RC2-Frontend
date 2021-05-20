@@ -1,5 +1,10 @@
+// React
+
 import React from "react";
 import { Navbar} from "react-bootstrap"
+
+// CSS
+
 import  './Footer.css';
     
 const Footer = () => {

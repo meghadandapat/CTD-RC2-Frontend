@@ -1,6 +1,11 @@
+// React
+
 import React from 'react'
-import "./Box.css";
 import { Card, Form, Row } from 'react-bootstrap';
+
+// CSS
+
+import "./Box.css";
 
 export default function QuestionBox() {
     return (

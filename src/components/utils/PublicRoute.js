@@ -1,5 +1,10 @@
+// React
+
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
+
+// CSS
+
 import { isLogin } from './index';
 
 const PublicRoute = ({component: Component, restricted, ...rest}) => {

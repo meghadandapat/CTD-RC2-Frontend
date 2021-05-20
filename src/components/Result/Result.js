@@ -1,6 +1,12 @@
+// CSS
+
+import './Result.css';
+
+// Local Imports
 
 import Resultcards from "./Resultcards"
-import './Result.css';
+
+// SVGs
 
 import gold from '../svgs/Gold.svg'
 import silver from '../svgs/Silver.svg'

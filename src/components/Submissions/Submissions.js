@@ -1,8 +1,15 @@
+// React
+
 import { ProgressBar} from "react-bootstrap";
 import { useState } from 'react';
-
 import React from 'react';
+
+// CSS
+
 import "./Submissions.css";
+
+// Local Imports
+
 import QueCard from "./QueCard";
 import SubCard from "./SubCard";
 

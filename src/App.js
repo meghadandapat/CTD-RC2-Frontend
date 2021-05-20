@@ -1,5 +1,9 @@
-import './App.css';
+// React
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+// Components
+
 import Submissions from './components/Submissions/Submissions';
 import Testcase from './components/Testcase/Testcase';
 import QuestionHub from './components/QuestionHub/QuestionHub';
@@ -10,6 +14,13 @@ import Footer from './components/Footer/Footer';
 import Leaderboard from './components/Leaderboard/Leaderboard';
 import Result from './components/Result/Result';
 import Codingpage from './components/Coding/Codingpage';
+
+// CSS
+
+import './App.css';
+
+// Routers
+
 import PrivateRoute from './components/utils/PrivateRoute';
 import PublicRoute from './components/utils/PublicRoute';
 

@@ -1,6 +1,11 @@
+// React
+
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Button, Modal } from 'react-bootstrap';
+
+// Local Imports
+
 import './Logout.css';
 import { logout } from '../utils/index';
 

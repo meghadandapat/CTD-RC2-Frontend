@@ -1,7 +1,12 @@
+// React
+
 import React, {useState} from 'react'
-import './CodeEditor.css';
 import Code from './Code.js';
 import { Container, Form, Row, Col, Button } from 'react-bootstrap';
+
+// CSS
+
+import './CodeEditor.css';
 
 export default function CodeEditor() {
     const [lang, setLang] = useState('cpp');
