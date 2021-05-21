@@ -10,7 +10,7 @@ const Cards = ({qno, progbar, attempts, button}) => {
                 <div className="col-sm-10">
                     <div className="card qhubcard">
                         <div className="card-body">
-                            <Table responsive className="table table-borderless">
+                            <Table responsive className="table table-borderless qhubtable">
                                 <tbody>
                                     <tr>
                                         <td></td>

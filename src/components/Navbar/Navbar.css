@@ -5,7 +5,7 @@
     text-transform: uppercase;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
-    color: #388087 !important;
+    color: #ffffff !important;
     
   }
   nav{
@@ -42,7 +42,7 @@
     left: 0;
     right: 0;
     margin: auto;
-    background-color:#388087;
+    background-color:#ffffff;
     color: transparent;
     width: 0%;
     content: '';

@@ -15,13 +15,13 @@ const TitleCard = () => {
                                     <tr>
                                         <td></td>
                                         <td className="questno justify-content-left">
-                                            <p className="quecontent">SrNo.</p>
+                                            <p className="titlecontent">SrNo.</p>
                                         </td>
                                         <td className="progressb">
-                                            <p className="quecontent">Progress</p>
+                                            <p className="titlecontent">Progress</p>
                                         </td>
                                         <td className="attempno">
-                                            <p className="quecontent">Attempts</p>
+                                            <p className="titlecontent">Attempts</p>
                                         </td>
                                         <td className="attempb"></td>
                                         <td></td>
