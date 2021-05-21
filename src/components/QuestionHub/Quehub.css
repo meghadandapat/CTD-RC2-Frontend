@@ -40,11 +40,11 @@
 }
 
 .btn{
-    background-image: linear-gradient(to top right, #d3c6ba 0%,#d3c6ba  100%);
+    background-image: linear-gradient(to top right, #4d516c 0%,#4d516c  100%);
   }
 
 .btn:hover{
-  background-image: linear-gradient(to top right,  #ffc371 0%, #ff5f6d 100%);
+  /* background-image: linear-gradient(to top right,  #ffc371 0%, #ff5f6d 100%); */
 
 }
 
@@ -60,7 +60,7 @@
   margin-top: -0.4vh;
 }
 .attempt{
-    color: #152238;
+    color: white;
     font-size: 2vh;
   }
 

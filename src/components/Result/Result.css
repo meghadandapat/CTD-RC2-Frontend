@@ -7,7 +7,7 @@
     text-align: center;
     z-index: -1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+    background-image: linear-gradient(to top right, #4d516c 0%, #222b36 100%);
 }
 .resultpage{
     margin-top: 0em;
@@ -29,11 +29,12 @@
     text-align: center;
 }
 .res-text{
-    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
+    background: -webkit-linear-gradient(#ffffff, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent; 
     margin: 4vh;
     font-size: 3.8vh;
+    font-weight: bolder;
 }
 @media only screen and (max-width: 600px) {
     .resultcard{
@@ -50,7 +51,7 @@
         font-size: 3.5vh;
     }
     .svg-down{
-        margin-top: 2vh;
+        
     }
     .bronze{
         margin-bottom: 70px;

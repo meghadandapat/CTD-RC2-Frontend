@@ -3,21 +3,21 @@ body{
   background-image: linear-gradient(to top right, #152238  0%, #152238 100%);
 }
 .tablerow:nth-child(even) {
-  background-color: #031025;
+  background-color: #222b36;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   color: white;
   height: 30%;
 }
 .tablerow:nth-child(odd) {
-  background-color: #152238;
+  background-color: #171C24 ;
   color: white;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   height: 30%;
 }
 
 .tabletitle{
-  background-color: #6c6f74;
-  color: #152238;
+  background-color: #4d516c;
+  color: white;
   height: 30%;
 }
 
@@ -70,7 +70,7 @@ body{
 }
 
 .userrank{
-  background-color: #6c6f74;
+  background-color: #4d516c;
   box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   color:white ;
   
@@ -83,13 +83,13 @@ body{
   display: flex;
   list-style: none;
   outline: none;
-  color:#6c6f74;
+  color:white;
   height: 4vh;
  }
   
  .pagination>.active>a {
-  background-image: linear-gradient(to top right, #ff5f6d 0%, #ffc371 100%);
-  color:#6c6f74;
+  background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
+  color:white;
  }
   
  .pagination>li>a {
@@ -101,5 +101,5 @@ body{
  
  
  .pagination>li>a, .pagination>li>span {
-  background-image: linear-gradient(to top right, #152238  0%, #031025 100%);
+  background-image: linear-gradient(to top right, #4d516c  0%, #4d516c 100%);
  }

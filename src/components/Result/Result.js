@@ -18,13 +18,13 @@ const Result = () => {
                 <div className="col-sm-8">
                     <div className="row ">
                         <div className="col text-center">
-                        <img className="svgs  svg-down" src ={silver} alt="My Happy SVG"/>
+                        <img className="svgs  svg-down" src ={gold} alt="Rank 1"/>
                         <p className="svg-rank">Megha Dandapat</p>
                         </div>
                     </div>
                     <div className="row row2">
                         <div className="col text-center">
-                        <img className="svgs" src ={gold} alt="My Happy SVG"/>
+                        <img className="svgs" src ={silver} alt="rank 2"/>
                         <p className="svg-rank">Megha Dandapat</p>
                         </div>
                         <div className="col bronze text-center">
