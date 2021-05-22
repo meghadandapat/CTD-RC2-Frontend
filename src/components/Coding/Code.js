@@ -6,16 +6,7 @@ import 'brace/mode/python'
 import 'brace/ext/modelist'
 import 'brace/theme/monokai'
 
-let text =
-    '{public static void main(String[] args) {\n' +
-    'Scanner scan = new Scanner(System.in);\n' +
-    '// scan.useDelimiter("\\Z");\n' +
-    'String s = scan.next().trim();\n' +
-    'if (s.length() > 0) {\n' +
-    'String[] tokens = s.split("[!,?._@\\s]+");\n' +
-    'System.out.println(tokens.length);\n' +
-    'for(String token : tokens) {\n' +
-    'System.out.println(token);}\n';
+let text = '';
 
 export default class Main extends Component {
     render() {
@@ -26,6 +17,10 @@ export default class Main extends Component {
                         console.log("onChange", value, stat);
                     }}
                     value={text}
+                    fontSize={16}
+                    showPrintMargin={false}
+                    showGutter={true}
+                    tabSize={2}
                 />
             </div>
         );

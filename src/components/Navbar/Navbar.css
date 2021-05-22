@@ -1,16 +1,19 @@
 .navbar .nav-link {
-    /* font-family: 'Ubuntu', sans-serif; */
+    
     font-weight: bolder;
     font-size: 2.6vh;
     text-transform: uppercase;
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
+ 
     color: #ffffff !important;
     
   }
   nav{
     background-color:rgba(0,0,0,0);
     height: 10vh;
+  }
+  
+  .nav-item{
+    margin-left:4em
   }
 
   
