@@ -7,7 +7,7 @@
     text-align: center;
     z-index: -1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top right, #4d516c 0%, #222b36 100%);
+    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
 }
 .resultpage{
     margin-top: 0em;

@@ -21,7 +21,7 @@ const QuestionHub = () => {
             
             <TitleCard/>
             {qs.map((qs)=>(
-                <Cards qno={qs.qsno} progbar={<ProgressBar variant="secondary" now={qs.progress} className="progress" /> } 
+                <Cards qno={qs.qsno} progbar={<ProgressBar animated now={qs.progress} className="progress" /> } 
                 attempts={qs.attmp} button="yes"/>
             ))}
         </div>

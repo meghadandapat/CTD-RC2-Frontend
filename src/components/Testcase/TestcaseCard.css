@@ -5,15 +5,12 @@
     margin-right: 3vw;
     margin-top: 7vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+    background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
     
  }
  .card-heading, .card-status{
     text-align: center;
-    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color:transparent;
+    color: #ffffff;
     font-size: 3vh;
  }
   .card-preview:hover {

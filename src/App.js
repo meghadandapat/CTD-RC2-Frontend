@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import Leaderboard from './components/Leaderboard/Leaderboard';
 import Result from './components/Result/Result';
 import Codingpage from './components/Coding/Codingpage';
+import Bg from './components/Login/Bg';
 
 
 function App() {

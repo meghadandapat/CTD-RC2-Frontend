@@ -14,7 +14,7 @@
   
 .qhubcard{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
     /* height: 68%; */
     height:10.3vh;
     
@@ -25,22 +25,23 @@
     height:10vh;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     /* background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
-    background-color:#6c6f74;
+    background-color:#4d516c;
     
     
 }
 
 .progress{
-    background-image: linear-gradient(to top right, #212121  0%, #212121 100%);
+    background-image: linear-gradient(to top right, #171c24  0%, #171c24 100%);
     height: 2.5vh;
   }
 
 .progress-bar{
-  background-color: #c0b283;
+  background-color: #4d516c;
 }
 
 .btn{
     background-image: linear-gradient(to top right, #4d516c 0%,#4d516c  100%);
+    color: #ffffff;
   }
 
 .btn:hover{

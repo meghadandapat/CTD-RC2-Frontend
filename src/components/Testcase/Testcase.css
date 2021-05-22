@@ -1,9 +1,6 @@
 .console-label, .scoreandstatus{
     text-align: center;
-    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color:transparent;
+    color: #ffffff;
 }
 .console-label{
   width: 100%;
@@ -22,7 +19,7 @@
     /* background-color: #6c6f74!important;  */
     /* background-image: linear-gradient(to top right, #152238  0%, #031025 100%)!important; */
     box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2) !important;
-    background-image: linear-gradient(to top right, #152238 0%, #152238 100%) !important;
+    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%) !important;
     border: none;
     overflow-y: visible;
     outline: none;

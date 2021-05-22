@@ -1,25 +1,19 @@
 .cardquestno{
     width:15vw;
     text-align: center;
-    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    color: #ffffff;
   }
   
   .cardprogressb{
     width:30vw;
     text-align: center;
-    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    color: #ffffff;
   }
   
   .cardattempno{
     width:15vw;
     text-align: center;
-    background: -webkit-linear-gradient(#ff5f6d, #ffc371);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    color: #ffffff;
   }
   
   .cardattempb{
