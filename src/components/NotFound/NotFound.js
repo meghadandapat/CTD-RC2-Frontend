@@ -24,7 +24,7 @@ const NotFound = () => {
     <div className="number">4</div>
   </div>
 
-  <div className="text">Oops. The page you're looking for doesn't exist.</div>
+  <div className="error-text">Oops. The page you're looking for doesn't exist.</div>
  
 </div>
 

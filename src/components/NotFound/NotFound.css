@@ -1,6 +1,6 @@
 
 .center {
-  height: 100%;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -153,10 +153,10 @@
   background-color: #293b49;
 }
 
-.text {
+.error-text {
   margin-top: 5rem;
   font-weight: 300;
-  color: #293b49;
+  color: #ffffff;
 }
 
 .button {
