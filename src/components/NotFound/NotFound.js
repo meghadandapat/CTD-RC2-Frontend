@@ -2,7 +2,7 @@ import './NotFound.css'
 
 const NotFound = () => {
     return (
-        <div className="center">
+        <div className="error-center">
   <div className="error">
     <div className="number">4</div>
     <div className="illustration">

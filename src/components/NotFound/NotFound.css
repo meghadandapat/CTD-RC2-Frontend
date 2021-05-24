@@ -1,5 +1,5 @@
 
-.center {
+.error-center {
   height: 80vh;
   display: flex;
   align-items: center;
@@ -18,12 +18,14 @@
   font-weight: 900;
   font-size: 15rem;
   line-height: 1;
+  color: #4d516c;
 }
 
 .illustration {
   position: relative;
   width: 12.2rem;
   margin: 0 2.1rem;
+  
 }
 
 .circle {
@@ -159,26 +161,4 @@
   color: #ffffff;
 }
 
-.button {
-  margin-top: 4rem;
-  padding: 1.2rem 3rem;
-  color: white;
-  background-color: #04cba0;
-}
-  
-  .button:hover {
-    background-color: #01ac88;
-  }
 
-
-.by {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 0.5rem;
-  text-transform: uppercase;
-  color: #293b49;
-}
-
-.byLink {
-  color: #04cba0;
-}
