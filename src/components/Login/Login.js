@@ -4,19 +4,7 @@ import { Button } from 'react-bootstrap';
 const Login = () => {
         const[name, setName] = useState("");
         const [password, setPassword] = useState("");
-        
-        // VANTA.WAVES({
-        //     el: "#loginbg",
-        //     mouseControls: true,
-        //     touchControls: true,
-        //     gyroControls: false,
-        //     minHeight: 200.00,
-        //     minWidth: 200.00,
-        //     scale: 1.00,
-        //     scaleMobile: 1.00,
-        //     color: 0x103351
-        //     })
-        
+
     return ( 
 
         <div className="login">
