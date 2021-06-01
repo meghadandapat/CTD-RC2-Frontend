@@ -24,8 +24,7 @@ const Cards = ({qno, progbar, attempts, button}) => {
                                             <h6 className="quecontent">{attempts}</h6>
                                         </td>
                                         <td className="cardattempb">
-                                            {button==="yes" && <div className="btn qbtn btn-dark"><div class="attempt">Attempt</div></div>}
-                                            
+                                            <button className="btn qbtn btn-dark attempt">Attempt</button>
                                         </td>
                                         <td></td>
                                         
