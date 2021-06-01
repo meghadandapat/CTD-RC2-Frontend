@@ -31,7 +31,7 @@ const Cards = ({qno, progbar, attempts, button, id}) => {
                                             <h6 className="quecontent">{attempts}</h6>
                                         </td>
                                         <td className="cardattempb">
-                                            {button==="yes" && <div className="btn qbtn btn-dark"><button class="attempt btn qbtn btn-dark" id={ id } onClick={ handleClick }>Attempt</button></div>}
+                                            {button==="yes" && <button className="attempt btn qbtn btn-dark" id={ id } onClick={ handleClick }>Attempt</button>}
                                         </td>
                                         <td></td>
                                         
