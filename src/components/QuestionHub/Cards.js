@@ -3,7 +3,7 @@ import { Table, NavLink } from 'react-bootstrap';
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import './Card.css';
-const Cards = ({qno, progbar, attempts, button, id}) => {
+const Cards = ({qno, progbar, attempts,id}) => {
     console.log(id);
     const handleClick = (e) => {
         window.location.pathname = "coding/" + e.target.id;
@@ -31,7 +31,7 @@ const Cards = ({qno, progbar, attempts, button, id}) => {
                                             <h6 className="quecontent">{attempts}</h6>
                                         </td>
                                         <td className="cardattempb">
-                                            {button==="yes" && <button className="attempt btn qbtn btn-dark" id={ id } onClick={ handleClick }>Attempt</button>}
+                                            <button className="attempt btn qbtn btn-dark" id={ id } onClick={ handleClick }>Attempt</button>
                                         </td>
                                         <td></td>
                                         

@@ -6,7 +6,10 @@ import Timer from "../Timer/Timer";
 import { isLogin } from '../utils/index';
 
 
+
 const Navbar = () => {
+
+  
 
   if (!isLogin()){
     return(

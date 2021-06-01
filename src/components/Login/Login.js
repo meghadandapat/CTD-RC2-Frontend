@@ -1,7 +1,6 @@
 import './Login.css';
 import React ,{useState}from 'react';
 import { useHistory } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 import axiosInstance from '../../axios';
 import { login } from '../utils/index';
 
@@ -56,7 +55,7 @@ const Login = () => {
             <div className="card logincard">
                 <div className="card-body">
                     {/* <h2 className="btn-shine logintitle" target="_blank">Reverse Coding 2.0</h2> */}
-                    <div class="wrapper">
+                    <div className="wrapper">
                         <h2 className="logintitle typing-demo">Reverse Coding 2.0</h2>
                     </div>
                     <form className="loginform">
@@ -78,9 +77,9 @@ const Login = () => {
                         </div>
                         <div className="formRadio">
                             <input type="radio" value="junior" id="junior" name="category"/>
-                            <label id="junior" for="junior">Junior</label>
+                            <label id="junior" htmlFor="junior">Junior</label>
                             <input type="radio" value="senior" id="senior" name="category"/>
-                            <label id="senior" for="senior">Senior</label>
+                            <label id="senior" htmlFor="senior">Senior</label>
                         </div>
                         
                         <button className="btn loginbutton" type="submit" onClick={ handleSubmit }>
