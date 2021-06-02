@@ -16,13 +16,13 @@ const Login = () => {
             <div className="card logincard">
                 <div className="card-body">
                     {/* <h2 className="btn-shine logintitle" target="_blank">Reverse Coding 2.0</h2> */}
-                    <div class="wrapper">
+                    <div className="wrapper">
                         <h2 className="logintitle typing-demo">Reverse Coding 2.0</h2>
                     </div>
                     <form className="loginform">
                         <div className="formField">
                             <div className="logo">
-                                <i class="fa fa-user icon"></i>
+                                <i className="fa fa-user icon"></i>
                             </div>
                             <div className="formInput">
                                 <input type="text" className="formip" placeholder="Username" name="name" value={name} onChange = {
@@ -32,7 +32,7 @@ const Login = () => {
                         </div>
                         <div className="formField">
                             <div className="logo">
-                                <i class="fas fa-unlock-alt"></i>
+                                <i className="fas fa-unlock-alt"></i>
                             </div>
                             <div className="formInput">
                                 <input type="password" className="formip" placeholder="Password" name="password" value={password} 
@@ -42,9 +42,9 @@ const Login = () => {
                         </div>
                         <div className="formRadio">
                             <input type="radio" value="junior" id="junior" name="category"/>
-                            <label id="junior" for="junior">Junior</label>
+                            <label id="junior" htmlFor="junior">Junior</label>
                             <input type="radio" value="senior" id="senior" name="category"/>
-                            <label id="senior" for="senior">Senior</label>
+                            <label id="senior" htmlFor="senior">Senior</label>
                         </div>
                         
                         <button className="btn loginbutton" type="submit">

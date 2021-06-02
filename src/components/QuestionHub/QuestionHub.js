@@ -24,7 +24,7 @@ const QuestionHub = () => {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 5000)
+    }, 1000)
   }, [show])
 
   if (!show) return <Preloader />
@@ -34,8 +34,8 @@ const QuestionHub = () => {
             <div className="qhub">
                 <TitleCard/>
                 {qs.map((qs)=>(
-                    <Cards qno={qs.qsno} progbar={<ProgressBar animated now={qs.progress} className="progress" /> } 
-                    attempts={qs.attmp} button="yes"/>
+                  <Cards qno={qs.qsno} progbar={<ProgressBar animated now={qs.progress} className="progress" />}
+                    attempts={qs.attmp} button="yes" key={qs.qsno }/>
                 ))}
             </div>
     );
