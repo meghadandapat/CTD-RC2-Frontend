@@ -35,7 +35,7 @@ export default function CodeEditor() {
                 <Row className="justify-content-between " style={{ marginBottom: "5vh", width: "90%", marginLeft:"1rem", marginTop: "3vh" }}>
                         
                             <Button variant="outline-secondary" className="editor-button run">Run Code</Button>
-                            <Button variant="outline-secondary" className="editor-button load" >Load buffer</Button>
+                            <Button variant="outline-secondary" className="editor-button" >Load buffer</Button>
                             <input type="file" id="choose-file" name="choose-file" hidden/>
                             <label for="choose-file" class="customfile">Choose File</label>
                             <Button variant="outline-secondary" className="editor-button submit">Submit</Button>

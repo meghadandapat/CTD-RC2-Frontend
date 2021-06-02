@@ -7,7 +7,7 @@ import CodeEditor from './CodeEditor';
 const Codingpage = () => {
     return (
         <Container fluid >
-            <Row style={{ marginTop: "-2vh" }}>
+            <Row style={{ height:"80vh", alignItems:"center" }}>
           <Col lg={6}> <QuestionBox></QuestionBox>
             <Row>
               <Col>
