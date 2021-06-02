@@ -141,7 +141,7 @@ font-size: 2.8vh;
     transform: translateY(-2000px); } }
 
    
-    .loginbutton {
+    /* .loginbutton {
       cursor: pointer;
       background: transparent;
       border: 1px solid #91C9FF;
@@ -162,6 +162,38 @@ font-size: 2.8vh;
       color: white;
       font-size: 18px;
       font-weight: 100;
+    } */
+
+    .loginbutton {
+      font-weight: 300;
+      border-radius: 2px;
+      background-color: transparent;
+      border: 3px solid #4d516c;
+      padding: 6px 12px;
+      transition: all 0.5s ease;
+      cursor:pointer;
+      box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    }
+    .loginbutton:hover
+    /* button:hover*/ { 
+      outline: 0;
+      color: #fff;
+    }
+    .loginbutton:active
+    /* button:active*/ { 
+      outline: 0;
+      color: #fff;
+      transform: scale(0.9);
+            /* Scaling button to 0.98 to its original size */
+            box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    }
+    .btn-slide-up {
+      background: linear-gradient(to bottom, transparent 50%, #4d516c 50%);
+      background-size: 100% 200%;
+      background-position: left top;
+    }
+    .btn-slide-up:hover {
+      background-position: right bottom;
     }
     
 @media only screen and (max-width: 600px){

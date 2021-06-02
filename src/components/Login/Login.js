@@ -47,7 +47,7 @@ const Login = () => {
                             <label id="senior" htmlFor="senior">Senior</label>
                         </div>
                         
-                        <button className="btn loginbutton" type="submit">
+                        <button className="btn loginbutton btn-slide-up" type="submit">
         <span>Login</span>
       </button>
       
