@@ -1,6 +1,7 @@
 import './Login.css';
+import './Bg.sass';
 import React ,{useState}from 'react';
-import { Button } from 'react-bootstrap';
+
 const Login = () => {
         const[name, setName] = useState("");
         const [password, setPassword] = useState("");
@@ -8,14 +9,14 @@ const Login = () => {
     return ( 
 
         <div className="login">
-          <div id="stars"></div>
+        <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
             <div className="container" id="loginbg">
         
             <div className="card logincard">
                 <div className="card-body">
-                    {/* <h2 className="btn-shine logintitle" target="_blank">Reverse Coding 2.0</h2> */}
+               
                     <div className="wrapper">
                         <h2 className="logintitle typing-demo">Reverse Coding 2.0</h2>
                     </div>
