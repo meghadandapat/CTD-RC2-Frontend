@@ -2,6 +2,13 @@
 *{
 	font-family: 'Roboto', sans-serif;
 }
+.btn, .btn:focus, .btn:active{
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
 ::-webkit-scrollbar-track
 {   border-radius: 10px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
