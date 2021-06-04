@@ -1,10 +1,11 @@
 import './Login.css';
-import './Bg.sass';
 import React ,{useState}from 'react';
 
 const Login = () => {
         const[name, setName] = useState("");
         const [password, setPassword] = useState("");
+        const [isFound, setIsFound] = useState("User Found");
+        const [isDuplicate, setIsDuplicate] = useState(false);
 
     return ( 
 
@@ -19,6 +20,12 @@ const Login = () => {
                
                     <div className="wrapper">
                         <h2 className="logintitle typing-demo">Reverse Coding 2.0</h2>
+                    </div>
+                    <div>
+                        <h5 className="found">{isFound}</h5>
+                        {isDuplicate && <div class="alert alert-warning">
+                            Duplicate User!
+                        </div>}
                     </div>
                     <form className="loginform">
                         <div className="formField">
@@ -48,7 +55,7 @@ const Login = () => {
                             <label id="senior" htmlFor="senior">Senior</label>
                         </div>
                         
-                        <button className="btn loginbutton btn-slide-up" type="submit">
+                        <button className="btn loginbutton scanfcode" type="submit">
         <span>Login</span>
       </button>
       

@@ -35,7 +35,7 @@ const Navbar = () => {
               <NavLink
                 to="/questionhub"
                 className="nav-link"
-                activeStyle={{color:"#58A6FF"}}
+                activeClassName="currentpage"
               >
                 QuestionHub
               </NavLink>
@@ -44,7 +44,7 @@ const Navbar = () => {
               <NavLink
                 to="/submissions"
                 className="nav-link"
-                activeStyle={{color:"#58A6FF"}}
+                activeClassName="currentpage"
               >
                 Submissions
               </NavLink>
@@ -53,7 +53,7 @@ const Navbar = () => {
               <NavLink
                 to="/leaderboard"
                 className="nav-link"
-                activeStyle={{color:"#58A6FF"}}
+                activeClassName="currentpage"
               >
                 Leaderboard
               </NavLink>

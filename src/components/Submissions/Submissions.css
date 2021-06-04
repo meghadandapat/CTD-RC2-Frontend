@@ -68,6 +68,40 @@
     margin-top: 2.5px;
 }
 
+.sub-button {
+    background: transparent;
+    color: white;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  
+  .sub-button:active {
+    outline: 0;
+    color: #fff;
+    transform: scale(0.95);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  }
+  .sub-button:after {
+    content: '';
+      display: block;
+      position: absolute;
+      top: -36px;
+      left: -100px;
+      background: white;
+      width: 25px;
+      height: 125px;
+      opacity: 20%;
+      transform: rotate(-45deg);
+  }
+  
+  .sub-button:hover:after {
+    left: 150%;
+    transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+     -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+  }
+
 @media only screen and (max-width: 600px) {
     .scard{
         font-size: 12px;

@@ -13,7 +13,7 @@ nav {
 }
 
 .current{
-  color: "#4d516c",
+  color: "#ffffff",
 }
 
 .navbar .navbar-nav .nav-link {
@@ -33,8 +33,14 @@ nav {
   transition: all 0.3s;
 }
 .navbar .navbar-nav .nav-link:hover::after {
-  width: 60%;
+  width: 70%;
 }
+
+.navbar .navbar-nav .currentpage::after{
+  width: 70%;
+}
+
+
 .logo{
  
   height:8vh;
