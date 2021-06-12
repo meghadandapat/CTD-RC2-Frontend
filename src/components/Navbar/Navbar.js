@@ -1,95 +1,78 @@
 import React from "react";
-import { Link } from "react-router-dom"
+import { NavLink, useLocation } from "react-router-dom";
 import Logout from "../Logout/Logout";
 import "./Navbar.css";
 import Timer from "../Timer/Timer";
-import { isLogin } from '../utils/index';
-
-
 
 const Navbar = () => {
-
-  
-
-  if (!isLogin()){
-    return(
-      <nav className="navbar navbar-expand-lg ">
-    <div className="container nav-continer">
+  const location = useLocation();
  
-      <button
-        className="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      
-     
-       
-         <div className="collapse navbar-collapse" id="navbarCollapse">
-          <ul className="navbar-nav ml-auto justify-content-right">
-              <li className="nav-item">
-                <Link to="/submissions" className="nav-link">
-                  Submissions
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/questionhub" className="nav-link">
-                  QuestionHub
-                </Link>
-              </li>
-        
-              
-             
-          <li className="nav-item">
-            <Timer />
-          </li>
+  if (
+    location.pathname === "/questionhub" ||
+    location.pathname === "/submissions" ||
+    location.pathname === "/leaderboard" ||
+    location.pathname.includes("coding") ||
+    location.pathname === "/testcases"
+  )
+    return (
+      <nav className="navbar navbar-expand-lg ">
+        <button
+          className="navbar-toggler navbar-dark "
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon navbar-dark" />
+        </button>
+        <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
+        <Timer />
+        <div className="collapse navbar-collapse" id="navbarCollapse">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <NavLink
+                to="/questionhub"
+                className="nav-link"
+                activeClassName="currentpage"
+              >
+                QuestionHub
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/submissions"
+                className="nav-link"
+                activeClassName="currentpage"
+              >
+                Submissions
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/leaderboard"
+                className="nav-link"
+                activeClassName="currentpage"
+              >
+                Leaderboard
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <Logout />
+            </li>
           </ul>
+          <img className="logo ctd" alt="RC Logo" src="../img/rclogo.png" />
         </div>
-  </div>
-  </nav>
+      </nav>
     );
-  }
 
   return (
     <nav className="navbar navbar-expand-lg ">
-    <div className="container nav-continer">
- 
-      <button
-        className="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      
-     
-       
-         <div className="collapse navbar-collapse" id="navbarCollapse">
-          <ul className="navbar-nav ml-auto justify-content-right">
-              <li className="nav-item">
-                <Link to="/submissions" className="nav-link">
-                  Submissions
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/questionhub" className="nav-link">
-                  QuestionHub
-                </Link>
-              </li>
-        
-              
-             
-          <li className="nav-item">
-            <Timer />
-          </li>
-          <li className="nav-item">
-        <Logout />
-          </li>
-          </ul>
-        </div>
-  </div>
-  </nav>
+      <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
+      <img className="logo ctd ml-auto" alt="RC Logo" src="../img/rclogo.png" />
+    </nav>
   );
 };
 

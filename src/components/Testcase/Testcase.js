@@ -15,8 +15,8 @@ const Testcase = (props) => {
           <Row className="justify-content-center">{List1}</Row>
           <Row className="justify-content-center">{List2}</Row>
           <Row >
-            <Col className="scoreandstatus">Your score</Col>
-            <Col className="scoreandstatus">Status</Col>
+          <Col className="scoreandstatus"><Row className="justify-content-center">Your Score</Row><Row className="justify-content-center">Write score</Row></Col>
+          <Col className="scoreandstatus"><Row className="justify-content-center">Status</Row><Row className="justify-content-center">Write Status</Row></Col>
           </Row>
         </Col>
         <Col lg={4}>
