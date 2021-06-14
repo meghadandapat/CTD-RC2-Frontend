@@ -38,3 +38,17 @@
     color:#fff;
 
 }
+
+@media only screen and (max-width: 600px) {
+    .console{
+        
+    width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .console{
+        
+        width: 70vw;
+        }
+}

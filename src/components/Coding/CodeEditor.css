@@ -18,10 +18,11 @@
     width: 120px;
     height: 40px;
     background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%); 
-    /* color: white; */
+    color: white;
     border-radius: 5px;
     font-size: 18px;
     padding-left: 22px;
+    background-color:#4d516c;
   }
   .score{
       cursor:default;
