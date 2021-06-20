@@ -107,7 +107,7 @@ input:focus {
   border: 3px solid #4d516c;
   color: #fff;
   transform: scale(0.9);
-  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24)!important;
   -webkit-box-shadow: none!important;
 }
 
@@ -156,6 +156,7 @@ input:focus {
 
 .scanfcode {
   background: transparent;
+  background-image: linear-gradient(to top right, #4d516c 0%,#4d516c  100%);
   color: white;
   outline: none;
   overflow: hidden;
