@@ -24,7 +24,7 @@ const QuestionHub = () => {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 1000)
+    }, 3000)
   }, [show])
 
   if (!show) return <Preloader />

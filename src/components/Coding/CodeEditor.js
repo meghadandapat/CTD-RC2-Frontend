@@ -44,8 +44,7 @@ export default function CodeEditor() {
         <div className="compiler">
           <AceEditor
             mode="java"
-            fontSize={16}
-            theme="monokai"
+ theme="monokai"
             style={{ height: "27rem", width: "90%" }}
             setOptions={{
               showPrintMargin: false, // boolean: true if show the vertical print margin
@@ -53,6 +52,7 @@ export default function CodeEditor() {
               showLineNumbers: true,
               tabSize: 1, // number
               wrap: true,
+             
             }}
           />
         </div>
@@ -71,7 +71,7 @@ export default function CodeEditor() {
           <Button variant="outline-secondary" className="editor-button">
             Load buffer
           </Button>
-          <input type="file" id="choose-file" name="choose-file" hidden />
+          <input type="file" id="choose-file" className="editor-button choose-file" hidden />
           <label for="choose-file" class="customfile">
             Choose File
           </label>
