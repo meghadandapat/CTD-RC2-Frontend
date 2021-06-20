@@ -73,7 +73,7 @@ const Instructions = () => {
                  </ul>
       </p>
       <div className="instrbutton" style={{ textAlign: "center"}}>
-        <Button variant="dark">Proceed</Button>
+        <Button variant="dark" className="ibtn">Proceed</Button>
       </div>
     </div>
   );

@@ -16,8 +16,10 @@ export default function CodeEditor() {
   return (
     <Form>
       <Form.Group controlId="codearea">
-        <div className="Container" style={{ marginLeft: "30px", paddingTop: "2rem"
-    }}>
+        <div
+          className="Container"
+          style={{ marginLeft: "30px", paddingTop: "2rem" }}
+        >
           <Row className="justify-content-between">
             <select
               id="dropdown"
@@ -42,24 +44,12 @@ export default function CodeEditor() {
         <div className="compiler">
           <AceEditor
             mode="java"
+            fontSize={16}
             theme="monokai"
             style={{ height: "27rem", width: "90%" }}
             setOptions={{
-              selectionStyle: "line", // "line"|"text"
-              highlightActiveLine: true, // boolean
-              highlightSelectedWord: true, // boolean
-
-              cursorStyle: "ace", // "ace"|"slim"|"smooth"|"wide"
-
-              wrapBehavioursEnabled: true, // boolean
-
-              animatedScroll: false, // boolean: true if scroll should be animated
-              displayIndentGuides: false, // boolean: true if the indent should be shown. See 'showInvisibles'
-              showInvisibles: false, // boolean -> displayIndentGuides: true if show the invisible tabs/spaces in indents
               showPrintMargin: false, // boolean: true if show the vertical print margin
-
               showGutter: true, // boolean: true if show line gutter
-
               showLineNumbers: true,
               tabSize: 1, // number
               wrap: true,
