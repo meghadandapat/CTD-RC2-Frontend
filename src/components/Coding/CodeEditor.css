@@ -1,66 +1,64 @@
-/* .Container{
-    padding-top: 2rem;
-} */
 .compiler{
-    padding-top: 2rem;
-    padding-left: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
 }
-.editor-button{
-    /* padding:1rem; */
-    width:fit-content;
-    height:40px;
-    background-image: linear-gradient(to top right, #4d516c 0%, #46516c 100%); 
-    color: white;
+.editor-button {
+
+  width: fit-content;
+  height: 40px;
+  background-image: linear-gradient(to top right, #4d516c 0%, #46516c 100%);
+  color: white;
+}
+.ace_editor, .ace_editor *{
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Droid Sans Mono", "Consolas", monospace !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+  }
+#dropdown,
+.score {
+  margin-top: 2rem;
+  width: 120px;
+  height: 40px;
+  background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
+  color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 22px;
+  background-color: #4d516c;
+}
+.score {
+  cursor: default;
+  border: none;
+  outline: none;
+  color: #ffffff;
+}
+.score:focus,
+.score:active {
+  cursor: default;
+  outline: none !important;
+  color: #ffffff;
+  -webkit-appearance: none;
+}
+.customfile {
+  background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
+  color: white;
+  width: fit-content;
+  width: 110px;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  text-align: center;
+  padding-top: 8px;
+}
+select#dropdown {
+  border: 0px;
+  outline: 0px;
 }
 
-#dropdown, .score {
-   margin-top: 2rem;
-    width: 120px;
-    height: 40px;
-    background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%); 
-    color: white;
-    border-radius: 5px;
-    font-size: 18px;
-    padding-left: 22px;
-    background-color:#4d516c;
-  }
-  .score{
-      cursor:default;
-      border: none;
-      outline: none;
-      color: #ffffff
-    
-  }
-  .score:focus, .score:active{
-    cursor:default;
-    outline: none !important;
-   
-    color: #ffffff;
-  -webkit-appearance: none;
-  }
-  .customfile{
-        
-  background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);  
-    color: white;
-    width:fit-content;
-    width:110px;
-    border-radius: 5px;
-    cursor: pointer;
-    height:40px;
-    text-align:center;
-    padding-top:8px; 
-   
-   
-  }
-  select#dropdown {
-    border:0px;
-    outline:0px;
- }
- 
-.load{
-  color: white!important;
+.load {
+  color: white !important;
 }
-.load:hover{
-  
+.load:hover {
   color: white;
 }

@@ -14,7 +14,7 @@ const SubCard = ({attemptNo, time, progbar, button}) => {
                   <td><p className="subtext">{time}</p></td>
                   <td><p className="progbar">{progbar}</p></td>
                   <td>{button === "yes" && (
-                    <div className="btn  btn1 sub-button">View</div>
+                    <button className="btn  btn1 sub-button">View</button>
                   )}</td>
                 </tr>
 

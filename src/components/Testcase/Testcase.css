@@ -5,11 +5,10 @@
 .console-label{
   width: 100%;
   margin-top: 5vh;
-  /* font-size: 1.5rem; */
   font-size: 3.9vh;
 }
 .scoreandstatus{
-    /* font-size: 1.5rem; */
+
     font-size: 3.9vh;
     font-weight: bold;
     margin-top: 10vh;

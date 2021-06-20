@@ -13,7 +13,7 @@ const Result = () => {
              
             <div className="row" style={{marginTop:"7vh"}}>
                 <div className="col-sm-4 ">
-                    <div className="row "><Resultcards username="xyz" rank="111" score="40" /></div>
+                    <div className="row justify-content-center"><Resultcards username="xyz" rank="111" score="40" /></div>
                 </div>
                 <div className="col-sm-8">
                     <div className="row ">
