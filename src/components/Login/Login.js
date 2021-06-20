@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axiosInstance from "../../axios";
 
-import './Bg.sass';
 const Login = () => {
   const history = useHistory();
 
