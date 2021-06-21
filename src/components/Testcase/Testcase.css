@@ -1,40 +1,53 @@
-.console-label, .scoreandstatus{
-    text-align: center;
-    color: #ffffff;
+.console-label,
+.scoreandstatus {
+  text-align: center;
+  color: #ffffff;
 }
-.console-label{
+.console-label {
   width: 100%;
   margin-top: 5vh;
-  /* font-size: 1.5rem; */
   font-size: 3.9vh;
 }
-.scoreandstatus{
-    /* font-size: 1.5rem; */
-    font-size: 3.9vh;
-    font-weight: bold;
-    margin-top: 10vh;
-   
+.scoreandstatus {
+  font-size: 3.9vh;
+  font-weight: bold;
+  margin-top: 10vh;
 }
-.console{
-    /* background-color: #6c6f74!important;  */
-    /* background-image: linear-gradient(to top right, #152238  0%, #031025 100%)!important; */
-    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2) !important;
-    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%) !important;
-    border: none;
-    overflow-y: visible;
-    outline: none;
-    color:#fff;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    resize: none;
-    width: 23.3vw;
-    font-size: 2.65vh;
+.console {
+
+  box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.16),
+    0 6px 20px 0 rgba(0, 0, 0, 0.2) !important;
+  background-image: linear-gradient(
+    to top right,
+    #222b36 0%,
+    #222b36 100%
+  ) !important;
+  border: none;
+  overflow-y: visible;
+  outline: none;
+  color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  width: 23.3vw;
+  font-size: 2.65vh;
 }
 .console:focus {
-    border: none !important;
-   
-    outline: 0 !important;
-    color:#fff;
+  border: none !important;
 
+  outline: 0 !important;
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .console {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .console {
+    width: 70vw;
+  }
 }

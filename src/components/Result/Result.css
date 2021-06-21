@@ -1,59 +1,73 @@
-.resultcard{
-    /* height: 500px;*/
-    width: 20vw; 
-    height: 20vh;
-    margin-bottom: 4vh;
-    margin-left: 12vw;
-    text-align: center;
-    z-index: -1;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
+.resultcard {
+  /* height: 500px;*/
+  width: 20vw;
+
+  margin-left: 12vw;
+
+  z-index: -1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
 }
-.resultpage{
-    margin-top: 0em;
-    overflow-x: hidden;
+.resultpage {
+  margin-top: 0em;
+  overflow-x: hidden;
 }
-.svgs{
-    width: 30vw;
-    height: 30vh;
-    color: white;
+.svgs {
+  width: 30vw;
+  height: 30vh;
+  color: white;
 }
-.svg-down{
-    /* margin-top: 20vh; */
+
+.row2 {
+  margin-top: -6vh;
 }
-.row2{
-    margin-top: -6vh;
+.svg-rank {
+  color: white;
+  text-align: center;
 }
-.svg-rank{
-    color: white;
-    text-align: center;
+.res-text {
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 4vh;
+  font-size: 3.8vh;
+
+  font-weight: bolder;
 }
-.res-text{
-    background: -webkit-linear-gradient(#ffffff, #ffffff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent; 
-    margin: 4vh;
-    font-size: 3.8vh;
-    font-weight: bolder;
+
+.result-circle {
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  margin: 5% auto;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 4vh;
+}
+.result-content {
+  position: absolute;
+  width: inherit;
+  height: auto;
+  top: 52%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #001122;
+  text-transform: capitalize;
 }
 @media only screen and (max-width: 600px) {
-    .resultcard{
-        /* height: 400px;
-        width: 280px;
-        margin-bottom: 4vh;       */
-        height: 120px;
-        width: 280px;
-        margin: 4vw 20vw;
-        
-    }
-    .res-text{
-        margin: 20px;
-        font-size: 3.5vh;
-    }
-    .svg-down{
-        
-    }
-    .bronze{
-        margin-bottom: 70px;
-    }
+  .resultcard {
+ 
+    height: 120px;
+    width: 280px;
+    margin: 4vw 20vw;
+  }
+  .res-text {
+    margin: 20px;
+    font-size: 3.5vh;
+  }
+ 
+  .bronze {
+    margin-bottom: 70px;
+  }
 }

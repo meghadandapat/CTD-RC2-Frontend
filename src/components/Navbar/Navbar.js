@@ -3,8 +3,12 @@ import { NavLink, useLocation } from "react-router-dom";
 import Logout from "../Logout/Logout";
 import "./Navbar.css";
 import Timer from "../Timer/Timer";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   const location = useLocation();
  
   if (
@@ -20,16 +24,16 @@ const Navbar = () => {
           className="navbar-toggler navbar-dark "
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded={!isNavCollapsed ? true : false}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon navbar-dark" />
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
         <Timer />
-        <div className="collapse navbar-collapse" id="navbarCollapse">
+        <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <NavLink
