@@ -45,7 +45,7 @@ const Submissions = () => {
                     progbar={<ProgressBar animated
                         now={que1.progress}
                       />}
-                    button="yes"   
+                   
                     />}
                 </div>
             ))}
@@ -58,7 +58,7 @@ const Submissions = () => {
                     progbar={<ProgressBar animated
                         now={que2.progress}
                       />}
-                    button="yes"   
+               
                     />}
                 </div>
             ))}
@@ -71,7 +71,7 @@ const Submissions = () => {
                     progbar={<ProgressBar animated
                         now={que3.progress}
                       />}
-                    button="yes"   
+                  
                     />}
                 </div>
             ))}
@@ -84,7 +84,7 @@ const Submissions = () => {
                     progbar={<ProgressBar animated
                         now={que4.progress}
                       />}
-                    button="yes"   
+                   
                     />}
                 </div>
             ))}
@@ -97,7 +97,7 @@ const Submissions = () => {
                     progbar={<ProgressBar animated
                         now={que5.progress}
                       />}
-                    button="yes"   
+                  
                     />}
                 </div>
             ))}
@@ -110,7 +110,7 @@ const Submissions = () => {
                     progbar={<ProgressBar animated
                         now={que6.progress}
                       />}
-                    button="yes"   
+                   
                     />}
                 </div>
             ))}
