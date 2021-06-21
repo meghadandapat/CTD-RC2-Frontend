@@ -14,3 +14,37 @@ color: white;
     
      } */
      
+     .mybtn {
+        background: transparent;
+        background-image: linear-gradient(to top right, #4d516c 0%,#4d516c  100%);
+        color: white;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+      }
+
+
+      .mybtn:active {
+        outline: 0;
+        color: #fff;
+        transform: scale(0.95);
+        box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+      }
+      .mybtn:after {
+        content: '';
+          display: block;
+          position: absolute;
+          top: -36px;
+          left: -100px;
+          background: white;
+          width: 25px;
+          height: 125px;
+          opacity: 20%;
+          transform: rotate(-45deg);
+      }
+
+      .mybtn:hover:after {
+        left: 140%;
+        transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+         -webkit-transition: all 700ms cubic-bezier(0.3, 1, 0.2, 1);
+      }

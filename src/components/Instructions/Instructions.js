@@ -34,7 +34,7 @@ const Instructions = () => {
                  </ul>
       </p>
       <div className="instrbutton" style={{ textAlign: "center"}}>
-        <Button variant="dark" onClick={
+        <Button variant="dark" className="ibtn" onClick={
           (e) => {
             e.preventDefault();
             window.location.pathname = '/questionhub';

@@ -17,8 +17,7 @@ const Leaderboard = () => {
         {rank:'6', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'},
         {rank:'7', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'},
         {rank:'8', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'},
-        {rank:'9', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'},
-        {rank:'10', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'}
+        {rank:'9', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'}
     ])
     return ( 
         <div className="leaderboard">
