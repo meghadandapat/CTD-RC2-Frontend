@@ -27,8 +27,8 @@
   outline: none;
   color: #ffffff;
 }
-.score:focus,
-.score:active {
+.score:focus,#dropdown:focus,
+.score:active,#dropdown:active {
   cursor: default;
   outline: none !important;
   color: #ffffff;

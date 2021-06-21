@@ -229,6 +229,28 @@ input:focus {
     box-shadow: 1771px 1182px #FFF , 1292px 1229px #FFF , 200px 1040px #FFF , 1625px 589px #FFF , 892px 934px #FFF , 117px 402px #FFF , 637px 592px #FFF , 290px 1543px #FFF , 507px 1379px #FFF , 1748px 1107px #FFF , 584px 1130px #FFF , 1480px 585px #FFF , 1343px 1783px #FFF , 185px 564px #FFF , 1656px 1279px #FFF , 697px 1087px #FFF , 1896px 154px #FFF , 509px 1563px #FFF , 1167px 945px #FFF , 960px 825px #FFF , 92px 1409px #FFF , 1476px 1765px #FFF , 1991px 291px #FFF , 1603px 1051px #FFF , 329px 769px #FFF , 21px 1541px #FFF , 748px 1977px #FFF , 282px 1463px #FFF , 667px 153px #FFF , 894px 1414px #FFF , 1451px 278px #FFF , 67px 22px #FFF , 776px 1846px #FFF , 1024px 919px #FFF , 898px 622px #FFF , 464px 288px #FFF , 1926px 80px #FFF , 176px 1194px #FFF , 1706px 1729px #FFF , 1010px 1726px #FFF , 243px 507px #FFF , 96px 446px #FFF , 1360px 409px #FFF , 1887px 1905px #FFF , 660px 1167px #FFF , 825px 977px #FFF , 1961px 1799px #FFF , 740px 422px #FFF , 1617px 661px #FFF , 182px 1594px #FFF , 206px 1254px #FFF , 833px 1900px #FFF , 727px 1295px #FFF , 806px 1056px #FFF , 1682px 1577px #FFF , 943px 1680px #FFF , 325px 955px #FFF , 1819px 163px #FFF , 1703px 1897px #FFF , 367px 1653px #FFF , 542px 1606px #FFF , 711px 606px #FFF , 257px 1411px #FFF , 1454px 1654px #FFF , 1210px 101px #FFF , 1020px 162px #FFF , 397px 213px #FFF , 1862px 297px #FFF , 1216px 874px #FFF , 1900px 1932px #FFF , 1935px 1702px #FFF , 1014px 418px #FFF , 275px 73px #FFF , 176px 42px #FFF , 1294px 664px #FFF , 1901px 1029px #FFF , 1418px 501px #FFF , 683px 1811px #FFF , 1546px 664px #FFF , 1793px 706px #FFF , 1066px 188px #FFF , 52px 115px #FFF , 328px 1661px #FFF , 1764px 1077px #FFF , 756px 886px #FFF , 941px 1146px #FFF , 1517px 1635px #FFF , 1811px 1608px #FFF , 1837px 1091px #FFF , 894px 521px #FFF , 402px 743px #FFF , 1130px 56px #FFF , 433px 985px #FFF , 650px 187px #FFF , 1009px 653px #FFF , 766px 626px #FFF , 1470px 593px #FFF , 937px 1507px #FFF , 1227px 961px #FFF , 138px 839px #FFF; }
 
 
+    #title {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      color: #FFF;
+      text-align: center;
+      font-family: 'lato',sans-serif;
+      font-weight: 300;
+      font-size: 50px;
+      letter-spacing: 10px;
+      margin-top: -60px;
+      padding-left: 10px; }
+      #title span {
+        background: -webkit-linear-gradient(white, #38495a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    @keyframes animStar {
+      from {
+        transform: translateY(0px); }
+      to {
+        transform: translateY(-2000px); } }
 
 @media only screen and (max-width: 600px) {
   .logincard {
