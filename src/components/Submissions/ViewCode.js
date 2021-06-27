@@ -1,9 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import axiosInstance from '../../axios';
 
 
-const ViewCode = () => {
+const ViewCode = (props) => {
   
+  const [code, setCode] = useState("");
+
+  useEffect(() => {
+    axiosInstance.get('submissions/' + props.id.toString()).then((res) => {
+      setCode(res.data.code);
+      console.log(res.data);
+    })
+  }, [setCode]);
   
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
@@ -26,13 +35,7 @@ const ViewCode = () => {
           </Modal.Header>
           <Modal.Body>
           <p>
-          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-          dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
-              
+          { code }
         </p>
           
           </Modal.Body>

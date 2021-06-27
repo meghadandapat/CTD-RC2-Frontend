@@ -10,7 +10,6 @@ const Logout = () => {
 
   const handleYes = (e) => {
     e.preventDefault();
-    logout();
     history.push('/result');
     handleClose();
   }

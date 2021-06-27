@@ -1,15 +1,17 @@
 import { ProgressBar } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import React from "react";
 import "./Submissions.css";
 import QueCard from "./QueCard";
 import SubCard from "./SubCard";
+import axiosInstance from "../../axios";
 
 const Submissions = () => {
+
   const [que1, setQue1] = useState([
-    { id: 1, time: "00:00", progress: 10 },
-    { id: 2, time: "00:00", progress: 70 },
+    { id: 80, time: "00:00", progress: 10 },
+    { id: 81, time: "00:00", progress: 70 },
   ]);
 
   const [que2, setQue2] = useState([{ id: 1, time: "00:00", progress: 50 }]);
@@ -25,8 +27,72 @@ const Submissions = () => {
     { id: 1, time: "00:00", progress: 70 },
     { id: 2, time: "00:00", progress: 70 },
   ]);
+  const [que6, setQue6] = useState([
+    { id: 1, time: "00:00", progress: 70 },
+    { id: 2, time: "00:00", progress: 70 },
+  ]);
 
-  const [que6, setQue6] = useState([]);
+  useEffect(() => {
+    axiosInstance.get('submissions/').then((res) => {
+      const data = res.data;
+      console.log(data);
+      data.forEach((submission) => {
+        switch(submission.question_id_fk) {
+          case 1:
+            console.log(submission);
+            setQue1([...que1, {
+              id: parseInt(submission.pk), 
+              progress: parseInt(submission.accuracy),
+              time: submission.submission_time.toString().substr(11, 5).trim()
+            }])
+            break;
+          case 2:
+            console.log(submission);
+            setQue2([...que2, {
+              id: parseInt(submission.pk), 
+              progress: parseInt(submission.accuracy),
+              time: submission.submission_time.toString().substr(11, 5).trim()
+            }])
+            break;
+          case 3:
+            console.log(submission);
+            setQue3([...que3, {
+              id: parseInt(submission.pk), 
+              progress: parseInt(submission.accuracy),
+              time: submission.submission_time.toString().substr(11, 5).trim()
+            }])
+            break;
+          case 4:
+            console.log(submission);
+            setQue4([...que4, {
+              id: parseInt(submission.pk), 
+              progress: parseInt(submission.accuracy),
+              time: submission.submission_time.toString().substr(11, 5).trim()
+            }])
+            break;
+          case 5:
+            console.log(submission);
+            setQue5([...que5, {
+              id: parseInt(submission.pk), 
+              progress: parseInt(submission.accuracy),
+              time: submission.submission_time.toString().substr(11, 5).trim()
+            }])
+            break;
+          case 6:
+            console.log(submission);
+            setQue6([...que6, {
+              id: parseInt(submission.pk), 
+              progress: parseInt(submission.accuracy),
+              time: submission.submission_time.toString().substr(11, 5).trim()
+            }])
+            break;
+          default:
+            break;
+        }
+      })
+    })
+  }, [setQue1]);
+  
   return (
     <div className="sub">
       <QueCard qno={1} />

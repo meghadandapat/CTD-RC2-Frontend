@@ -21,7 +21,7 @@ const QuestionHub = () => {
 
   useEffect(() => {
         axiosInstance.get('questions/').then((res) => {
-          const allQuestions = res.data.results;
+          const allQuestions = res.data;
           console.log(parseInt(allQuestions[0].total_attempts) / 40);
           setQs([
             {id:allQuestions[0].id, qsno:1, progress:(100 * (parseInt(allQuestions[0].correct_attempts) / parseInt(allQuestions[0].total_attempts))), attmp: allQuestions[0].total_attempts},

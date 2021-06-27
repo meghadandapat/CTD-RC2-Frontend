@@ -45,6 +45,7 @@ const CodeEditor = (props) => {
           status: res.data.status,
           passed: res.data.passed_test_cases,
         });
+        console.log(res.data);
         history.push("/testcases", [
           {
             error: res.data.error,

@@ -15,7 +15,7 @@ const SubCard = ({ attemptNo, time, progbar }) => {
                   <td><p className="subtext">{time}</p></td>
                   <td><p className="progbar">{progbar}</p></td>
                   <td>
-                    <ViewCode/>
+                    <ViewCode id={attemptNo}/>
                 </td>
                 </tr>
 
