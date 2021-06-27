@@ -69,5 +69,16 @@ nav {
     background-color:#222b36 ;
     text-align: center;
   }
-  
+  .logo{
+ 
+    height:5vh;
+  }
+  .pisb{
+    width:20vw;
+    margin-right:0em;
+  }
+  .ctd{
+    width:5vw;
+    display: none;
+  }
 }
