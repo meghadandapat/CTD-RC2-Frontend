@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://52.255.191.48:8000/';
+const baseURL = 'https://rcsr.ctd.pictieee.in/';
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,
