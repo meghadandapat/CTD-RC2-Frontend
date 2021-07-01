@@ -12,13 +12,18 @@ const Resultcards = ({ username, rank, score }) => {
             </div>
           </div>
           <div className="row justify-content-center">
-            <h3 className="res-text">Username: {username}</h3>
+            <p><h3 className="res-text">Username</h3>
+            <h2 className="resuser-text">{username}</h2>
+            </p>
           </div>
-          <div className="row justify-content-center">
-            <h3 className="res-text">Rank: {rank}</h3>
+          <div className="row justify-content-center float-left">
+            <p><h3 className="res-text">Rank</h3>
+            <h2 className="resuser-text">{rank}</h2>
+            </p>
           </div>
-          <div className="row justify-content-center">
-            <h3 className="res-text">Score: {score}</h3>
+          <div className="row justify-content-center float-right">
+            <p><h3 className="res-text">Score</h3>
+            <h2 className="resuser-text">{score}</h2></p>
           </div>
         </div>
       </div>
