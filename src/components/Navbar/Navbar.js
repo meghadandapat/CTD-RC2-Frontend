@@ -19,7 +19,7 @@ const Navbar = () => {
     location.pathname === "/testcases"
   )
     return (
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar navbar-expand-md ">
         <button
           className="navbar-toggler navbar-dark "
           type="button"
@@ -34,7 +34,7 @@ const Navbar = () => {
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
         <Timer/>
-        <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
+        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <NavLink
@@ -64,12 +64,11 @@ const Navbar = () => {
               </NavLink>
             </li>
 
-            <li className="nav-item">
-              <Logout />
-            </li>
           </ul>
-          <img className="logo ctd" alt="RC Logo" src="../img/rclogo.png" />
+         
         </div>
+        <Logout />
+        <img className="logo ctd" alt="RC Logo" src="../img/rclogo.png" />
       </nav>
     );
 

@@ -7,7 +7,7 @@ const Logout = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
     return (
-  <div>
+  <React.Fragment>
         <Button variant="default" className="mybtn" onClick={handleShow} style={{marginLeft: "1rem"}}>
           Logout
         </Button>
@@ -31,7 +31,7 @@ const Logout = () => {
             
           </Modal.Footer>
         </Modal>
-        </div>
+        </React.Fragment>
      );
 }
  

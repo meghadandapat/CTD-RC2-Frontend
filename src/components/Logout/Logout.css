@@ -15,12 +15,14 @@ color: white;
      } */
      
      .mybtn {
-        background: transparent;
-        background-image: linear-gradient(to top right, #4d516c 0%,#4d516c  100%);
+       
+        background-color: #4d516c;
         color: white;
         outline: none;
         overflow: hidden;
         position: relative;
+        margin-right: 3em;
+        
       }
       
       
