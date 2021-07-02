@@ -29,20 +29,36 @@
   background: -webkit-linear-gradient(#ffffff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin: 4vh;
+  margin: 3vh;
   font-size: 3.8vh;
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 1px solid white;
+}
 
+.resuser-text{
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent; 
+  margin-top: 2.5vh;
+  margin-bottom: 0vh;
+  font-size: 3.8vh;
+  text-align: center;
   font-weight: bolder;
 }
 
+.float-left, .float-right{
+  margin-bottom: 4vh;
+}
+
 .result-circle {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   background: #ffffff;
   margin: 5% auto;
   border-radius: 50%;
   position: relative;
-  margin-top: 4vh;
+  margin-top: 2vh;
 }
 .result-content {
   position: absolute;

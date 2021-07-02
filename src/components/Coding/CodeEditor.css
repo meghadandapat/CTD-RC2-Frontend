@@ -35,6 +35,7 @@
   -webkit-appearance: none;
 }
 .customfile {
+  position: absolute;
   background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
   color: white;
     width:110px;
@@ -43,8 +44,12 @@
     height:40px;
     text-align:center;
     padding-top:8px; 
+    margin-top: -11.5vh;
 }
-
+.run{
+  position: absolute;
+  margin-top: -20.5vh;
+}
 .editor-button {
   height: 40px;
   background: transparent;
@@ -80,4 +85,24 @@
   left: 150%;
   transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
    -webkit-transition: all 800ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+@media only screen and (min-width: 1900px){
+  .customfile {
+    position: absolute;
+    background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
+    color: white;
+      width:110px;
+      border-radius: 5px;
+      cursor: pointer;
+      height:40px;
+      text-align:center;
+      padding-top:8px; 
+      margin-top: -9vh;
+  }
+  .run{
+    position: absolute;
+    margin-top: -9vh;
+  }
+
 }

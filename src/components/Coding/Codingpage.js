@@ -74,14 +74,16 @@ const Codingpage = () => {
           </Col>
           <Col lg={6}> 
           <CodeEditor runCode={ handleSubmit }></CodeEditor> 
-          <Row className="justify-content-between " style={{ marginBottom: "5vh", width: "90%", marginLeft:"1rem", marginTop: "3vh" }}>
+          <Row className="justify-content-between moveup" style={{ marginBottom: "5vh", width: "90%", marginLeft:"1rem", marginTop: "3vh" }}>
                         
-                            <Button variant="outline-secondary" className="editor-button run" onClick={ handleSubmit }>Run Code</Button>
+                            <Col lg={3}></Col>
+                            <Col lg={3}> <Button variant="outline-secondary" className="editor-button run" onClick={ handleSubmit }>Run Code</Button> </Col>
                             {/* <Button variant="outline-secondary" className="editor-button load" >Load buffer</Button> */}
-                            <input type="file" id="choose-file" name="choose-file" hidden/>
-                            <label for="choose-file" class="customfile">Choose File</label>
+                            <Col lg={3}><input type="file" id="choose-file" name="choose-file" hidden/>
+                            <label for="choose-file" class="customfile">Choose File</label> </Col>
                             {/* <Button variant="outline-secondary" className="editor-button submit" onClick={ handleSubmit }>Submit</Button> */}
-                  
+                            <Col lg={3}></Col>
+
                     </Row>
           </Col>
         </Row>
