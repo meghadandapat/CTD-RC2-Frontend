@@ -1,6 +1,6 @@
 import { ProgressBar} from "react-bootstrap";
 import { useState } from 'react';
-
+import { Table } from "react-bootstrap";
 import React from 'react';
 import "./Submissions.css";
 import QueCard from "./QueCard";
@@ -8,10 +8,17 @@ import SubCard from "./SubCard";
 
 
 const Submissions = () => {
-    const [que1, setQue1] = useState([
+    const [queno, setQueno] = useState(1);
+    const [toggle1, setToggle1] = useState(true);
+    const [toggle2, setToggle2] = useState(false);
+    const [toggle3, setToggle3] = useState(false);
+    const [toggle4, setToggle4] = useState(false);
+    const [toggle5, setToggle5] = useState(false);
+    const [toggle6, setToggle6] = useState(false);
+    const que1 = [
         {id:1, time:'00:00', progress:10 },
         {id:2, time:'00:00', progress:70 },
-    ]);
+    ];
 
     const [que2, setQue2] = useState([
         {id:1, time:'00:00', progress:50 },
@@ -34,36 +41,144 @@ const Submissions = () => {
     const [que6, setQue6] = useState([
 
     ]);
+
+    function questionHandler(e){
+        setQueno(e.target.value)
+        if(queno==1){
+            setToggle1(true)
+        }
+        if(queno==2){
+            setToggle2(true)
+        }
+    }
     return (
         <div className="sub">
-            <QueCard qno={1}/>
-            {que1.map((que1) => (
-                <div className="que-preview" key={que1.id}>
-                    {que1.id!==0 && <SubCard
-                    attemptNo={que1.id}
-                    time={que1.time}
-                    progbar={<ProgressBar animated
-                        now={que1.progress}
-                      />}
-                   
-                    />}
-                </div>
-            ))}
-            <QueCard qno={2}/>
-            {que2.map((que2) => (
-                <div className="que-preview" key={que2.id}>
-                    {que2.id!==0 && <SubCard
-                    attemptNo={que2.id}
-                    time={que2.time}
-                    progbar={<ProgressBar animated
-                        now={que2.progress}
-                      />}
-               
-                    />}
-                </div>
-            ))}
+            <div className="row qbuttons">
+            <Table responsive className="table table-borderless">
+              <tbody>
+                <tr>
+                  <td>
+                    <div className="radio">
+                    <input 
+                    id="radio-1" 
+                    name="radio" 
+                    value="1" 
+                    type="radio" 
+                    onChange={questionHandler}
+                     />
+                    <label for="radio-1" className="radio-label">
+                    Question 1
+                    </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="radio">
+                    <input 
+                    id="radio-2" 
+                    name="radio" 
+                    value="2" 
+                    onChange={questionHandler}
+                    type="radio"  />
+                    <label for="radio-2" className="radio-label">
+                    Question 2
+                    </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="radio">
+                    <input 
+                    id="radio-3" 
+                    name="radio" 
+                    value="3" 
+                    onChange={questionHandler}
+                    type="radio"  />
+                    <label for="radio-3" className="radio-label">
+                    Question 3
+                    </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="radio">
+                    <input 
+                    id="radio-4" 
+                    name="radio" 
+                    value="4" 
+                    onChange={questionHandler}
+                    type="radio"  />
+                    <label for="radio-4" className="radio-label">
+                    Question 4
+                    </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="radio">
+                    <input 
+                    id="radio-5" 
+                    name="radio" 
+                    value="5" 
+                    onChange={questionHandler}
+                    type="radio"/>
+                    <label for="radio-5" className="radio-label">
+                    Question 5
+                    </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="radio">
+                    <input 
+                    id="radio-6" 
+                    name="radio" 
+                    value="6" 
+                    onChange={questionHandler}
+                    type="radio"  />
+                    <label for="radio-6" className="radio-label">
+                    Question 6
+                    </label>
+                    </div>
+                  </td>
+
+                </tr>
+
+              </tbody>
+            </Table>
+            </div>
+
+
+            {/* <div className="ques1">
+                <QueCard qno={1} />
+                {toggle1 && que1.map((que1) => (
+                    <div className="que-preview" key={que1.id}>
+                        {que1.id!==0 && <SubCard
+                        attemptNo={que1.id}
+                        time={que1.time}
+                        progbar={<ProgressBar animated
+                            now={que1.progress}
+                        />}
+                    
+                        />}
+                    </div>
+                ))}
+            </div>
+
+            <div className="ques">
+                <QueCard qno={2}/>
+                {toggle2 && que2.map((que2) => (
+                    <div className="que-preview" key={que2.id}>
+                        {que2.id!==0 && <SubCard
+                        attemptNo={que2.id}
+                        time={que2.time}
+                        progbar={<ProgressBar animated
+                            now={que2.progress}
+                        />}
+                
+                        />}
+                    </div>
+                ))}
+            </div>
+
+            <div className="ques">
             <QueCard qno={3}/>
-            {que3.map((que3) => (
+            {toggle3 && que3.map((que3) => (
                 <div className="que-preview" key={que3.id}>
                     {que3.id!==0 && <SubCard
                     attemptNo={que3.id}
@@ -75,8 +190,11 @@ const Submissions = () => {
                     />}
                 </div>
             ))}
+            </div>
+
+            <div className="ques">
             <QueCard qno={4}/>
-            {que4.map((que4) => (
+            {toggle4 && que4.map((que4) => (
                 <div className="que-preview" key={que4.id}>
                     {que4.id!==0 && <SubCard
                     attemptNo={que4.id}
@@ -88,8 +206,11 @@ const Submissions = () => {
                     />}
                 </div>
             ))}
+            </div>
+            
+            <div className="ques">
             <QueCard qno={5}/>
-            {que5.map((que5) => (
+            {toggle5 && que5.map((que5) => (
                 <div className="que-preview" key={que5.id}>
                     {que5.id!==0 && <SubCard
                     attemptNo={que5.id}
@@ -101,8 +222,11 @@ const Submissions = () => {
                     />}
                 </div>
             ))}
+            </div>
+
+            <div className="ques">
             <QueCard qno={6}/>
-            {que6.map((que6) => (
+            {toggle6 && que6.map((que6) => (
                 <div className="que-preview" key={que6.id}>
                     {que6.id!==0 && <SubCard
                     attemptNo={que6.id}
@@ -114,6 +238,9 @@ const Submissions = () => {
                     />}
                 </div>
             ))}
+            </div> */}
+
+
             <div className="space"></div>
         </div>
     );

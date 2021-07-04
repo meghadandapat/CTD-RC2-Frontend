@@ -1,40 +1,34 @@
-.sub{
-    overflow-x: hidden;
-   
+.sub {
+  overflow-x: hidden;
 }
-.quetext{
-    
-    width: max-content;
-    margin-top: -0.6em;
-    color: #ffffff;
+.quetext {
+  width: max-content;
+  margin-top: -0.6em;
+  color: #ffffff;
 }
-.qcard{
-  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-color:#4d516c;
-    color: #ffffff !important;
-    height: 60%;
-    margin-top: 1.8vh;
+.qcard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #4d516c;
+  color: #ffffff !important;
+  height: 67%;
+  margin-top: 1.8vh;
 }
-.btn{
-    color: #ffffff !important;
+.btn {
+  color: #ffffff !important;
 }
-.table{   
-    /* margin-top: -7px; */
-    
+.table {
+  /* margin-top: -7px; */
 }
-.subtext{
-
-    color:#ffffff;
-
+.subtext {
+  color: #ffffff;
 }
-.subcard{
-    margin-top: -0.8em;
-    margin-bottom: -2em;
+.subcard {
+  margin-top: -0.8em;
+  margin-bottom: -2em;
 }
 
-.scard{
-    /* overflow: hidden;
+.scard {
+  /* overflow: hidden;
     color: white;
     height: 80%;
     margin-top: -3vh;
@@ -43,37 +37,47 @@
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
     background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
-    height: 68%;
-    text-align: center;
-    
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
+  height: 68%;
+  text-align: center;
 }
-.btn1{
-    margin-top: -0.8em;
-    margin-right: -50px;
+.btn1 {
+  margin-top: -0.8em;
+  margin-right: -50px;
 }
-.space{
-    margin-bottom: 10vh;
+.space {
+  margin-bottom: 10vh;
 }
-.progbar{
-    margin-top: 2.5px;
+.progbar {
+  margin-top: 2.5px;
 }
-
+.ques1 {
+  margin-top: 3vh;
+}
+.radio input[type="radio"] {
+  opacity: 0;
+}
+.radio-label {
+  color: white;
+  padding-top: 2vh;
+  margin: 0 1.5em;
+  font-size: 2.3vh;
+}
 
 @media only screen and (max-width: 600px) {
-    .scard{
-        font-size: 12px;
-    }
-    .qcard{
-        font-size: 15px;
-    }
-    .progbar{
-        width: 100px;
-    }
-    .btn1{
-        margin-top: 0px;
-        margin-right: 0px;   
-        font-size: 10px;
-    }
+  .scard {
+    font-size: 12px;
   }
+  .qcard {
+    font-size: 15px;
+  }
+  .progbar {
+    width: 100px;
+  }
+  .btn1 {
+    margin-top: 0px;
+    margin-right: 0px;
+    font-size: 10px;
+  }
+}

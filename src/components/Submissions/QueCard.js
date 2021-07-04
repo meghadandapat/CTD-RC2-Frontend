@@ -10,7 +10,7 @@ const QueCard = ({qno}) => {
                   <div className="card-body">
                     <div className="row">
                       <div className="col-sm-1"></div>
-                      <div className="col-sm-2 ">
+                      <div className="col-sm-2 text-center">
                         <p className="quetext">Question no {qno}</p>
                       </div>
                       <div className="col-sm-9"></div>
