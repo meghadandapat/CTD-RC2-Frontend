@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Modal } from 'react-bootstrap'
+import "./Submissions.css";
 
 
 const ViewCode = () => {
@@ -14,6 +15,7 @@ const ViewCode = () => {
           View
         </Button>
         <Modal
+          className="codemodal"
           show={show}
           onHide={handleClose}
           centered
@@ -25,13 +27,14 @@ const ViewCode = () => {
           <Modal.Title>Submission</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-          <p>
+          <p className="codemodaltext">
           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
-              Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-              dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-              consectetur ac, vestibulum at eros.
+          consectetur ac, vestibulum at eros.
+          Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
+          dapibus ac facilisis in, egestas eget quam. 
+          Morbi leo risus, porta ac
+          consectetur ac, vestibulum at eros.
               
         </p>
           

@@ -60,7 +60,12 @@
     margin-top: 2.5px;
 }
 
-
+.codemodal{
+    white-space: pre-line;
+}
+.codemodaltext{
+    white-space: pre-line;
+}
 @media only screen and (max-width: 600px) {
     .scard{
         font-size: 12px;
