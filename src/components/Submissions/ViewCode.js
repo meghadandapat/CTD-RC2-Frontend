@@ -27,6 +27,7 @@ const ViewCode = () => {
           <Modal.Title>Submission</Modal.Title>
           </Modal.Header>
           <Modal.Body>
+          <Button variant="default" className=" btn copybtn"><i class="far fa-clipboard"></i> Copy</Button>
           <p className="codemodaltext">
           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
