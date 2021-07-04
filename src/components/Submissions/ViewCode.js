@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Modal } from 'react-bootstrap'
-import "brace/theme/dracula";
+import "./Submissions.css";
 import copy from "copy-to-clipboard";
 import axiosInstance from '../../axios';
 import AceEditor from "react-ace";
+import "brace/mode/java";
+import "brace/mode/c_cpp";
+import "brace/mode/python";
+import "brace/ext/modelist";
 
 const ViewCode = (props) => {
   
@@ -40,8 +44,10 @@ const ViewCode = (props) => {
         >
           <Modal.Header closeButton>
           <Modal.Title>Submission</Modal.Title>
+          
           </Modal.Header>
           <Modal.Body>
+          <Button variant="default" className=" btn copybtn" onClick={copyToClipboard}><i class="far fa-clipboard"></i></Button>
           <div className="compiler" style={{margin:0}}>
           <AceEditor
             mode="java"
@@ -59,7 +65,7 @@ const ViewCode = (props) => {
           />
         </div>
           </Modal.Body>
-          <Button variant="default" className=" btn copybtn" onClick={copyToClipboard}>Copy</Button>
+          
         </Modal>
         </div>
      );
