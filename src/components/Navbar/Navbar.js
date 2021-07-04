@@ -33,7 +33,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon navbar-dark" />
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
-        <Timer/>
+       
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
