@@ -5,7 +5,7 @@ import "./TestcaseCard.css";
 
 const TestcaseCard = (props) => {
 
-  console.log(props.status);
+  
 
     return (<Card className="card-preview">
           <Card.Body >

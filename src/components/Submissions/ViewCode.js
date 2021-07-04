@@ -11,7 +11,7 @@ const ViewCode = (props) => {
   useEffect(() => {
     axiosInstance.get('submissions/' + props.id.toString()).then((res) => {
       setCode(res.data.code);
-      console.log(res.data);
+     
     })
   }, [setCode]);
   

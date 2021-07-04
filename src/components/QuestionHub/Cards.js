@@ -4,7 +4,7 @@ import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import './Card.css';
 const Cards = ({qno, progbar, attempts,id}) => {
-    console.log(id);
+    
     const handleClick = (e) => {
         window.location.pathname = "coding/" + e.target.id;
     }

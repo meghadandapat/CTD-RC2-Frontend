@@ -14,7 +14,7 @@ const Result = () => {
 
   useEffect(() => {
     axiosInstance.get('leaderboard/').then((res) => {
-      console.log(res.data);
+      
       setResult({
         username: res.data.username,
         rank: res.data.rank,

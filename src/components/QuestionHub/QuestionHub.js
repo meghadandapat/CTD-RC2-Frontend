@@ -22,7 +22,7 @@ const QuestionHub = () => {
   useEffect(() => {
         axiosInstance.get('questions/').then((res) => {
           const allQuestions = res.data;
-          console.log(parseInt(allQuestions[0].total_attempts) / 40);
+          
           setQs([
             {id:allQuestions[0].id, qsno:1, progress:(100 * (parseInt(allQuestions[0].correct_attempts) / parseInt(allQuestions[0].total_attempts))), attmp: allQuestions[0].total_attempts},
             {id:allQuestions[1].id, qsno:2, progress:100 * (allQuestions[1].correct_attempts / allQuestions[1].total_attempts), attmp: allQuestions[1].total_attempts},
@@ -32,11 +32,11 @@ const QuestionHub = () => {
             {id:allQuestions[5].id, qsno:6, progress:100 * (allQuestions[5].correct_attempts / allQuestions[5].total_attempts), attmp: allQuestions[5].total_attempts},
           ]);
           setQuestionData({ loading: false, questions: null });
-          console.log(res.data.results);
+          
         });
   }, [setQuestionData, setQs]);
 
-  console.log(qs);
+ 
   
  
 

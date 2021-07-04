@@ -22,7 +22,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
 
     axiosInstance
       .post("/api/token/", {
@@ -35,7 +34,6 @@ const Login = () => {
         axiosInstance.defaults.headers["Authorization"] =
           "JWT " + localStorage.getItem("access_token");
         history.push("/instructions");
-        console.log(res.status);
       });
   };
 
