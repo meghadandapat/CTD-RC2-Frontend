@@ -49,6 +49,12 @@
     margin-top: 2.5px;
 }
 
+.copybtn{
+    width: 5vw;
+    margin-left: 1vw;
+    margin-bottom: 1vw;
+}
+
 .sub-button {
     background: transparent;
     color: white;
