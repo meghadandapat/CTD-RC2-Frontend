@@ -9,16 +9,12 @@ import SubCard from "./SubCard";
 
 const Submissions = () => {
     const [queno, setQueno] = useState(1);
-    const [toggle1, setToggle1] = useState(true);
-    const [toggle2, setToggle2] = useState(false);
-    const [toggle3, setToggle3] = useState(false);
-    const [toggle4, setToggle4] = useState(false);
-    const [toggle5, setToggle5] = useState(false);
-    const [toggle6, setToggle6] = useState(false);
-    const que1 = [
+
+    const [qdetails, setQdetails] = useState([{id:1, time:'00:00', progress:10 }]);
+    const [que1, setQue1] = useState([
         {id:1, time:'00:00', progress:10 },
         {id:2, time:'00:00', progress:70 },
-    ];
+    ]);
 
     const [que2, setQue2] = useState([
         {id:1, time:'00:00', progress:50 },
@@ -44,11 +40,30 @@ const Submissions = () => {
 
     function questionHandler(e){
         setQueno(e.target.value)
-        if(queno==1){
-            setToggle1(true)
+        if(queno == 1){
+            setQdetails([
+                {id:1, time:'00:00', progress:10 },
+                {id:2, time:'00:00', progress:70 },
+            ])
         }
-        if(queno==2){
-            setToggle2(true)
+        if(queno == 2){
+            setQdetails([
+                {id:1, time:'00:00', progress:10 },
+            ])
+        }
+        if(queno == 3){
+            setQdetails([
+                {id:1, time:'00:00', progress:0 },
+                {id:2, time:'00:00', progress:20 },
+            ])
+        }
+        if(queno == 4){
+            setQdetails([
+                {id:1, time:'00:00', progress:0 },
+                {id:2, time:'00:00', progress:20 },
+                {id:3, time:'00:00', progress:70 },
+                {id:4, time:'00:00', progress:8 },
+            ])
         }
     }
     return (
@@ -65,6 +80,7 @@ const Submissions = () => {
                     value="1" 
                     type="radio" 
                     onChange={questionHandler}
+                    
                      />
                     <label for="radio-1" className="radio-label">
                     Question 1
@@ -142,11 +158,28 @@ const Submissions = () => {
               </tbody>
             </Table>
             </div>
+            <div className="ques1">
+                <QueCard qno={queno} />
+                {qdetails.map((que1) => (
+                    <div className="que-preview" key={que1.id}>
+                    {que1.id!==0 && <SubCard
+                    attemptNo={que1.id}
+                    time={que1.time}
+                    progbar={<ProgressBar animated
+                        now={que1.progress}
+                    />}
+                
+                    />}
+                </div>                    
 
+                ))
+
+                }
+            </div>
 
             {/* <div className="ques1">
                 <QueCard qno={1} />
-                {toggle1 && que1.map((que1) => (
+                {que1.map((que1) => (
                     <div className="que-preview" key={que1.id}>
                         {que1.id!==0 && <SubCard
                         attemptNo={que1.id}
