@@ -18,28 +18,28 @@ const Codingpage = () => {
 
   const handleRunCodeChange = (e) => {
     setRunCode({ input: e.target.value });
-    console.log(e.target.value);
+   
   }
   
 
   const handleSubmit = (e) => {
-    console.log(runCode.input);
+  
     axiosInstance
               .post('get_output/', {
                 pk: id.toString(),
                 input: runCode.input.toString(),
               })
               .then((res) => {
-                console.log(res.data);
+              
                 setRunCode({ output: res.data.output });
               })
   }
 
   useEffect(() => {
     axiosInstance.get('questions/' + id + '/').then((res) => {
-      console.log(res.data.question_desc);
+    
       setQuestion({ data: res.data.question_desc, loading: false});
-      console.log(question.data);
+     
     })
   }, [setQuestion]);
 

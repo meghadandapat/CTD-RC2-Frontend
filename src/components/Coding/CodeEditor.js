@@ -17,7 +17,12 @@ const CodeEditor = (props) => {
 
   const [lang, setLang] = useState("cpp");
   const [result, setResult] = useState({ passed: null, status: null });
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState(`#include <bits/stdc++.h>
+  using namespace std;
+          
+      int main () {
+           
+          }`);
 
   const handleCodeChange = (e) => {
     setCode(e);
@@ -30,10 +35,9 @@ const CodeEditor = (props) => {
   };
 
   const handleLang = (e) => {
-    setLang(e.target.value)
+    setLang(e.target.value);
     switch (e.target.value) {
-  
-      case 'java':
+      case "java":
         setCode(`import java.io.*;
 import java.util.*;
         
@@ -41,43 +45,43 @@ import java.util.*;
         public static void main (String[] args) throws IOException {
           
          }
-        }`)
+        }`);
         break;
-      case 'c':
+      case "c":
         setCode(`#include <stdio.h>
         
       int main () {
          
-        }`)
+        }`);
         break;
-      case 'cpp':
+      case "cpp":
         setCode(`#include <bits/stdc++.h>
 using namespace std;
         
     int main () {
          
-        }`)
+        }`);
         break;
-        default:
-          setCode('')
+      default:
+        setCode("");
     }
-  }
+  };
 
   const handleSubmit = (e) => {
-    console.log(code);
+   
     axiosInstance
       .post("submit/" + id + "/", {
         code: code,
         language: lang,
       })
       .then((res) => {
-        console.log(res.data.error);
+       
         setResult({
           error: res.data.error,
           status: res.data.status,
           passed: res.data.passed_test_cases,
         });
-        console.log(res.data);
+      
         history.push("/testcases", [
           {
             error: res.data.error,
@@ -93,11 +97,7 @@ using namespace std;
       <Form.Group controlId="codearea">
         <div className="Container" style={{ marginLeft: "30px" }}>
           <Row className="justify-content-between">
-            <select
-              id="dropdown"
-              value={lang}
-              onChange={handleLang}
-            >
+            <select id="dropdown" value={lang} onChange={handleLang}>
               <option value="cpp">C++</option>
               <option value="c">C</option>
               <option value="java">Java</option>
@@ -121,12 +121,12 @@ using namespace std;
             onChange={handleCodeChange}
             value={code}
             setOptions={{
-                showPrintMargin: false,
-                showGutter: true, 
-                showLineNumbers: true,
-                tabSize: 4, 
-                wrap: true,
-              }}
+              showPrintMargin: false,
+              showGutter: true,
+              showLineNumbers: true,
+              tabSize: 4,
+              wrap: true,
+            }}
           />
         </div>
         <Row

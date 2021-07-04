@@ -34,6 +34,9 @@
   color: #ffffff;
   -webkit-appearance: none;
 }
+#dropdown:focus{
+  outline: none !important;
+}
 .customfile {
   position: absolute;
   background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
