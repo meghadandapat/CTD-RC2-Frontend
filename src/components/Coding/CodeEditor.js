@@ -29,6 +29,38 @@ const CodeEditor = (props) => {
     });
   };
 
+  const handleLang = (e) => {
+    setLang(e.target.value)
+    switch (lang) {
+  
+      case 'java':
+        setCode(`import java.io.*;
+        import java.util.*;
+        
+        public class main {
+         public static void main (String[] args) throws IOException {
+          
+         }
+        }`)
+        break;
+      case 'c':
+        setCode(`#include <stdio.h>
+        
+        int main () {
+         
+        }`)
+        break;
+      default:
+        setCode(`#include <bits/stdc++.h>
+
+        using namespace std;
+        
+        int main () {
+         
+        }`)
+    }
+  }
+
   const handleSubmit = (e) => {
     console.log(code);
     axiosInstance
@@ -62,7 +94,7 @@ const CodeEditor = (props) => {
             <select
               id="dropdown"
               value={lang}
-              onChange={(e) => setLang(e.target.value)}
+              onChange={handleLang}
             >
               <option value="cpp">C++</option>
               <option value="c">C</option>
