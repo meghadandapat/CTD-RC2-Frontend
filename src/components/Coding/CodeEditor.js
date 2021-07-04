@@ -31,7 +31,7 @@ const CodeEditor = (props) => {
 
   const handleLang = (e) => {
     setLang(e.target.value)
-    switch (lang) {
+    switch (e.target.value) {
   
       case 'java':
         setCode(`import java.io.*;
@@ -50,7 +50,7 @@ const CodeEditor = (props) => {
          
         }`)
         break;
-      default:
+      case 'cpp':
         setCode(`#include <bits/stdc++.h>
 
         using namespace std;
@@ -58,6 +58,9 @@ const CodeEditor = (props) => {
         int main () {
          
         }`)
+        break;
+        default:
+          setCode('')
     }
   }
 
