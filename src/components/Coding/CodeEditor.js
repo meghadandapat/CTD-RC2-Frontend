@@ -35,10 +35,10 @@ const CodeEditor = (props) => {
   
       case 'java':
         setCode(`import java.io.*;
-        import java.util.*;
+import java.util.*;
         
         public class main {
-         public static void main (String[] args) throws IOException {
+        public static void main (String[] args) throws IOException {
           
          }
         }`)
@@ -46,16 +46,15 @@ const CodeEditor = (props) => {
       case 'c':
         setCode(`#include <stdio.h>
         
-        int main () {
+      int main () {
          
         }`)
         break;
       case 'cpp':
         setCode(`#include <bits/stdc++.h>
-
-        using namespace std;
+using namespace std;
         
-        int main () {
+    int main () {
          
         }`)
         break;
@@ -125,7 +124,7 @@ const CodeEditor = (props) => {
                 showPrintMargin: false,
                 showGutter: true, 
                 showLineNumbers: true,
-                tabSize: 1, 
+                tabSize: 4, 
                 wrap: true,
               }}
           />

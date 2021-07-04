@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Logout from "../Logout/Logout";
 import "./Navbar.css";
-import Timer from "../Timer/Timer";
 import { useState } from "react";
 
 const Navbar = () => {
@@ -19,7 +18,7 @@ const Navbar = () => {
     location.pathname === "/testcases"
   )
     return (
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar navbar-expand-md ">
         <button
           className="navbar-toggler navbar-dark "
           type="button"
@@ -32,8 +31,8 @@ const Navbar = () => {
           <span className="navbar-toggler-icon navbar-dark" />
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
-        <Timer />
-        <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
+     
+        <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
               <NavLink

@@ -27,7 +27,7 @@
   outline: none;
   color: #ffffff;
 }
-.score:focus,#dropdown:focus,
+.score:focus,
 .score:active,#dropdown:active {
   cursor: default;
   outline: none !important;
