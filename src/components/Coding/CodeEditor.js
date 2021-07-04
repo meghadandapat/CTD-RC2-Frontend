@@ -9,9 +9,7 @@ import "brace/mode/java";
 import "brace/mode/c_cpp";
 import "brace/mode/python";
 import "brace/ext/modelist";
-import "brace/theme/monokai";
-import "ace-builds/src-noconflict/ext-language_tools";
-import "ace-builds/src-noconflict/ext-beautify";
+import "brace/theme/dracula";
 
 const CodeEditor = (props) => {
   const history = useHistory();
@@ -84,7 +82,7 @@ const CodeEditor = (props) => {
         <div className="compiler">
           <AceEditor
             mode="java"
-            theme="monokai"
+            theme="dracula"
             style={{ height: "27rem", width: "90%" }}
             onChange={handleCodeChange}
             value={code}
