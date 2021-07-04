@@ -6,9 +6,8 @@ import "brace/mode/java";
 import "brace/mode/c_cpp";
 import "brace/mode/python";
 import "brace/ext/modelist";
-import "brace/theme/monokai";
-import "ace-builds/src-noconflict/ext-language_tools";
-import "ace-builds/src-noconflict/ext-beautify";
+import "brace/theme/dracula";
+
 
 export default function CodeEditor() {
   const [lang, setLang] = useState("cpp");
@@ -44,7 +43,7 @@ export default function CodeEditor() {
         <div className="compiler">
           <AceEditor
             mode="java"
- theme="monokai"
+ theme="dracula"
             style={{ height: "27rem", width: "90%" }}
             setOptions={{
               showPrintMargin: false, // boolean: true if show the vertical print margin
@@ -52,7 +51,7 @@ export default function CodeEditor() {
               showLineNumbers: true,
               tabSize: 1, // number
               wrap: true,
-             
+              
             }}
           />
         </div>
