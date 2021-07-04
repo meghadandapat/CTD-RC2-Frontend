@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Modal } from 'react-bootstrap'
 import "brace/theme/dracula";
+import copy from "copy-to-clipboard";
 import axiosInstance from '../../axios';
 import AceEditor from "react-ace";
 
@@ -11,7 +12,7 @@ const ViewCode = (props) => {
   useEffect(() => {
     axiosInstance.get('submissions/' + props.id.toString()).then((res) => {
       setCode(res.data.code);
-      console.log(res.data);
+     
     })
   }, [setCode]);
   
@@ -19,6 +20,10 @@ const ViewCode = (props) => {
   const handleClose = () => setShow(false);
   const handleView = () => setShow(true);
 
+  const copyToClipboard = () => {
+    copy(code);
+
+ }
  
     return (
   <div>
@@ -54,7 +59,7 @@ const ViewCode = (props) => {
           />
         </div>
           </Modal.Body>
-            
+          <Button variant="default" className=" btn copybtn" onClick={copyToClipboard}>Copy</Button>
         </Modal>
         </div>
      );

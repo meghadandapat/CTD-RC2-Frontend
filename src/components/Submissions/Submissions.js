@@ -35,11 +35,11 @@ const Submissions = () => {
   useEffect(() => {
     axiosInstance.get('submissions/').then((res) => {
       const data = res.data;
-      console.log(data);
+      
       data.forEach((submission) => {
         switch(submission.question_id_fk) {
           case 1:
-            console.log(submission);
+           
             setQue1([...que1, {
               id: parseInt(submission.pk), 
               progress: parseInt(submission.accuracy),
@@ -47,7 +47,7 @@ const Submissions = () => {
             }])
             break;
           case 2:
-            console.log(submission);
+            
             setQue2([...que2, {
               id: parseInt(submission.pk), 
               progress: parseInt(submission.accuracy),
@@ -55,7 +55,7 @@ const Submissions = () => {
             }])
             break;
           case 3:
-            console.log(submission);
+            
             setQue3([...que3, {
               id: parseInt(submission.pk), 
               progress: parseInt(submission.accuracy),
@@ -63,7 +63,7 @@ const Submissions = () => {
             }])
             break;
           case 4:
-            console.log(submission);
+           
             setQue4([...que4, {
               id: parseInt(submission.pk), 
               progress: parseInt(submission.accuracy),
@@ -71,7 +71,7 @@ const Submissions = () => {
             }])
             break;
           case 5:
-            console.log(submission);
+            
             setQue5([...que5, {
               id: parseInt(submission.pk), 
               progress: parseInt(submission.accuracy),
@@ -79,7 +79,7 @@ const Submissions = () => {
             }])
             break;
           case 6:
-            console.log(submission);
+            
             setQue6([...que6, {
               id: parseInt(submission.pk), 
               progress: parseInt(submission.accuracy),

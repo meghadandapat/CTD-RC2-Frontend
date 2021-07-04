@@ -4,7 +4,7 @@ import "./Testcase.css";
 import TestcaseCard from "./TestcaseCard";
 
 const Testcase = (props) => {
-  console.log(props.location.state);
+ 
   const List1 = [1, 2, 3].map((num) => <TestcaseCard val={num} status={props.location.state[0].passed[num - 1]}/>);
   const List2 = [4, 5, 6].map((num) => <TestcaseCard val={num} status={props.location.state[0].passed[num - 1]}/>);
 
