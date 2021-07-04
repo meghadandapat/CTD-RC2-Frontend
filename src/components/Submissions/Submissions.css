@@ -50,10 +50,12 @@
 }
 
 .copybtn{
-    width: 5vw;
-    margin-left: 1vw;
-    margin-bottom: 1vw;
+    width: 3vw;
+    margin:1vw;
+    float: right;
+    background: #222b36!important ;
 }
+
 
 .sub-button {
     background: transparent;
