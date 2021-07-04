@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Modal } from 'react-bootstrap'
-
+import copy from "copy-to-clipboard";
 import axiosInstance from '../../axios';
 
 
@@ -19,6 +19,10 @@ const ViewCode = (props) => {
   const handleClose = () => setShow(false);
   const handleView = () => setShow(true);
 
+  const copyToClipboard = () => {
+    copy(code);
+
+ }
  
     return (
   <div>
@@ -42,7 +46,7 @@ const ViewCode = (props) => {
         </p>
           
           </Modal.Body>
-            
+          <Button variant="default" className=" btn copybtn" onClick={copyToClipboard}>Copy</Button>
         </Modal>
         </div>
      );
