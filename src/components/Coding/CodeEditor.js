@@ -5,11 +5,14 @@ import { Container, Form, Row, Col, Button } from "react-bootstrap";
 import axiosInstance from "../../axios";
 import Testcase from "../Testcase/Testcase";
 import AceEditor from "react-ace";
+import Preloader from '../Preloader/Preloader'
 import "brace/mode/java";
 import "brace/mode/c_cpp";
 import "brace/mode/python";
 import "brace/ext/modelist";
 import "brace/theme/dracula";
+import reactDom from "react-dom";
+import { render } from "@testing-library/react";
 
 const CodeEditor = (props) => {
   const history = useHistory();
@@ -68,20 +71,18 @@ using namespace std;
   };
 
   const handleSubmit = (e) => {
-   
+   render(<Preloader />)
     axiosInstance
       .post("submit/" + id + "/", {
         code: code,
         language: lang,
       })
       .then((res) => {
-       
         setResult({
           error: res.data.error,
           status: res.data.status,
           passed: res.data.passed_test_cases,
         });
-      
         history.push("/testcases", [
           {
             error: res.data.error,
