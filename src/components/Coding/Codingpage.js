@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import QuestionBox from './QuestionBox'
 import InputBox from './InputBox';
 import OutputBox from './OutputBox';
@@ -18,7 +18,18 @@ const Codingpage = () => {
               </Col>
             </Row>
           </Col>
-          <Col lg={6}> <CodeEditor></CodeEditor> </Col>
+          <Col lg={6}> <CodeEditor></CodeEditor>
+          <Row className="justify-content-between moveup " style={{  width: "90%", marginLeft:"1rem" }}>
+                        
+          <Col lg={3}></Col>
+          <Col lg={3}> <Button variant="outline-secondary" className="editor-button run">Run Code</Button> </Col>
+  
+          <Col lg={3}><input type="file" id="choose-file" name="choose-file" hidden/>
+          <label for="choose-file" className="customfile ">Choose File</label> </Col>
+
+          <Col lg={3}></Col>
+
+  </Row></Col>
         </Row>
       </Container>
      );

@@ -8,7 +8,7 @@ export default function InputBox() {
             <Card className="boxtitle">
                 <Card.Header>Custom Input</Card.Header>
                 <Form.Group controlId="Textarea1" className="boxbody">
-                    <Form.Control className="box" as="textarea" style={{ height: '10rem' }} />
+                    <Form.Control className="box" as="textarea" style={{ height: '9rem' }} />
                 </Form.Group>
             </Card>
         </div>

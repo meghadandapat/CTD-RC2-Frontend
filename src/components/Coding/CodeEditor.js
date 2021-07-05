@@ -44,7 +44,7 @@ export default function CodeEditor() {
           <AceEditor
             mode="java"
  theme="dracula"
-            style={{ height: "25rem", width: "90%" }}
+            style={{ height: "25rem", width: "92%" }}
             setOptions={{
               showPrintMargin: false, // boolean: true if show the vertical print margin
               showGutter: true, // boolean: true if show line gutter
@@ -60,19 +60,14 @@ export default function CodeEditor() {
           style={{
             width: "90%",
             marginLeft: "1rem",
-            marginTop: "3vh",
+            marginTop: "1.7rem",
           }}
         >
-          <Button variant="outline-secondary" className="editor-button run">
-            Run Code
-          </Button>
+       
           <Button variant="outline-secondary" className="editor-button">
             Load buffer
           </Button>
-          <input type="file" id="choose-file" className="editor-button choose-file" hidden />
-          <label for="choose-file" class="customfile">
-            Choose File
-          </label>
+        
           <Button variant="outline-secondary" className="editor-button submit">
             Submit
           </Button>

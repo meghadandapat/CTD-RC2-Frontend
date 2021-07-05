@@ -11,7 +11,6 @@
   }
 #dropdown,
 .score {
-  margin-top: 2rem;
   width: 120px;
   height: 40px;
   background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
@@ -43,6 +42,11 @@
     height:40px;
     text-align:center;
     padding-top:8px; 
+    margin-bottom:0
+}
+.moveup{
+  position: absolute;
+  margin-top: -55px;
 }
 
 .editor-button {

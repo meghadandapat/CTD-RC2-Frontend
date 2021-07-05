@@ -8,7 +8,7 @@ export default function OutputBox() {
             <Card className="boxtitle">
                 <Card.Header>Custom output</Card.Header>
                 <Form.Group controlId="Textarea2" className="boxbody">
-                <Form.Control as="textarea" className="box" readOnly value="Lorem Ipsum has been the industry's standard du" style={{ height: '10rem' }}/>
+                <Form.Control as="textarea" className="box" readOnly value="Lorem Ipsum has been the industry's standard du" style={{ height: '9rem' }}/>
                 </Form.Group>
             </Card>
         </div>
