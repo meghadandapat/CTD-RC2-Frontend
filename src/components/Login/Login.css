@@ -59,8 +59,8 @@
     0 6rgb (80, 94, 110) 0 rgba(0, 0, 0, 0.2);
 }
 .logintitle {
-  margin-top: 2vh;
-  margin-bottom: 6vh;
+  margin-top: 3vh;
+  margin-bottom: 10vh;
   color: #ffffff;
   font-size: 5.5vh;
 }
@@ -100,6 +100,7 @@ input:focus {
   margin-top: 5vh;
   width: 10vw;
   outline: none;
+  margin-bottom: 3vh;
 }
 
 

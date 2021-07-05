@@ -80,19 +80,7 @@ const Login = () => {
                 </div>
               </div>
               <div className="form-center">
-                <div className="radio">
-                  <input id="radio-1" name="radio" type="radio" checked />
-                  <label for="radio-1" className="radio-label">
-                    Junior
-                  </label>
-                </div>
-
-                <div className="radio">
-                  <input id="radio-2" name="radio" type="radio" />
-                  <label for="radio-2" className="radio-label">
-                    Senior
-                  </label>
-                </div>
+                
               </div>
 
               <button

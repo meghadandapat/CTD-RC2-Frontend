@@ -47,7 +47,7 @@ const ViewCode = (props) => {
           
           </Modal.Header>
           <Modal.Body>
-          <Button variant="default" className=" btn copybtn" onClick={copyToClipboard}><i class="far fa-clipboard"></i></Button>
+          <Button variant="default" className=" btn copybtn" onClick={copyToClipboard}><i class="far fa-clipboard"></i> Copy</Button>
           <div className="compiler" style={{margin:0}}>
           <AceEditor
             mode="java"
