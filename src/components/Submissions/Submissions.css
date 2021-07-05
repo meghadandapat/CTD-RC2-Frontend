@@ -27,11 +27,11 @@
   margin-bottom: -2em;
 }
 
-.copybtn{
-    width: 6vw;
-    margin:1vw;
-    float: right;
-    background: #222b36!important ;
+.copybtn {
+  width: 6vw;
+  margin: 1vw;
+  float: right;
+  background: #222b36 !important ;
 }
 .scard {
   /* overflow: hidden;
@@ -91,5 +91,19 @@
     margin-top: 0px;
     margin-right: 0px;
     font-size: 10px;
+  }
+  .radio input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.2em;
+    opacity: 0;
+  }
+  .stable1 {
+    margin-top: -5vh;
+  }
+  .stable {
+    margin-top: -7vh;
   }
 }
