@@ -48,6 +48,10 @@
   position: absolute;
   margin-top: -55px;
 }
+.movemoreup{
+  position: absolute;
+  margin-top: -95px;
+}
 
 .editor-button {
   height: 40px;
