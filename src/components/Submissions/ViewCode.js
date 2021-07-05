@@ -39,7 +39,7 @@ const ViewCode = (props) => {
           onHide={handleClose}
           centered
           keyboard={false}
-          size="md"
+          size="lg"
           scrollable
         >
           <Modal.Header closeButton>

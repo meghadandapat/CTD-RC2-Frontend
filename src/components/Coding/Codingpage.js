@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import QuestionBox from './QuestionBox'
-import InputBox from './InputBox';
-import OutputBox from './OutputBox';
 import CodeEditor from './CodeEditor';
 import axiosInstance from '../../axios';
 import Preloader from '../Preloader/Preloader';
@@ -56,7 +54,7 @@ const Codingpage = () => {
                       <Card className="boxtitle">
                           <Card.Header>Custom Input</Card.Header>
                           <Form.Group controlId="Textarea1" className="boxbody">
-                              <Form.Control className="box" as="textarea" id="input" value={ runCode.input } onChange={ handleRunCodeChange } style={{ height: '10rem' }} />
+                              <Form.Control className="box" as="textarea" id="input" value={ runCode.input } onChange={ handleRunCodeChange } style={{ height: '9rem' }} />
                           </Form.Group>
                       </Card>
                   </div> 
@@ -64,7 +62,7 @@ const Codingpage = () => {
                       <Card className="boxtitle">
                           <Card.Header>Custom output</Card.Header>
                           <Form.Group controlId="Textarea2" className="boxbody">
-                          <Form.Control as="textarea" className="box" readOnly value={ runCode.output } style={{ height: '10rem' }}/>
+                          <Form.Control as="textarea" className="box" readOnly value={ runCode.output } style={{ height: '9rem' }}/>
                           </Form.Group>
                       </Card>
                   </div>
@@ -74,17 +72,15 @@ const Codingpage = () => {
           </Col>
           <Col lg={6}> 
           <CodeEditor runCode={ handleSubmit }></CodeEditor> 
-          <Row className="justify-content-between moveup" style={{ marginBottom: "5vh", width: "90%", marginLeft:"1rem", marginTop: "3vh" }}>
-                        
-                            <Col lg={3}></Col>
-                            <Col lg={3}> <Button variant="outline-secondary" className="editor-button run" onClick={ handleSubmit }>Run Code</Button> </Col>
-                            {/* <Button variant="outline-secondary" className="editor-button load" >Load buffer</Button> */}
+          <Row className="justify-content-center" style={{ width: "90%", marginLeft:"1rem"}}>
+     <Col lg={3}> <Button variant="outline-secondary" className="editor-button movemoreup run" onClick={ handleSubmit }>Run Code</Button> </Col>
                             <Col lg={3}><input type="file" id="choose-file" name="choose-file" hidden/>
-                            <label for="choose-file" class="customfile">Choose File</label> </Col>
-                            {/* <Button variant="outline-secondary" className="editor-button submit" onClick={ handleSubmit }>Submit</Button> */}
-                            <Col lg={3}></Col>
+                            <label htmlFor="choose-file" className="customfile moveup">Choose File</label> </Col>
+                        
+                          
 
                     </Row>
+                    <Row className="vem"></Row>
           </Col>
         </Row>
       </Container>

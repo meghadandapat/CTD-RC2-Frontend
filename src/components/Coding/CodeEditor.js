@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import "./CodeEditor.css";
-import { Container, Form, Row, Col, Button } from "react-bootstrap";
+import { Form, Row, Button } from "react-bootstrap";
 import axiosInstance from "../../axios";
 import Testcase from "../Testcase/Testcase";
 import AceEditor from "react-ace";
@@ -11,7 +11,6 @@ import "brace/mode/c_cpp";
 import "brace/mode/python";
 import "brace/ext/modelist";
 import "brace/theme/dracula";
-import reactDom from "react-dom";
 import { render } from "@testing-library/react";
 
 const CodeEditor = (props) => {
@@ -118,7 +117,7 @@ using namespace std;
           <AceEditor
             mode="java"
             theme="dracula"
-            style={{ height: "27rem", width: "90%" }}
+            style={{ height: "25rem", width: "92%" }}
             onChange={handleCodeChange}
             value={code}
             setOptions={{
@@ -133,13 +132,13 @@ using namespace std;
         <Row
           className="justify-content-between "
           style={{
-            marginBottom: "5vh",
+            
             width: "90%",
             marginLeft: "1rem",
-            marginTop: "3vh",
+            marginTop: "1.7rem",
           }}
         >
-          {/* <Button variant="outline-secondary" className="editor-button run" onClick={ props.runCode }>Run Code</Button> */}
+
           <Button
             variant="outline-secondary"
             className="editor-button "
@@ -147,8 +146,7 @@ using namespace std;
           >
             Load buffer
           </Button>
-          {/* <input type="file" id="choose-file" name="choose-file" hidden/>
-                            <label for="choose-file" class="customfile">Choose File</label> */}
+ 
           <Button
             variant="outline-secondary"
             className="editor-button submit"
