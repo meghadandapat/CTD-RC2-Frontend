@@ -75,7 +75,7 @@ const Codingpage = () => {
           <Row className="justify-content-center" style={{ width: "90%", marginLeft:"1rem"}}>
      <Col lg={3}> <Button variant="outline-secondary" className="editor-button movemoreup run" onClick={ handleSubmit }>Run Code</Button> </Col>
                             <Col lg={3}><input type="file" id="choose-file" name="choose-file" hidden/>
-                            <label htmlFor="choose-file" className="customfile moveup">Choose File</label> </Col>
+                            <label htmlFor="choose-file" className="customfile choosecode moveup">Choose File</label> </Col>
                         
                           
 
