@@ -53,13 +53,13 @@ const ViewCode = (props) => {
             mode="java"
             theme="dracula"
             style={{ height: "27rem", width: "100%" }}
-           readonly= {true}
             value={code}
             setOptions={{
                 showPrintMargin: false,
                 showGutter: true, 
                 showLineNumbers: true,
-                tabSize: 1, 
+                tabSize: 4,
+                readOnly: true,
                 wrap: true,
               }}
           />
