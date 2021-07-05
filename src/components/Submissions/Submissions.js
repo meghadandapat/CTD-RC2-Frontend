@@ -35,7 +35,7 @@ const Submissions = () => {
   useEffect(() => {
     axiosInstance.get('submissions/').then((res) => {
       const data = res.data;
-      
+      console.log(res.data)
       data.forEach((submission) => {
         switch(submission.question_id_fk) {
           case 1:

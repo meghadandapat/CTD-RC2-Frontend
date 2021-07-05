@@ -11,25 +11,25 @@ const LeaderRow = ({data}) => {
                     <p className="datauser">{data.username}</p>
                 </td>
                 <td>
-                    <p className="data">{data.q1}</p>
+                    <p className="data">{data.score_list[0]}</p>
                 </td>
                 <td>
-                    <p className="data">{data.q2}</p>
+                    <p className="data">{data.score_list[1]}</p>
                 </td>
                 <td>
-                    <p className="data">{data.q3}</p>
+                    <p className="data">{data.score_list[2]}</p>
                 </td>
                 <td>
-                    <p className="data">{data.q4}</p>
+                    <p className="data">{data.score_list[3]}</p>
                 </td>
                 <td>
-                    <p className="data">{data.q5}</p>
+                    <p className="data">{data.score_list[4]}</p>
                 </td>
                 <td>
-                    <p className="data">{data.q6}</p>
+                    <p className="data">{data.score_list[5]}</p>
                 </td>
                 <td>
-                    <p className="datascore">{data.total}</p>
+                    <p className="datascore">{data.total_score}</p>
                 </td>
             
         </div>
