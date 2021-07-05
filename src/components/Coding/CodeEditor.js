@@ -17,7 +17,7 @@ export default function CodeEditor() {
       <Form.Group controlId="codearea">
         <div
           className="Container"
-          style={{ marginLeft: "30px", paddingTop: "2rem" }}
+          style={{ marginLeft: "30px"}}
         >
           <Row className="justify-content-between">
             <select
@@ -44,7 +44,7 @@ export default function CodeEditor() {
           <AceEditor
             mode="java"
  theme="dracula"
-            style={{ height: "27rem", width: "90%" }}
+            style={{ height: "25rem", width: "90%" }}
             setOptions={{
               showPrintMargin: false, // boolean: true if show the vertical print margin
               showGutter: true, // boolean: true if show line gutter
@@ -58,7 +58,6 @@ export default function CodeEditor() {
         <Row
           className="justify-content-between "
           style={{
-            marginBottom: "5vh",
             width: "90%",
             marginLeft: "1rem",
             marginTop: "3vh",
