@@ -10,7 +10,11 @@ import bronze from "../svgs/Bronze.svg";
 
 const Result = () => {
   const [result, setResult] = useState({});
-  const[topThree, setTopThree] = useState([]);
+  const[topThree, setTopThree] = useState([
+    {username: "Loading..."},
+    {username: "Loading..."},
+    {username: "Loading..."}
+  ]);
 
   useEffect(() => {
     axiosInstance.get('leaderboard/').then((res) => {
@@ -20,7 +24,7 @@ const Result = () => {
         rank: res.data.rank,
         score: res.data.score
       })
-      setTopThree(res.data.page_obj.usernames);
+      setTopThree(res.data.page_obj.data);
     })
     logout();
   }, [setResult])
@@ -37,17 +41,17 @@ const Result = () => {
           <div className="row ">
             <div className="col text-center">
               <img className="svgs  svg-down" src={gold} alt="Rank 1" />
-              <p className="svg-rank">{topThree[0]}</p>
+              <p className="svg-rank">{topThree[0].username}</p>
             </div>
           </div>
           <div className="row row2">
             <div className="col text-center">
               <img className="svgs" src={silver} alt="rank 2" />
-              <p className="svg-rank">{topThree[1]}</p>
+              <p className="svg-rank">{topThree[1].username}</p>
             </div>
             <div className="col bronze text-center">
               <img className="svgs svg-down" src={bronze} alt="My Happy SVG" />
-              <p className="svg-rank">{topThree[2]}</p>
+              <p className="svg-rank">{topThree[2].username}</p>
             </div>
           </div>
         </div>
