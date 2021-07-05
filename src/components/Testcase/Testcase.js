@@ -1,17 +1,22 @@
 import React from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "./Testcase.css";
 import TestcaseCard from "./TestcaseCard";
+import { useHistory } from "react-router-dom";
 
 const Testcase = (props) => {
  
   const List1 = [1, 2, 3].map((num) => <TestcaseCard val={num} status={props.location.state[0].passed[num - 1]}/>);
   const List2 = [4, 5, 6].map((num) => <TestcaseCard val={num} status={props.location.state[0].passed[num - 1]}/>);
+  let history = useHistory();
 
   return (
     <Container fluid>
       <Row>
         <Col lg={8}>
+        <Row ><Button variant="default" style={{ margin: "5px" }} onClick={() => history.goBack()}><i className="fas fa-arrow-circle-left" style={{ fontSize: "28px" }}></i></Button>
+        <div><p style={{color:"white", margin:"2vh"}}>Go back</p></div>
+        </Row>
           <Row className="justify-content-center">{List1}</Row>
           <Row className="justify-content-center">{List2}</Row>
           <Row >
