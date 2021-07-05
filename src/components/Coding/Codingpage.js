@@ -29,10 +29,11 @@ const Codingpage = () => {
 
         
 
-  </Row>
+            </Row>
+            <Row className="vem"></Row>
   </Col>
         </Row>
-        <Row className="vem"></Row>
+       
       </Container>
      );
 }
