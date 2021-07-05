@@ -10,20 +10,33 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: #4d516c;
   color: #ffffff !important;
-  height: 67%;
+  height: 47%;
   margin-top: 1.8vh;
+  margin-bottom: -1vh;
+}
+.srno {
+  width: 16.8vw;
+  text-align: center;
+}
+.stime {
+  width: 34.6vw;
+  text-align: center;
+}
+.sprogress {
+  width: 12.6vw;
+  text-align: center;
+}
+.sview {
+  width: 18.5vw;
 }
 .btn {
   color: #ffffff !important;
-}
-.table {
-  /* margin-top: -7px; */
 }
 .subtext {
   color: #ffffff;
 }
 .subcard {
-  margin-top: -0.8em;
+  margin-top: -2em;
   margin-bottom: -2em;
 }
 
@@ -34,15 +47,6 @@
   background: #222b36 !important ;
 }
 .scard {
-  /* overflow: hidden;
-    color: white;
-    height: 80%;
-    margin-top: -3vh;
-    margin-bottom: -10vh;
-    padding-bottom: 10vh;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
   height: 68%;
@@ -77,12 +81,37 @@
 .codemodaltext {
   white-space: pre-line;
 }
+.title-text {
+  /* text-align: center; */
+  color: white;
+}
 @media only screen and (max-width: 600px) {
   .scard {
     font-size: 12px;
   }
   .qcard {
-    font-size: 15px;
+    height: 50%;
+  }
+  .td1 {
+    display: none;
+  }
+  .srno {
+    font-size: 2vh;
+    text-align: left;
+    width: 9vw;
+  }
+  .stime {
+    font-size: 2vh;
+    width: 17vw;
+    text-align: left;
+  }
+  .sprogress {
+    font-size: 2vh;
+    text-align: left;
+    width: 39vw;
+  }
+  .sview {
+    width: 22.5vw;
   }
   .progbar {
     width: 100px;
@@ -105,5 +134,9 @@
   }
   .stable {
     margin-top: -7vh;
+  }
+  .question-number {
+    font-size: 3vh;
+    margin-left: 2vh;
   }
 }
