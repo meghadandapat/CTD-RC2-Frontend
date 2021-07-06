@@ -1,6 +1,15 @@
 .sub {
   overflow-x: hidden;
 }
+
+.hidelabel{
+  display:none;
+}
+.pagination{
+  margin:0 !important;
+  justify-content: center;
+
+}
 .quetext {
   width: max-content;
   margin-top: -0.6em;
@@ -62,7 +71,7 @@
 .progbar {
   margin-top: 2.5px;
 }
-.ques1 {
+.ques {
   margin-top: 3vh;
 }
 .radio input[type="radio"] {
