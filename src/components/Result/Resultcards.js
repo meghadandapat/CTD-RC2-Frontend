@@ -7,7 +7,7 @@ const Resultcards = ({ username, rank, score }) => {
           <div class="result-circle">
             <div class="result-content">
               <strong>
-                <h1>A</h1>
+                <h1>{ username.charAt(0).toUpperCase}</h1>
               </strong>
             </div>
           </div>
