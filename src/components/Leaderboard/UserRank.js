@@ -1,12 +1,15 @@
+import { useState, useEffect } from 'react';
 import './Leaderboard.css';
-const UserRank = () => {
+import axiosInstance from '../../axios';
+const UserRank = ({result, userScoreList}) => {
+
     return ( 
         <div className="userrank">
             <td>
-                <p className="data">Rank</p>
+                <p className="data">{result.rank}</p>
             </td>
             <td>
-                <p className="datauser">Username</p>
+                <p className="datauser">{result.username}</p>
             </td>
             <td>
                 <p className="data">Q1</p>
@@ -27,7 +30,7 @@ const UserRank = () => {
                 <p className="data">Q6</p>
             </td>
             <td>
-                <p className="datascore">Total</p>
+                <p className="datascore">{result.score}</p>
             </td>
         </div>
      );
