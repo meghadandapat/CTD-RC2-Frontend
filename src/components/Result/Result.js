@@ -15,26 +15,34 @@ const Result = () => {
     {username: "Loading..."},
     {username: "Loading..."}
   ]);
+  
 
   useEffect(() => {
     axiosInstance.get('leaderboard/').then((res) => {
       
       setResult({
         username: res.data.username,
+        firstchar: res.data.username.charAt(0).toUpperCase(),
         rank: res.data.rank,
         score: res.data.score
+
       })
       setTopThree(res.data.page_obj.data);
+      
     })
+    
     logout();
   }, [setResult])
+
+
+  
 
   return (
     <div className="fluid-container resultpage ">
       <div className="row" style={{ marginTop: "7vh" }}>
         <div className="col-sm-4 ">
           <div className="row justify-content-center">
-            <Resultcards username={result.username} rank={result.rank} score={ result.score } />
+            <Resultcards username={result.username} rank={result.rank} score={ result.score } firstchar={result.firstchar} />
           </div>
         </div>
         <div className="col-sm-8">

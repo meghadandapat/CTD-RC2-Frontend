@@ -9,6 +9,9 @@ import ReactPaginate from 'react-paginate';
 import axiosInstance from '../../axios';
 
 
+
+
+
 const Submissions = () => {
     const [queno, setQueno] = useState(1);
 
@@ -51,6 +54,23 @@ const Submissions = () => {
 
             </div>
             <div className="ques1">
+
+
+    
+
+    return (
+        <div className="sub">
+        <ReactPaginate
+        previousClassName="hidelabel"
+                nextClassName="hidelabel"
+                pageClassName="chooseque"
+pageCount={6}
+onPageChange={console.log("click")}
+containerClassName={"pagination"}
+subContainerClassName={"pages pagination"}
+activeClassName={"active"} />
+
+            <div className="ques">
                 <QueCard qno={queno} />
                 {qdetails.map((que) => (
                     <div className="que-preview" key={que.id}>

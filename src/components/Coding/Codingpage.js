@@ -8,6 +8,7 @@ import Preloader from '../Preloader/Preloader';
 import { Card, Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 
+
 const Codingpage = () => {
   const { id } = useParams();
   const [question, setQuestion] = useState({ data: null, loading: true });
@@ -22,6 +23,8 @@ const Codingpage = () => {
 
   const handleSubmit = (e) => {
   
+
+    
     axiosInstance
               .post('get_output/', {
                 pk: id.toString(),

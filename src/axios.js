@@ -4,7 +4,7 @@ const baseURL = 'https://rcsr.ctd.pictieee.in/';
 
 const axiosInstance = axios.create({
 	baseURL: baseURL,
-	timeout: 50000,
+	timeout: 10000000000000,
 	headers: {
 		Authorization: localStorage.getItem('access_token')
 			? 'JWT ' + localStorage.getItem('access_token')

@@ -5,6 +5,7 @@ import { Form, Row, Button } from "react-bootstrap";
 import axiosInstance from "../../axios";
 import Testcase from "../Testcase/Testcase";
 import AceEditor from "react-ace";
+import CodeLoader from './CodeLoader'
 import Preloader from '../Preloader/Preloader'
 import "brace/mode/java";
 import "brace/mode/c_cpp";
@@ -70,7 +71,7 @@ using namespace std;
   };
 
   const handleSubmit = (e) => {
-   render(<Preloader />)
+    render(<CodeLoader />)
     axiosInstance
       .post("submit/" + id + "/", {
         code: code,
