@@ -7,7 +7,7 @@ import axiosInstance from '../../axios';
 import Preloader from '../Preloader/Preloader';
 import { Card, Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
-import CodeLoader from './CodeLoader'
+
 
 const Codingpage = () => {
   const { id } = useParams();
@@ -23,6 +23,8 @@ const Codingpage = () => {
 
   const handleSubmit = (e) => {
   
+
+    
     axiosInstance
               .post('get_output/', {
                 pk: id.toString(),
@@ -42,7 +44,7 @@ const Codingpage = () => {
     })
   }, [setQuestion]);
 
-    if (question.loading) return <CodeLoader />
+    if (question.loading) return <Preloader />
 
     return (
         <Container fluid >

@@ -24,7 +24,7 @@
     align-items: center;
     border-radius: 50%;
     background: #171C24;
-    background: linear-gradient(0deg, rgba(63,249,220,0.1) 33%, rgb(40, 138, 123) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.24) 33%, #4d516c 100%);
     animation: spin .8s linear 0s infinite;
   }
   
