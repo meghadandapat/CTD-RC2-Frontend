@@ -20,27 +20,6 @@ const Submissions = () => {
         });
     }, [setQdetails,queno])
 
-    return (
-        <div className="sub">
-            <div className="row qbuttons">
-            <ReactPaginate
-                previousLabel={"previous"}
-                nextLabel={"next"}
-                breakLabel={"..."}
-                breakClassName={"break-me"}
-                pageCount={6}
-                onPageChange={(e) => setQueno(e.selected + 1)}
-                containerClassName={"pagination"}
-                subContainerClassName={"pages pagination"}
-                activeClassName={"active"} />
-                
-                
-
-            </div>
-            <div className="ques1">
-
-
-
 
     return (
         <div className="sub">
