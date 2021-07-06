@@ -5,7 +5,7 @@ const CodeLoader = () => {
     <div class="circle-border">
       <div class="circle-core"></div>
         </div>
-    <p>Your code is getting executed.</p>    
+    <h4 style={{color:"white"}}>Your code is getting executed.</h4>    
   </div> );
 }
  
