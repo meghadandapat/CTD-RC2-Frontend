@@ -38,8 +38,6 @@ const QuestionHub = () => {
 
  
   
- 
-
   if (questionData.loading) return <Preloader />
 
     return (  
