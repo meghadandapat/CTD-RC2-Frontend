@@ -57,6 +57,7 @@ const Leaderboard = () => {
                 previousLabel={"previous"}
                 nextLabel={"next"}
                 breakLabel={"..."}
+                initialPage={1}
                 breakClassName={"break-me"}
                 /*pageCount={pageCount}*/
                 onPageChange={(e) => setPage(e.selected + 1)}

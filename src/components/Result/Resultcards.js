@@ -1,5 +1,8 @@
 import "./Result.css";
-const Resultcards = ({ username, rank, score }) => {
+const Resultcards = ({ username, rank, score, firstchar }) => {
+
+  
+  
   return (
     <div className="resultcards ">
       <div className="card resultcard">
@@ -7,7 +10,7 @@ const Resultcards = ({ username, rank, score }) => {
           <div class="result-circle">
             <div class="result-content">
               <strong>
-                <h1>{username.charAt(0).toUpperCase()}</h1>
+                <h1>{firstchar}</h1>
               </strong>
             </div>
           </div>
