@@ -8,15 +8,10 @@ import SubCard from "./SubCard";
 import ReactPaginate from 'react-paginate';
 import axiosInstance from '../../axios';
 
-
-
-
-
 const Submissions = () => {
     const [queno, setQueno] = useState(1);
 
     const [qdetails, setQdetails] = useState([]);
-
     useEffect(() => {
         console.log(queno);
         axiosInstance.post('submissions/', {qno: queno}).then((res) => {
@@ -24,16 +19,6 @@ const Submissions = () => {
             setQdetails(res.data);
         });
     }, [setQdetails,queno])
-
-    
-
-    
-
-    
-
-    
-
-    
 
     return (
         <div className="sub">
@@ -49,14 +34,13 @@ const Submissions = () => {
                 subContainerClassName={"pages pagination"}
                 activeClassName={"active"} />
                 
-
                 
 
             </div>
             <div className="ques1">
 
 
-    
+
 
     return (
         <div className="sub">
@@ -85,8 +69,6 @@ activeClassName={"active"} />
                 </div>       
                 ))}
             </div>
-
-
             <div className="space"></div>
         </div>
     );
