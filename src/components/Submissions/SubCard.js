@@ -1,6 +1,6 @@
 import { Table } from "react-bootstrap";
 import ViewCode from './ViewCode'
-const SubCard = ({ attemptNo, time, progbar }) => {
+const SubCard = ({ srNo, time, progbar,id }) => {
     return (
         <div className="subcard">
         <div className="row">
@@ -11,11 +11,11 @@ const SubCard = ({ attemptNo, time, progbar }) => {
             <Table responsive className="table table-borderless">
               <tbody>
                 <tr>
-                  <td><p className="subtext">{attemptNo}</p></td>
+                  <td><p className="subtext">{srNo}</p></td>
                   <td><p className="subtext">{time}</p></td>
                   <td><p className="progbar">{progbar}</p></td>
                   <td>
-                    <ViewCode id={attemptNo}/>
+                    <ViewCode id={id}/>
                 </td>
                 </tr>
 
