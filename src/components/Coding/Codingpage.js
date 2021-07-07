@@ -7,12 +7,13 @@ import axiosInstance from '../../axios';
 import Preloader from '../Preloader/Preloader';
 import { Card, Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import CodeLoader from './CodeLoader';
 
 
 const Codingpage = () => {
   const { id } = useParams();
   const [question, setQuestion] = useState({ data: null, loading: true });
-
+  const [isSubmitted, setIsSubmitted] = useState(true);
   const [runCode, setRunCode] = useState({ input: null, output: '' });
 
   const handleRunCodeChange = (e) => {
@@ -45,7 +46,7 @@ const Codingpage = () => {
   }, [setQuestion]);
 
     if (question.loading) return <Preloader />
-
+    else if (!isSubmitted) return <CodeLoader/>
     return (
         <Container fluid >
             <Row style={{ height:"80vh", alignItems:"center" }}>
@@ -74,7 +75,7 @@ const Codingpage = () => {
             </Row>
           </Col>
           <Col lg={6}> 
-          <CodeEditor runCode={ handleSubmit }></CodeEditor> 
+          <CodeEditor runCode={ handleSubmit } isSubmitted={isSubmitted} setIsSubmitted={setIsSubmitted}></CodeEditor> 
           <Row className="justify-content-center" style={{ width: "90%", marginLeft:"1rem"}}>
      <Col lg={3}> <Button variant="outline-secondary" className="editor-button movemoreup run" onClick={ handleSubmit }>Run Code</Button> </Col>
                             <Col lg={3}><input type="file" id="choose-file" name="choose-file" hidden/>

@@ -17,7 +17,7 @@ import { render } from "@testing-library/react";
 const CodeEditor = (props) => {
   const history = useHistory();
   const { id } = useParams();
-
+  // const [isSubmitted, setIsSubmitted] = useState(true);
   const [lang, setLang] = useState("cpp");
   const [result, setResult] = useState({ passed: null, status: null });
   const [code, setCode] = useState(`#include <bits/stdc++.h>
@@ -71,7 +71,8 @@ using namespace std;
   };
 
   const handleSubmit = (e) => {
-    render(<CodeLoader />)
+    // render(<CodeLoader />)
+    props.setIsSubmitted(false);
     axiosInstance
       .post("submit/" + id + "/", {
         code: code,
@@ -90,9 +91,10 @@ using namespace std;
             passed: res.data.passed_test_cases,
           },
         ]);
+        props.setIsSubmitted(true);
       });
   };
-
+  // if (!props.isSubmitted) return <CodeLoader/> 
   return (
     <Form>
       <Form.Group controlId="codearea">

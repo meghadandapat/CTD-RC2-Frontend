@@ -9,6 +9,8 @@ import UserRank from "./UserRank";
 import axiosInstance from "../../axios";
 
 const Leaderboard = () => {
+    
+    const [result, setResult] = useState({});
     const [pages, setPages] = useState({ 
         prev: null,
         next: null,
@@ -36,7 +38,21 @@ const Leaderboard = () => {
         axiosInstance.get('leaderboard/?page=' + page).then((res) => {
             setDatas(res.data.page_obj.data);
         })
+        
     }, [setDatas, page])
+
+    useEffect(() => {
+        axiosInstance.get('leaderboard/').then((res) => {
+          
+          setResult({
+            username: res.data.username,
+            rank: res.data.rank,
+            score: res.data.score
+    
+          })
+        })
+        
+      }, [setResult])
 
     return ( 
         <div className="leaderboard">
@@ -51,7 +67,7 @@ const Leaderboard = () => {
                         data.rank%2!==0 && <tr className="tablerow"><LeaderRow data={data}/></tr> ||
                         data.rank%2!==0 || <tr className="tablerow"><LeaderRow data={data} /></tr>
                     ))}
-                <UserRank/>
+                <UserRank result={result}/>
             </Table>
             <ReactPaginate
                 previousLabel={"previous"}
