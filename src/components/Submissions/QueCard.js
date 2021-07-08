@@ -22,7 +22,7 @@ const QueCard = ({qno}) => {
                                             <p className="title-text ">SrNo.</p>
                                         </td>
                                         <td className="stime">
-                                            <p className="title-text ">Time</p>
+                                            <p className="title-text " style={{paddingLeft:"4rem"}}>Time</p>
                                         </td>
                                         <td className="sprogress">
                                             <p className="title-text ">Progress</p>

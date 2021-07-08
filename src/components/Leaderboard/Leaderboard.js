@@ -2,41 +2,30 @@ import { Table } from "react-bootstrap"
 import LeaderRow from "./LeaderRow"
 import './Leaderboard.css';
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import ReactPaginate from 'react-paginate';
 import TitleLeader from "./TitleLeader";
 import UserRank from "./UserRank";
+import Preloader from '../Preloader/Preloader';
 import axiosInstance from "../../axios";
 
 const Leaderboard = () => {
     
     const [result, setResult] = useState({});
-    const [pages, setPages] = useState({ 
-        prev: null,
-        next: null,
-    });
-    const [data, setData] = useState([
-        {rank:'1', username:'ABC',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'80'},
-        {rank:'2', username:'DEF',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'78'},
-        {rank:'3', username:'GHI',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'77'},
-        {rank:'4', username:'JKL',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'69'},
-        {rank:'5', username:'MNO',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'58'},
-        {rank:'6', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'},
-        {rank:'7', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'},
-        {rank:'8', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'},
-        {rank:'9', username:'PQR',q1:60,q2:60, q3:60, q4:60,q5:60,q6:60, total:'50'}
-    ]);
+  
+    const [isLoading, setIsLoading] = useState(true)
     const [datas, setDatas] = useState([{
-        username: "Loading...",
-        score_list: [1,2,3,4,5,6],
-        total_score: 200,
-        rank: 69
+        username: "",
+        score_list: [],
+        total_score: null,
+        rank: null
     }]);
+ 
     const [page, setPage] = useState(0);
 
     useEffect(() => {
         axiosInstance.get('leaderboard/?page=' + page).then((res) => {
             setDatas(res.data.page_obj.data);
+            setIsLoading(false)
         })
         
     }, [setDatas, page])
@@ -47,13 +36,13 @@ const Leaderboard = () => {
           setResult({
             username: res.data.username,
             rank: res.data.rank,
-            score: res.data.score
-    
-          })
+            score: res.data.score,
+         })
         })
         
       }, [setResult])
 
+      if (isLoading) return <Preloader />
     return ( 
         <div className="leaderboard">
             <Table striped borderless hover responsive className="leadertable">
@@ -73,7 +62,7 @@ const Leaderboard = () => {
                 previousLabel={"previous"}
                 nextLabel={"next"}
                 breakLabel={"..."}
-                initialPage={1}
+                initialPage={0}
                 breakClassName={"break-me"}
                 /*pageCount={pageCount}*/
                 onPageChange={(e) => setPage(e.selected + 1)}
