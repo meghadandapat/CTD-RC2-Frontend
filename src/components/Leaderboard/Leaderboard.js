@@ -69,6 +69,7 @@ const Leaderboard = () => {
                 containerClassName={"pagination"}
                 subContainerClassName={"pages pagination"}
                 activeClassName={"active"} />
+                <div className="leaderspacing"></div>
         </div>
      );
 }
