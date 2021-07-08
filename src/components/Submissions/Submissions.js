@@ -54,7 +54,7 @@ const Submissions = () => {
           />
         )
       }) }
-          
+        <div className="subspacing"></div>
     </div>
   );
 };

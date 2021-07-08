@@ -24,7 +24,7 @@ body{
 .leaderboard{
   padding: 5px;
   width:max-content;
-  margin-top: 1.5vh;
+  margin-top: 1vh;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6vh;
@@ -102,4 +102,8 @@ body{
  
  .pagination>li>a, .pagination>li>span {
   background-image: linear-gradient(to top right, #4d516c  0%, #4d516c 100%);
+ }
+
+ .leaderspacing{
+   height: 6vh;
  }
