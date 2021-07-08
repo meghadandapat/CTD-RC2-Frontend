@@ -1,6 +1,12 @@
 import { Table } from "react-bootstrap";
 import ViewCode from './ViewCode'
+import { ProgressBar} from "react-bootstrap";
 const SubCard = ({ srNo, time, progbar,id }) => {
+
+  if (srNo < 10) {
+  srNo = `${0}`+srNo
+}
+
     return (
         <div className="subcard">
         <div className="row">
@@ -13,7 +19,8 @@ const SubCard = ({ srNo, time, progbar,id }) => {
                 <tr>
                   <td><p className="subtext">{srNo}</p></td>
                   <td><p className="subtext">{time}</p></td>
-                  <td><p className="progbar">{progbar}</p></td>
+                  <td><p className="progbar"><ProgressBar animated
+                  now={progbar}/></p></td>
                   <td>
                     <ViewCode id={id}/>
                 </td>

@@ -1,5 +1,6 @@
 .sub {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .quetext {
     width: max-content;
