@@ -10,7 +10,8 @@ import Footer from './components/Footer/Footer';
 import Leaderboard from './components/Leaderboard/Leaderboard';
 import Result from './components/Result/Result';
 import Codingpage from './components/Coding/Codingpage';
-import NotFound from './components/NotFound/NotFound'
+import NotFound from './components/NotFound/NotFound';
+import WebTeam from './components/WebTeam/WebTeam'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
     <Route path="/leaderboard" component={Leaderboard} />
     <Route path="/result" component={Result} />
     <Route path="/coding" component={Codingpage} />
+    <Route path="/webteam" component={WebTeam} />
     <Route component={NotFound} />
     </Switch>      
     </Router>
