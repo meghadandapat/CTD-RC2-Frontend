@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar} from "react-bootstrap"
-import { useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import  './Footer.css';
     
 const Footer = () => {
@@ -12,7 +12,9 @@ const Footer = () => {
   // )
     return (
         <Navbar fixed="bottom" expand="lg" variant="default" className="footer">
-          <Navbar.Brand>&copy; PICT IEEE Student Branch OUR TEAM</Navbar.Brand>
+          <Navbar.Brand>&copy; PICT IEEE Student Branch <Link to="/webteam" className="our-team"> OUR TEAM</Link>
+            </Navbar.Brand>
+            
         </Navbar>
        );
 

@@ -30,9 +30,10 @@ function App() {
     <Route path="/coding" component={Codingpage} />
     <Route path="/webteam" component={WebTeam} />
     <Route component={NotFound} />
-    </Switch>      
+    </Switch>
+    <Footer/>      
     </Router>
-    <Footer/>    
+        
     </div>
   );
 }

@@ -1,7 +1,13 @@
-.footer{
-    background-color:rgba(0,0,0,0.3);
-    color: #ffffff;
-    font-weight: bold;
-    justify-content: center;
-    height: 8vh;
+.footer {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-weight: bold;
+  justify-content: center;
+  height: 8vh;
+}
+.our-team {
+  color: #4d516c;
+}
+.our-team:hover {
+  color: #4d516c;
 }
