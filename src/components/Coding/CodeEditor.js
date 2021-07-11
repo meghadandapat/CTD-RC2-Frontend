@@ -20,12 +20,12 @@ const CodeEditor = (props) => {
   // const [isSubmitted, setIsSubmitted] = useState(true);
   const [lang, setLang] = useState("cpp");
   const [result, setResult] = useState({ passed: null, status: null });
-  const [code, setCode] = useState(`#include <bits/stdc++.h>
+  const [code, setCode] = useState(`
+  #include <bits/stdc++.h>
   using namespace std;
-          
-      int main () {
-           
-          }`);
+    int main () {
+
+    }`);
 
   const handleCodeChange = (e) => {
     setCode(e);
@@ -41,29 +41,29 @@ const CodeEditor = (props) => {
     setLang(e.target.value);
     switch (e.target.value) {
       case "java":
-        setCode(`import java.io.*;
+        setCode(`
+import java.io.*;
 import java.util.*;
-        
-        public class main {
-        public static void main (String[] args) throws IOException {
+  public class main {
+  public static void main (String[] args) throws IOException {
           
-         }
-        }`);
+  }
+  }`);
         break;
       case "c":
-        setCode(`#include <stdio.h>
-        
-      int main () {
+        setCode(`
+#include <stdio.h>
+  int main () {
          
-        }`);
+  }`);
         break;
       case "cpp":
-        setCode(`#include <bits/stdc++.h>
+        setCode(`
+#include <bits/stdc++.h>
 using namespace std;
-        
-    int main () {
+  int main () {
          
-        }`);
+  }`);
         break;
       default:
         setCode("");

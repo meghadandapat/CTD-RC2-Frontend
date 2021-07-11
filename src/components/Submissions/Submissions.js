@@ -6,11 +6,12 @@ import QueCard from "./QueCard";
 import SubCard from "./SubCard";
 import ReactPaginate from "react-paginate";
 import axiosInstance from "../../axios";
-
+import Preloader from '../Preloader/Preloader';
 const Submissions = () => {
   let counter = 0;
   const [sub, setSub] = useState([]);
   const [question, setQuestion] = useState(1);
+  const [isLoading, setIsLoading] = useState(true)
 
   const handlePageChange = (e) => {
     setQuestion(e.selected + 1);
@@ -25,9 +26,15 @@ const Submissions = () => {
         (submission) => submission.question_id_fk === question
       );
         console.log(filteredSub);
-        setSub(filteredSub)
+      setSub(filteredSub)
+      setIsLoading(false)
     });
   }, [sub, question]);
+
+  if (isLoading)
+    return (
+      <Preloader/>
+    )
 
   return (
     <div className="sub">
