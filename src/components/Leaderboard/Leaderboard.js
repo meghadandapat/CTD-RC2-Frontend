@@ -9,7 +9,7 @@ import Preloader from '../Preloader/Preloader';
 import axiosInstance from "../../axios";
 
 const Leaderboard = () => {
-    
+    const [userScore, setUserScore] = useState([]);
     const [result, setResult] = useState({});
     const [pagecount, setPagecount] = useState(1)
     const [isLoading, setIsLoading] = useState(true)
@@ -41,7 +41,10 @@ const Leaderboard = () => {
             score: res.data.score,
          })
         })
-        
+        for(let i=0; i<datas.length; i++){
+            if(datas[i].username===result.username) setUserScore(datas[i].score_list);
+                
+        }
       }, [setResult])
 
       if (isLoading) return <Preloader />
@@ -58,7 +61,7 @@ const Leaderboard = () => {
                         data.rank%2!==0 && <tr className="tablerow"><LeaderRow data={data}/></tr> ||
                         data.rank%2!==0 || <tr className="tablerow"><LeaderRow data={data} /></tr>
                     ))}
-                <UserRank result={result}/>
+                <UserRank result={result} userScore={userScore}/>
             </Table>
             <ReactPaginate
                 previousLabel={"Previous"}
