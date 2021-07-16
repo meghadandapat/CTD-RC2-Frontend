@@ -34,7 +34,7 @@ const Leaderboard = () => {
                 
         }
         
-    }, [setDatas, page, pagecount, datas, result.username])
+    }, [setDatas, page, pagecount])
 
     useEffect(() => {
         axiosInstance.get('leaderboard/').then((res) => {
