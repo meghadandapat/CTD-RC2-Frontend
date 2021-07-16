@@ -29,8 +29,12 @@ const Leaderboard = () => {
             setDatas(res.data.page_obj.data);
             setIsLoading(false)
         })
+        for(let i=0; i<datas.length; i++){
+            if(datas[i].username===result.username) setUserScore(datas[i].score_list);
+                
+        }
         
-    }, [setDatas, page, pagecount])
+    }, [setDatas, page, pagecount, datas, result.username])
 
     useEffect(() => {
         axiosInstance.get('leaderboard/').then((res) => {
@@ -41,10 +45,7 @@ const Leaderboard = () => {
             score: res.data.score,
          })
         })
-        for(let i=0; i<datas.length; i++){
-            if(datas[i].username===result.username) setUserScore(datas[i].score_list);
-                
-        }
+       
       }, [setResult])
 
       if (isLoading) return <Preloader />

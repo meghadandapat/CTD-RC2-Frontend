@@ -11,7 +11,7 @@ const CodeLoader = () => {
                
             </div>
             <h5 style={{ color: "#AB5FC6", textAlign: "center" , 
-            lineHeight: "20"}}>Your code is being executed...</h5>
+            lineHeight: "10vh"}}>Your code is being executed...</h5>
         </React.Fragment>
     );
         
