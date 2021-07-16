@@ -11,7 +11,7 @@ import axiosInstance from "../../axios";
 const Leaderboard = () => {
     
     const [result, setResult] = useState({});
-  
+    const [pagecount, setPagecount] = useState(1)
     const [isLoading, setIsLoading] = useState(true)
     const [datas, setDatas] = useState([{
         username: "",
@@ -24,15 +24,17 @@ const Leaderboard = () => {
 
     useEffect(() => {
         axiosInstance.get('leaderboard/?page=' + page).then((res) => {
+            console.log(res)
+            setPagecount(res.data.page_range.length)
             setDatas(res.data.page_obj.data);
             setIsLoading(false)
         })
         
-    }, [setDatas, page])
+    }, [setDatas, page, pagecount])
 
     useEffect(() => {
         axiosInstance.get('leaderboard/').then((res) => {
-          
+   
           setResult({
             username: res.data.username,
             rank: res.data.rank,
@@ -59,12 +61,12 @@ const Leaderboard = () => {
                 <UserRank result={result}/>
             </Table>
             <ReactPaginate
-                previousLabel={"previous"}
-                nextLabel={"next"}
+                previousLabel={"Previous"}
+                nextLabel={"Next"}
                 breakLabel={"..."}
                 initialPage={0}
                 breakClassName={"break-me"}
-                /*pageCount={pageCount}*/
+                pageCount={pagecount}
                 onPageChange={(e) => setPage(e.selected + 1)}
                 containerClassName={"pagination"}
                 subContainerClassName={"pages pagination"}
