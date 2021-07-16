@@ -5,7 +5,7 @@ import "./Navbar.css";
 import Timer from "../Timer/Timer";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({finalTime}) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
@@ -23,7 +23,7 @@ const Navbar = () => {
         <button
           className="navbar-toggler navbar-dark "
           type="button"
-          data-toggle="collapse"
+          data-toggle="collapse"ev
           data-target="#navbarCollapse"
           aria-controls="navbarCollapse"
           aria-expanded={!isNavCollapsed ? true : false}
@@ -33,7 +33,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon navbar-dark" />
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
-       
+        <Timer finalTime={finalTime}></Timer>
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">

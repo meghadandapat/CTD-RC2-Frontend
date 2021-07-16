@@ -1,4 +1,5 @@
 import './App.css';
+
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Submissions from './components/Submissions/Submissions';
 import Testcase from './components/Testcase/Testcase';
@@ -15,10 +16,12 @@ import WebTeam from './components/WebTeam/WebTeam'
 
 
 function App() {
+  const finalTime = new Date("July 16, 2021 20:35:00").getTime();
+
   return (
     <div className="App">
     <Router>
-    <Navbar />
+    <Navbar finalTime={finalTime} />
     <Switch>
     <Route exact path="/" component={Login} />
     <Route path="/submissions" component={Submissions} />
