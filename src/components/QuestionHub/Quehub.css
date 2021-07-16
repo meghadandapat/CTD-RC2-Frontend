@@ -1,0 +1,87 @@
+.qhub{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin-bottom: 5vh;
+  margin-top: 1.5vh;
+  height: 82vh;
+}
+.Cards{
+    /* margin-top: -1.8em; */
+    margin-top: 1.2vh;
+       
+  }
+  
+  
+.qhubcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
+    /* height: 68%; */
+    height:10.3vh;
+    
+  }
+  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);*/
+  
+.title{
+    height:10vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    /* background-image: linear-gradient(to top right, #152238 0%, #152238 100%); */
+    background-color:#4d516c;
+    
+    
+}
+
+.progress{
+    background-image: linear-gradient(to top right, #171c24  0%, #171c24 100%);
+    height: 2.5vh;
+  }
+
+.progress-bar{
+  background-color: #4d516c;
+}
+
+.btn{
+    background-image: linear-gradient(to top right, #4d516c 0%,#4d516c  100%);
+    color: #ffffff;
+  }
+
+.btn:hover{
+  /* background-image: linear-gradient(to top right,  #ffc371 0%, #ff5f6d 100%); */
+
+}
+
+.qbtn{
+  margin-top: -1em;
+}
+.quecontent{
+  font-size: 2.5vh;
+  margin-top: -1.2vh;
+}
+.titlecontent{
+  font-size: 2.7vh;
+  margin-top: -0.4vh;
+}
+.attempt{
+    color: white;
+    font-size: 2vh;
+  }
+
+@media only screen and (max-width: 600px){
+  .attempt{
+    font-size: 1.5vh;
+  }
+} 
+
+@media only screen and (min-width: 1900px){
+  .qbtn{
+    margin-top: 0.8vh;
+  }
+  .quecontent{
+    margin-top: 1vh;
+  }
+  .attempt{
+    font-size: 1.5vh;
+  }
+  .titlecontent{
+    margin-top: -1.5vh;
+  }
+} 

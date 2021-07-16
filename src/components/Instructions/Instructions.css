@@ -1,0 +1,72 @@
+.instruction-card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top right, #152238 0%, #152238 100%);
+    color: #fff;
+
+}
+
+.instructions{
+    color:white;
+    
+}
+
+.instrtitle{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 10vh;
+    text-align: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+.instrcontent{
+    margin-top: 8vh;
+    margin-bottom: 6vh;
+    text-align: justify;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 2.5vh;
+}
+li{
+    margin-top: 1vh;
+}
+
+.instrbutton{
+    font-size: 6vh;
+
+}
+
+.ibtn {
+    background: transparent;
+    background-image: linear-gradient(to top right, #4d516c 0%,#4d516c  100%);
+    color: white;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+  }
+
+
+  .ibtn:active {
+    outline: none;
+    color: #fff;
+    transform: scale(0.93);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: none!important;
+  }
+  .ibtn:after {
+    content: '';
+      display: block;
+      position: absolute;
+      top: -36px;
+      left: -100px;
+      background: white;
+      width: 25px;
+      height: 125px;
+      opacity: 20%;
+      transform: rotate(-45deg);
+  }
+
+  .ibtn:hover:after {
+    left: 135%;
+    transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+     -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+  }

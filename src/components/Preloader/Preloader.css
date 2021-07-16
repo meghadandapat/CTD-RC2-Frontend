@@ -1,0 +1,31 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.load {
+    width: 1rem;
+    height: 1rem;
+    margin: 2rem 0.3rem;
+    background: #4d516c;
+    border-radius: 50%;
+    animation: 0.9s bounce infinite alternate;
+}
+.load:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.load:nth-child(3) {
+    animation-delay: 0.6s;
+}
+@keyframes bounce {
+    to {
+        opacity: 0.3;
+        transform: translate3d(0, -1rem, 0);
+   }
+}
+

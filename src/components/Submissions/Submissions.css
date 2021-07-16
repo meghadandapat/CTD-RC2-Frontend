@@ -1,0 +1,141 @@
+.sub {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .quetext {
+    width: max-content;
+    margin-top: -0.6em;
+    color: #ffffff;
+  }
+  
+  .hidelabel{
+    display:none;
+  }
+  .pagination{
+    margin:0 !important;
+    justify-content: center;
+  
+  }
+  .qcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-color: #4d516c;
+    color: #ffffff !important;
+    height: 47%;
+    margin-top: 1.8vh;
+    margin-bottom: -1vh;
+  }
+
+  .subspacing{
+    height: 10vh;
+  }
+
+  .srno {
+    width: 16.8vw;
+    text-align: center;
+  }
+  .stime {
+    width: 34.6vw;
+    text-align: center;
+  }
+  .sprogress {
+    width: 12.6vw;
+    text-align: center;
+  }
+  .sview {
+    width: 18.5vw;
+  }
+  .btn {
+    color: #ffffff !important;
+  }
+  .subtext {
+    color: #ffffff;
+  }
+  .subcard {
+    margin-top: -2em;
+    margin-bottom: -2em;
+  }
+  
+  .copybtn {
+    width: 6vw;
+    margin: 1vw;
+    float: right;
+    background: #222b36 !important ;
+  }
+  .scard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to top right, #222b36 0%, #222b36 100%);
+    height: 68%;
+    text-align: center;
+  }
+  .btn1 {
+    margin-top: -0.8em;
+    margin-right: -50px;
+  }
+  .space {
+    margin-bottom: 10vh;
+  }
+  .progbar {
+    margin-top: 2.5px;
+  }
+  .ques {
+    margin-top: 3vh;
+  }
+  
+  .codemodal {
+    white-space: pre-line;
+  }
+  .codemodaltext {
+    white-space: pre-line;
+  }
+  .title-text {
+    /* text-align: center; */
+    color: white;
+  }
+  @media only screen and (max-width: 600px) {
+    .scard {
+      font-size: 12px;
+    }
+    .qcard {
+      height: 50%;
+    }
+    .td1 {
+      display: none;
+    }
+    .srno {
+      font-size: 2vh;
+      text-align: left;
+      width: 9vw;
+    }
+    .stime {
+      font-size: 2vh;
+      width: 17vw;
+      text-align: left;
+    }
+    .sprogress {
+      font-size: 2vh;
+      text-align: left;
+      width: 39vw;
+    }
+    .sview {
+      width: 22.5vw;
+    }
+    .progbar {
+      width: 100px;
+    }
+    .btn1 {
+      margin-top: 0px;
+      margin-right: 0px;
+      font-size: 10px;
+    }
+    
+    .stable1 {
+      margin-top: -5vh;
+    }
+    .stable {
+      margin-top: -7vh;
+    }
+    .question-number {
+      font-size: 3vh;
+      margin-left: 2vh;
+    }
+  }
