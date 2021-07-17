@@ -18,9 +18,7 @@ const CodeEditor = (props) => {
   const [lang, setLang] = useState("cpp");
   const [result, setResult] = useState({ passed: null, status: null });
   const [code, setCode] = useState(
-  `#include <bits/stdc++.h>
-  using namespace std;
-    int main () {
+  `#include <bits/stdc++.h>\nusing namespace std;\n\tint main () {
 
     }`);
 
@@ -156,7 +154,7 @@ using namespace std;
         <Row
           className="justify-content-between "
           style={{
-            width: "90%",
+            width: "92%",
             marginLeft: "1rem",
             marginTop: "1.7rem",
           }}

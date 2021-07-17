@@ -36,7 +36,7 @@
 .customfile {
   background-image: linear-gradient(to top right, #4d516c 0%, #4d516c 100%);
   color: white;
-    width:110px;
+    width:8vw;
     border-radius: 5px;
     cursor: pointer;
     height:40px;
@@ -66,6 +66,7 @@
   outline: none;
   overflow: hidden;
   position: relative;
+  width: 8vw;
 }
 .choosecode{
   height: 40px;
@@ -74,6 +75,7 @@
   color: white;
   outline: none;
   overflow: hidden;
+  width:8vw;
 }
 
 .editor-button:active , .choosecode{
