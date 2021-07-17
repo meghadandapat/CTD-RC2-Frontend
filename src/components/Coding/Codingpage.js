@@ -94,6 +94,8 @@ const Codingpage = () => {
             className="justify-content-end"
             style={{ width: "90%" }}
           >
+            < Col lg={3}></Col>
+            < Col lg={3}></Col>
             <Col lg={3}>
               <Button
                 variant="outline-secondary"
@@ -103,6 +105,7 @@ const Codingpage = () => {
                 Run Code
               </Button>
             </Col>
+            < Col lg={3}></Col>
           </Row>
           <Row className="vem"></Row>
         </Col>

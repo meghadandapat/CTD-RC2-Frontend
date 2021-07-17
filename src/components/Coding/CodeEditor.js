@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import "./CodeEditor.css";
-import { Form, Row, Button } from "react-bootstrap";
+import { Form, Row, Button, Col } from "react-bootstrap";
 import axiosInstance from "../../axios";
 import Testcase from "../Testcase/Testcase";
 import AceEditor from "react-ace";
@@ -161,14 +161,15 @@ using namespace std;
             marginTop: "1.7rem",
           }}
         >
-
+          < Col lg={3}>
         <Button
         variant="outline-secondary"
         className="editor-button "
         onClick={handleLoadBuffer}
       >
         Load buffer
-      </Button>
+      </Button></Col>
+        <Col lg={3}>
           <input
             type="file"
             id="choose-file"
@@ -179,8 +180,10 @@ using namespace std;
           <label htmlFor="choose-file" className="customfile choosecode moveup">
             Choose File
           </label>
+        </Col>
          
-
+        < Col lg={3}></Col>
+        < Col lg={3}>
           <Button
             variant="outline-secondary"
             className="editor-button submit"
@@ -188,6 +191,7 @@ using namespace std;
           >
             Submit
           </Button>
+          </Col>
         </Row>
       </Form.Group>
     </Form>

@@ -44,15 +44,16 @@
     padding-top:8px; 
     margin-bottom:0
 }
-.moveup{
+/* .moveup{
   position: absolute;
   margin-left: 8vw; 
-}
+}*/
 .movemoreup{
   position: absolute;
-  margin-top: -95px;
- 
-}
+  margin-top: -110px;
+  margin-left: 2vw;
+  width: 8vw;
+} 
 .vem{
   height: 2vh;
 }
