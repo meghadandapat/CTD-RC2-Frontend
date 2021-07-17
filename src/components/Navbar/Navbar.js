@@ -62,15 +62,7 @@ const Navbar = () => {
                 Leaderboard
               </NavLink>
             </li>
-            <li className="nav-item">
-            <NavLink
-              to="/webteam"
-              className="nav-link"
-              activeClassName="currentpage"
-            >
-              Web Team
-            </NavLink>
-          </li>
+            
 
             <li className="nav-item">
               <Logout />
