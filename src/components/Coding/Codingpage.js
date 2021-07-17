@@ -20,24 +20,6 @@ const Codingpage = () => {
     setRunCode({ input: e.target.value });
   };
 
-  let fileReader;
-
-  const handleFileRead = (e) => {
-    const content = fileReader.result;
-    console.log(content);
-   
-  };
-  const handleFileChosen = (file) => {
-    var extension =file.name.split('.').pop().toLowerCase();
-    if(extension==="cpp" || extension==="c" || extension==="py" )
-    {
-      fileReader = new FileReader();
-      fileReader.onloadend = handleFileRead;
-      fileReader.readAsText(file);
-    }
-    else {alert("Uploading only .c, .cpp & .py files is allowed.");}
-
-};
 
   const handleSubmit = (e) => {
     axiosInstance
@@ -109,33 +91,17 @@ const Codingpage = () => {
             setIsSubmitted={setIsSubmitted}
           ></CodeEditor>
           <Row
-            className="justify-content-center"
-            style={{ width: "90%", marginLeft: "1rem" }}
+            className="justify-content-end"
+            style={{ width: "90%" }}
           >
             <Col lg={3}>
-              {" "}
               <Button
                 variant="outline-secondary"
                 className="editor-button movemoreup run"
                 onClick={handleSubmit}
               >
                 Run Code
-              </Button>{" "}
-            </Col>
-            <Col lg={3}>
-              <input
-                type="file"
-                id="choose-file"
-                name="choose-file"
-                onChange={(e) => handleFileChosen(e.target.files[0])}
-                hidden
-              />
-              <label
-                htmlFor="choose-file"
-                className="customfile choosecode moveup"
-              >
-                Choose File
-              </label>{" "}
+              </Button>
             </Col>
           </Row>
           <Row className="vem"></Row>

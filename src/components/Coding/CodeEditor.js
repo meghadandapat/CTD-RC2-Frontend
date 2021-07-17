@@ -5,14 +5,11 @@ import { Form, Row, Button } from "react-bootstrap";
 import axiosInstance from "../../axios";
 import Testcase from "../Testcase/Testcase";
 import AceEditor from "react-ace";
-import CodeLoader from './CodeLoader'
-import Preloader from '../Preloader/Preloader'
 import "brace/mode/java";
 import "brace/mode/c_cpp";
 import "brace/mode/python";
 import "brace/ext/modelist";
 import "brace/theme/dracula";
-import { render } from "@testing-library/react";
 
 const CodeEditor = (props) => {
   const history = useHistory();
@@ -20,8 +17,8 @@ const CodeEditor = (props) => {
   // const [isSubmitted, setIsSubmitted] = useState(true);
   const [lang, setLang] = useState("cpp");
   const [result, setResult] = useState({ passed: null, status: null });
-  const [code, setCode] = useState(`
-  #include <bits/stdc++.h>
+  const [code, setCode] = useState(
+  `#include <bits/stdc++.h>
   using namespace std;
     int main () {
 
@@ -41,29 +38,32 @@ const CodeEditor = (props) => {
     setLang(e.target.value);
     switch (e.target.value) {
       case "java":
-        setCode(`
-import java.io.*;
+        setCode(
+          `import java.io.*;
 import java.util.*;
   public class main {
   public static void main (String[] args) throws IOException {
           
   }
-  }`);
+  }`
+        );
         break;
       case "c":
-        setCode(`
-#include <stdio.h>
+        setCode(
+          `#include <stdio.h>
   int main () {
          
-  }`);
+  }`
+        );
         break;
       case "cpp":
-        setCode(`
-#include <bits/stdc++.h>
+        setCode(
+          `#include <bits/stdc++.h>
 using namespace std;
   int main () {
          
-  }`);
+  }`
+        );
         break;
       default:
         setCode("");
@@ -96,11 +96,25 @@ using namespace std;
         props.setIsSubmitted(true);
       });
   };
-  // if (!props.isSubmitted) return <CodeLoader/> 
+  // if (!props.isSubmitted) return <CodeLoader/>
 
-  
-  
+  let fileReader;
 
+  const handleFileRead = (e) => {
+    const content = fileReader.result;
+    console.log(content);
+    setCode(content);
+  };
+  const handleFileChosen = (file) => {
+    var extension = file.name.split(".").pop().toLowerCase();
+    if (extension === "cpp" || extension === "c" || extension === "py") {
+      fileReader = new FileReader();
+      fileReader.onloadend = handleFileRead;
+      fileReader.readAsText(file);
+    } else {
+      alert("Uploading only .c, .cpp & .py files is allowed.");
+    }
+  };
 
   return (
     <Form>
@@ -142,21 +156,31 @@ using namespace std;
         <Row
           className="justify-content-between "
           style={{
-            
             width: "90%",
             marginLeft: "1rem",
             marginTop: "1.7rem",
           }}
         >
 
-          <Button
-            variant="outline-secondary"
-            className="editor-button "
-            onClick={handleLoadBuffer}
-          >
-            Load buffer
-          </Button>
- 
+        <Button
+        variant="outline-secondary"
+        className="editor-button "
+        onClick={handleLoadBuffer}
+      >
+        Load buffer
+      </Button>
+          <input
+            type="file"
+            id="choose-file"
+            name="choose-file"
+            onChange={(e) => handleFileChosen(e.target.files[0])}
+            hidden
+          />
+          <label htmlFor="choose-file" className="customfile choosecode moveup">
+            Choose File
+          </label>
+         
+
           <Button
             variant="outline-secondary"
             className="editor-button submit"

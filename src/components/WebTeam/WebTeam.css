@@ -50,15 +50,13 @@
   .ourTeam .i .c .wrap .info .name {
     color: white;
     margin: 0;
-    font-size: 24px;
-    font-size: 2.4rem;
-    font-weight: 700;
+    font-size: 1.4rem;
+    font-weight: 600;
     margin: 0 0 8px 0;
   }
   
   .ourTeam .i .c .wrap .info .position {
     margin: 0;
-    font-size: 14px;
     font-size: 1.4rem;
     color: #555659;
   }

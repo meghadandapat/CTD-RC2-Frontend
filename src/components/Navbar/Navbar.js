@@ -15,7 +15,8 @@ const Navbar = () => {
     location.pathname === "/submissions" ||
     location.pathname === "/leaderboard" ||
     location.pathname.includes("coding") ||
-    location.pathname === "/testcases"
+    location.pathname === "/testcases" ||
+    location.pathname==="/webteam"
   )
     return (
       <nav className="navbar navbar-expand-md ">

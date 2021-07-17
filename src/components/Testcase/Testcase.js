@@ -9,14 +9,18 @@ const Testcase = (props) => {
 console.log(props);
 
   const List1 = [1, 2, 3].map((num) => <TestcaseCard val={num} status={props.location.state[0].passed[num - 1]}/>);
-  const List2 = [4, 5, 6].map((num) => <TestcaseCard val={num} status={props.location.state[0].passed[num - 1]}/>);
+  const List2 = [4, 5, 6].map((num) => <TestcaseCard val={num} status={props.location.state[0].passed[num - 1]} />);
+  
   let history = useHistory();
+  const goBack = () => {
+      history.goBack()
+  }
 
   return (
     <Container fluid>
       <Row>
         <Col lg={8}>
-        <Row ><Button variant="default" style={{ margin: "5px" }} onClick={() => history.goBack()}><i className="fas fa-arrow-circle-left" style={{ fontSize: "28px" }}></i></Button>
+        <Row ><Button variant="default" style={{ margin: "5px" }} onClick={goBack}><i className="fas fa-arrow-circle-left" style={{ fontSize: "28px" }}></i></Button>
         <div><p style={{color:"white", margin:"2vh"}}>Go back</p></div>
         </Row>
           <Row className="justify-content-center">{List1}</Row>

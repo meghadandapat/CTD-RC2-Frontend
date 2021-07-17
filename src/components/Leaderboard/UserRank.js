@@ -12,22 +12,22 @@ const UserRank = ({result, userScore}) => {
                 <p className="datauser">{result.username}</p>
             </td>
             <td>
-                <p className="data">{userScore[0]}</p>
+                <p className="data"></p>
             </td>
             <td>
-                <p className="data">{userScore[1]}</p>
+                <p className="data"></p>
             </td>
             <td>
-                <p className="data">{userScore[2]}</p>
+                <p className="data"></p>
             </td>
             <td>
-                <p className="data">{userScore[3]}</p>
+                <p className="data"></p>
             </td>
             <td>
-                <p className="data">{userScore[4]}</p>
+                <p className="data"></p>
             </td>
             <td>
-                <p className="data">{userScore[5]}</p>
+                <p className="data"></p>
             </td>
             <td>
                 <p className="datascore">{result.score}</p>
