@@ -64,9 +64,7 @@ const Navbar = ({finalTime}) => {
                 Leaderboard
               </NavLink>
             </li>
-          
-
-            <li className="nav-item">
+  <li className="nav-item">
               <Logout />
             </li>
           </ul>

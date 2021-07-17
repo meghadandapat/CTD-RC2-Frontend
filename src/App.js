@@ -11,7 +11,8 @@ import Leaderboard from './components/Leaderboard/Leaderboard';
 import Result from './components/Result/Result';
 import Codingpage from './components/Coding/Codingpage';
 import NotFound from './components/NotFound/NotFound';
-import WebTeam from './components/WebTeam/WebTeam';
+import OurTeam from './components/WebTeam/OurTeam';
+
 
 // Routers
 
@@ -34,7 +35,7 @@ function App() {
     <PrivateRoute path="/instructions" component={Instructions} />
     <PrivateRoute path="/leaderboard" component={Leaderboard} />
     <PublicRoute path="/result" component={Result} />
-    <PublicRoute path="/webteam" component={WebTeam} />
+    <PublicRoute path="/ourteam" component={OurTeam} />
     <PrivateRoute path="/coding/:id" component={Codingpage} />
     <Route component={NotFound} />
     </Switch>

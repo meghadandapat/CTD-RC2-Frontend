@@ -3,14 +3,14 @@ import "./WebTeam.css";
 const WebCard = ({ name, src }) => {
   return (
 
-      <div className="col-12 col-sm-6 col-md-4 i align-items-center">
+      <div className="col-12 col-sm-6 col-md-4 i align-items-center imagecard">
         <div className="c text-center">
           <div className="wrap">
             <img
               src={src}
               alt={name}
-              width="200"
-              height="250"
+              // width="300"
+              // height="450"
               className="img-responsive"
             />
             <div className="info">

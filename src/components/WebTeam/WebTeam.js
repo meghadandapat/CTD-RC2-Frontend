@@ -4,11 +4,11 @@ import Neil from "./assets/neil.jpg";
 
 const WebTeam = () => {
   const ourTeam = [
-    { name: "Varada Kalaskar", src: "./assets/varada.jpeg" },
-    { name: "Megha Dandapat", src: "" },
-    { name: "Esha Anvekar", src: "" },
-    { name: "Atharva Naphade", src: "" },
-    { name: "Neil Deshpande", src: "" },
+    { name: "Varada Kalaskar", src: "../img/varada.jpeg" },
+    { name: "Megha Dandapat", src: "../img/megha.jpeg" },
+    { name: "Esha Anvekar", src: "../img/esha.jpeg" },
+    { name: "Atharva Naphade", src: "../img/atharva.jpeg" },
+    { name: "Neil Deshpande", src: "../img/neil.jpg" },
     { name: "Abhay", src: "" },
   ];
 

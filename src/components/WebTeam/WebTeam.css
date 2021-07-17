@@ -142,3 +142,13 @@
   .row2 {
     margin-top: 10vh;
   }
+
+  .wrap{
+    width: 15vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-responsive{
+    justify-self: center;
+  }
+  
