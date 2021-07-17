@@ -4,12 +4,12 @@ import './Leaderboard.css';
 import React, { useState, useEffect } from 'react'
 import ReactPaginate from 'react-paginate';
 import TitleLeader from "./TitleLeader";
-import UserRank from "./UserRank";
+
 import Preloader from '../Preloader/Preloader';
 import axiosInstance from "../../axios";
 
 const Leaderboard = () => {
-    const [result, setResult] = useState({});
+   
     const [pagecount, setPagecount] = useState(1)
     const [isLoading, setIsLoading] = useState(true)
     const [datas, setDatas] = useState([{
@@ -32,17 +32,7 @@ const Leaderboard = () => {
         
     }, [setDatas, page, pagecount])
 
-    useEffect(() => {
-        axiosInstance.get('leaderboard/').then((res) => {
-   
-          setResult({
-            username: res.data.username,
-            rank: res.data.rank,
-            score: res.data.score,
-         })
-        })
-       
-      }, [setResult])
+  
 
       if (isLoading) return <Preloader />
     return ( 
@@ -58,7 +48,7 @@ const Leaderboard = () => {
                         data.rank%2!==0 && <tr className="tablerow"><LeaderRow data={data}/></tr> ||
                         data.rank%2!==0 || <tr className="tablerow"><LeaderRow data={data} /></tr>
                     ))}
-                <UserRank result={result} />
+                
             </Table>
             <ReactPaginate
                 previousLabel={"Previous"}
