@@ -2,9 +2,10 @@ import React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import Logout from "../Logout/Logout";
 import "./Navbar.css";
+import Timer from  "../Timer/Timer"
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({finalTime}) => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
@@ -32,6 +33,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon navbar-dark" />
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
+        <Timer finalTime={finalTime}></Timer>
      
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
@@ -62,15 +64,7 @@ const Navbar = () => {
                 Leaderboard
               </NavLink>
             </li>
-            <li className="nav-item">
-            <NavLink
-              to="/webteam"
-              className="nav-link"
-              activeClassName="currentpage"
-            >
-              Web Team
-            </NavLink>
-          </li>
+          
 
             <li className="nav-item">
               <Logout />

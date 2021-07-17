@@ -14,7 +14,7 @@ import "brace/theme/dracula";
 const CodeEditor = (props) => {
   const history = useHistory();
   const { id } = useParams();
-  // const [isSubmitted, setIsSubmitted] = useState(true);
+  const [userScore, setUserScore] = useState('');
   const [lang, setLang] = useState("cpp");
   const [result, setResult] = useState({ passed: null, status: null });
   const [code, setCode] = useState(
@@ -68,6 +68,14 @@ using namespace std;
     }
   };
 
+  useEffect(() => {
+    axiosInstance.get("leaderboard/").then((res) => {
+      console.log(res.data);
+      setUserScore(res.data.score);
+    })
+  }, [setUserScore]);
+
+
   const handleSubmit = (e) => {
     // render(<CodeLoader />)
     props.setIsSubmitted(false);
@@ -105,12 +113,12 @@ using namespace std;
   };
   const handleFileChosen = (file) => {
     var extension = file.name.split(".").pop().toLowerCase();
-    if (extension === "cpp" || extension === "c" || extension === "py") {
+    if (extension === "cpp" || extension === "c" || extension === "py" || extension==="java") {
       fileReader = new FileReader();
       fileReader.onloadend = handleFileRead;
       fileReader.readAsText(file);
     } else {
-      alert("Uploading only .c, .cpp & .py files is allowed.");
+      alert("Uploading only .c, .cpp , .java & .py files is allowed.");
     }
   };
 
@@ -130,7 +138,7 @@ using namespace std;
               style={{ marginRight: "80px" }}
               className="score"
               type="text"
-              value="Score: 000"
+              value={"Score:" + userScore}
               readOnly
             />
           </Row>

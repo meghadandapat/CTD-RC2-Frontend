@@ -21,10 +21,11 @@ import PublicRoute from './components/utils/PublicRoute';
 
 
 function App() {
+  const finalTime = new Date("July 19, 2021 02:35:00").getTime();
   return (
     <div className="App">
     <Router>
-    <Navbar />
+    <Navbar finalTime={finalTime}  />
     <Switch>
     <PublicRoute restricted={false} exact path="/" component={Login} />
     <PrivateRoute path="/submissions" component={Submissions} />
