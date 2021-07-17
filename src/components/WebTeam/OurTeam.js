@@ -1,9 +1,19 @@
 import './Team.css';
+import {Button} from 'react-bootstrap'
+import { useHistory } from "react-router-dom";
 
 const OurTeam = () => {
+  let history = useHistory();
+  const goBack = () => {
+      history.goBack()
+  }
     return(
 
-        <div className="container">
+      <div className="container">
+     
+      <Button onClick={goBack} className="close-button" variant="light">
+      X
+      </Button>
         <div className="row mar justify-content-center">
           <div className="col-12 col-sm-6 col-md-4 col-lg-4">
             <div className="our-team">
@@ -95,7 +105,7 @@ const OurTeam = () => {
               </ul>
             </div>
           </div>
-          
+
         </div>
         <div className="row mar">
           <div className="col-12 col-sm-6 col-md-4 col-lg-4">
@@ -191,7 +201,7 @@ const OurTeam = () => {
           </div>
           <div className="spaceteam"></div>
       </div>
-      
+
     );
 }
 

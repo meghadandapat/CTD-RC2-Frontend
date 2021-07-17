@@ -17,6 +17,18 @@
 .mar{
     margin-top:2vw;
 }
+.close-button {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+  border-radius: 100%;
+  transform: scale(1.15);
+}
+.close-button:hover {
+  background-color: rgb(219, 219, 219);
+  color: #474747;
+  transform: scale(1);
+}
   
   .our-team .picture {
     display: inline-block;
@@ -113,12 +125,15 @@
 
   @media(max-width:425px){
 
-    .our-team .picture {
-        height:250px;
-        width:250px;
+    .our-team{
+    
+        width:80vw;
     }
     .mar{
         margin-top:15vw;
+    }
+    .spaceteam{
+      height: 10vh;
     }
 
 
