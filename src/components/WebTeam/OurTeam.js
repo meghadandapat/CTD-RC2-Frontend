@@ -18,7 +18,8 @@ const OurTeam = () => {
       <Button onClick={goBack} className="close-button">
         X
       </Button>
-      <div className="container">
+      <div className="container d-flex justify-content-center align-items-center" style={{ height: "80vh" }}>
+        <div className="centered-team " style={{width:"100%"}}>
         <div className="row mar justify-content-center">
           <WebCard name={"Varada Kalaskar"} img={Varada} github={"https://github.com/varada-kalaskar"} linkedin={""}/>
           <WebCard name={"Megha Dandapat"} img={Megha} github={"https://github.com/meghadandapat"} linkedin={"" }/>
@@ -30,7 +31,8 @@ const OurTeam = () => {
         </div>
         <div className="spaceteam"></div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 };
 

@@ -15,17 +15,17 @@ const Submissions = () => {
 
   const handlePageChange = (e) => {
     setQuestion(e.selected + 1);
-    console.log(question);
+    
   };
 
   useEffect(() => {
     axiosInstance.get("submissions/").then((res) => {
       const datas = res.data;
-      console.log(datas);
+  
       const filteredSub = datas.filter(
         (submission) => submission.question_id_fk === question
       );
-        console.log(filteredSub);
+        
       setSub(filteredSub)
       setIsLoading(false)
     });

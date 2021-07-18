@@ -70,7 +70,7 @@ using namespace std;
 
   useEffect(() => {
     axiosInstance.get("leaderboard/").then((res) => {
-      console.log(res.data);
+      
       setUserScore(res.data.score);
     })
   }, [setUserScore]);
@@ -90,7 +90,7 @@ using namespace std;
           status: res.data.status,
           passed: res.data.passed_test_cases,
         });
-        console.log(res);
+        
         history.push("/testcases", [
           {
             error: res.data.error,
@@ -108,7 +108,7 @@ using namespace std;
 
   const handleFileRead = (e) => {
     const content = fileReader.result;
-    console.log(content);
+  
     setCode(content);
   };
   const handleFileChosen = (file) => {

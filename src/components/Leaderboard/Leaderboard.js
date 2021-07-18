@@ -23,7 +23,7 @@ const Leaderboard = () => {
 
     useEffect(() => {
         axiosInstance.get('leaderboard/?page=' + page).then((res) => {
-            console.log(res)
+            
             setPagecount(res.data.page_range.length)
             setDatas(res.data.page_obj.data);
             setIsLoading(false)

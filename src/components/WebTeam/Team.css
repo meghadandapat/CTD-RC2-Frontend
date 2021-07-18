@@ -8,7 +8,7 @@
     cursor:pointer;
     margin-bottom:1.5vw;
     color: #ffffff;
-    width:16vw;
+    width:72%;
     height:98%;
     
   }
@@ -19,7 +19,7 @@
   /* position:absolute; */
   /* margin-top:30px; */
   /* margin-top: 5px; */
-  margin-right: 70px;
+  margin-right: 20px;
   border-radius: 100%;
   transform: scale(1.4);
 }
