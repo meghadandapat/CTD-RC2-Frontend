@@ -1,208 +1,37 @@
-import './Team.css';
-import {Button} from 'react-bootstrap'
+import "./Team.css";
+import { Button } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import WebCard from "./WebCard";
+import Varada from "./assets/varada.jpeg"
+import Megha from "./assets/megha.jpg"
+import Esha from "./assets/esha.jpeg"
+import Atharva from "./assets/atharva.jpeg"
+import Neil from "./assets/neil.jpg"
 
 const OurTeam = () => {
   let history = useHistory();
   const goBack = () => {
-      history.goBack()
-  }
-    return(
-
-      <div className="container">
-     
-      <Button onClick={goBack} className="close-button" variant="light">
-      X
+    history.goBack();
+  };
+  return (
+    <div>
+      <Button onClick={goBack} className="close-button">
+        X
       </Button>
+      <div className="container">
         <div className="row mar justify-content-center">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-4">
-            <div className="our-team">
-              <div className="picture">
-                <img
-                  className="img-fluid"
-                  src="../img/varada.jpeg"
-                />
-              </div>
-              <div className="team-content">
-                <h3 className="name">Varada Kalaskar</h3>
-                <h5 className="pos">Web Developer</h5>
-              </div>
-              <ul className="social">
-                <li>
-                  <a
-                    href="https://github.com/Frankenstein25"
-                    className="fa fa-github"
-                    aria-hidden="true"
-                  />
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/aneesh-berde/"
-                    className="fa fa-linkedin"
-                    aria-hidden="true"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-4">
-            <div className="our-team">
-              <div className="picture">
-                <img
-                  className="img-fluid"
-                  src="../img/megha.jpg"
-                />
-              </div>
-              <div className="team-content">
-                <h3 className="name">Megha Dandapat</h3>
-                <h5 className="pos">Web Developer</h5>
-              </div>
-              <ul className="social">
-              <li>
-                  <a
-                    href="https://github.com/atharvanaphade"
-                    className="fa fa-github"
-                    aria-hidden="true"
-                  />
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/atharva-naphade-540236148/"
-                    className="fa fa-linkedin"
-                    aria-hidden="true"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="col-12 col-sm-6 col-md-4 col-lg-4">
-            <div className="our-team">
-              <div className="picture">
-                <img
-                  className="img-fluid"
-                  src="../img/esha.jpeg"
-                />
-              </div>
-              <div className="team-content">
-                <h3 className="name">Esha Anvekar</h3>
-                <h5 className="pos">Web Developer</h5>
-              </div>
-              <ul className="social">
-              <li>
-                  <a
-                    href="https://github.com/anupampatil44"
-                    className="fa fa-github"
-                    aria-hidden="true"
-                  />
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/anupam-patil-114b841b0"
-                    className="fa fa-linkedin"
-                    aria-hidden="true"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-
+          <WebCard name={"Varada Kalaskar"} img={Varada} github={"https://github.com/varada-kalaskar"} linkedin={""}/>
+          <WebCard name={"Megha Dandapat"} img={Megha} github={"https://github.com/meghadandapat"} linkedin={"" }/>
+          <WebCard name={"Esha Anvekar"} img={Esha} github={"https://github.com/eshanvekar-01" } linkedin={ ""}/>
         </div>
-        <div className="row mar">
-          <div className="col-12 col-sm-6 col-md-4 col-lg-4">
-              <div className="our-team">
-                <div className="picture">
-                  <img
-                    className="img-fluid"
-                    src="../img/atharva.jpeg"
-                  />
-                </div>
-                <div className="team-content">
-                  <h3 className="name">Atharva Naphade</h3>
-                  <h5 className="pos">Web Developer</h5>
-                </div>
-                <ul className="social">
-                <li>
-                    <a
-                      href="http://github.com/Vaidehizade"
-                      className="fa fa-github"
-                      aria-hidden="true"
-                    />
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/vaidehi-zade-173450191/"
-                      className="fa fa-linkedin"
-                      aria-hidden="true"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-md-4 col-lg-4">
-              <div className="our-team">
-                <div className="picture">
-                  <img
-                    className="img-fluid"
-                    src="../img/neil.jpg"
-                  />
-                </div>
-                <div className="team-content">
-                  <h3 className="name">Neil Deshpande</h3>
-                  <h5 className="pos">Web Developer</h5>
-                </div>
-                <ul className="social">
-                <li>
-                    <a
-                      href="http://github.com/Vaidehizade"
-                      className="fa fa-github"
-                      aria-hidden="true"
-                    />
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/vaidehi-zade-173450191/"
-                      className="fa fa-linkedin"
-                      aria-hidden="true"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-12 col-sm-6 col-md-4 col-lg-4">
-              <div className="our-team">
-                <div className="picture">
-                  <img
-                    className="img-fluid"
-                    src="../img/abhay.jpeg"
-                  />
-                </div>
-                <div className="team-content">
-                  <h3 className="name">Abhay</h3>
-                  <h5 className="pos">Web Developer</h5>
-                </div>
-                <ul className="social">
-                <li>
-                    <a
-                      href="http://github.com/Vaidehizade"
-                      className="fa fa-github"
-                      aria-hidden="true"
-                    />
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.linkedin.com/in/vaidehi-zade-173450191/"
-                      className="fa fa-linkedin"
-                      aria-hidden="true"
-                    />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="spaceteam"></div>
+        <div className="row mar justify-content-center" style={{marginTop:"2vw"}}>
+          <WebCard name={"Atharva Naphade"} img={Atharva} github={"https://github.com/atharvanaphade" } linkedin={"" }/>
+          <WebCard name={"Neil Deshpande"} img={Neil} github={"https://github.com/deshpandeneil" } linkedin={"" }/>
+        </div>
+        <div className="spaceteam"></div>
       </div>
-
-    );
-}
+    </div>
+  );
+};
 
 export default OurTeam;

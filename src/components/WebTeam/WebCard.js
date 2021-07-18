@@ -1,34 +1,41 @@
 import { Link } from "react-router-dom";
-import "./WebTeam.css";
-const WebCard = ({ name, src }) => {
+import "./Team.css";
+const WebCard = ({ name, img, github, linkedin }) => {
   return (
 
-      <div className="col-12 col-sm-6 col-md-4 i align-items-center imagecard">
-        <div className="c text-center">
-          <div className="wrap">
-            <img
-              src={src}
-              alt={name}
-              // width="300"
-              // height="450"
-              className="img-responsive"
-            />
-            <div className="info">
-              <h5 className="name">{name}</h5>
-            </div>
-          </div>
-          <div className="more">
-            <div className="socials">
-              <Link to="" className="github">
-                <i className="fa fa-github"></i>
-              </Link>
-              <Link to="" className="linkedin">
-                <i className="fa fa-linkedin"></i>
-              </Link>
-            </div>
-          </div>
-        </div>
+    <div className="col-12 col-sm-6 col-md-4 col-lg-4 justify-content-center d-flex" >
+    <div className="our-team">
+      <div className="picture">
+        <img
+          className="img-fluid"
+            src={img}
+            alt={name}
+        />
       </div>
+      <div className="team-content">
+          <h4 className="name">{name}</h4>
+       
+      </div>
+      <ul className="social">
+        <li>
+          <a
+            href={github}
+            className="fa fa-github"
+              aria-hidden="true"
+              target="_blank"
+          />
+        </li>
+        <li>
+          <a
+            href={linkedin}
+            className="fa fa-linkedin"
+              aria-hidden="true"
+              target="_blank"
+          />
+        </li>
+      </ul>
+    </div>
+  </div>
   
   );
 };

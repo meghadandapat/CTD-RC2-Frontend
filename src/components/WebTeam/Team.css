@@ -1,40 +1,39 @@
 .our-team {
-    padding: 25px 0 40px;
+    padding: 25px 0 20px;
     background: #222b36;
     text-align: center;
     overflow: hidden;
     position: relative;
     border-radius:5px;
     cursor:pointer;
-    margin-top:1vw;
-    margin-bottom:3vw;
+    margin-bottom:1.5vw;
     color: #ffffff;
-    width: 20vw;
+    width:16vw;
+    height:98%;
+    
   }
-.spaceteam{
-    height: 5vh;
-}
-.mar{
-    margin-top:2vw;
-}
+
+
 .close-button {
   float: right;
-  margin-top: 5px;
-  margin-right: 20px;
+  /* position:absolute; */
+  /* margin-top:30px; */
+  /* margin-top: 5px; */
+  margin-right: 70px;
   border-radius: 100%;
-  transform: scale(1.15);
+  transform: scale(1.4);
 }
 .close-button:hover {
   background-color: rgb(219, 219, 219);
   color: #474747;
-  transform: scale(1);
+  transform: scale(1.25);
 }
   
   .our-team .picture {
     display: inline-block;
-    height: 180px;
-    width: 180px;
-    margin-bottom: 50px;
+    height: 140px;
+    width: 140px;
+    margin-bottom: 40px;
     z-index: 1;
     position: relative;
   }
