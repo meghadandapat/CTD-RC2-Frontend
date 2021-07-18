@@ -16,8 +16,8 @@ const Navbar = ({finalTime}) => {
     location.pathname === "/submissions" ||
     location.pathname === "/leaderboard" ||
     location.pathname.includes("coding") ||
-    location.pathname === "/testcases" ||
-    location.pathname==="/webteam"
+    location.pathname === "/testcases" 
+   
   )
     return (
       <nav className="navbar navbar-expand-md ">
@@ -33,7 +33,7 @@ const Navbar = ({finalTime}) => {
           <span className="navbar-toggler-icon navbar-dark" />
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
-        <Timer finalTime={finalTime}></Timer>
+        
      
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
