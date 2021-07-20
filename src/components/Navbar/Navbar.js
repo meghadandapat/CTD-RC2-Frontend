@@ -19,7 +19,7 @@ const Navbar = () => {
       
     })
     
-  }, [setUserName])
+  },[])
  
   if (
     location.pathname === "/questionhub" ||
