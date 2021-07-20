@@ -1,60 +1,76 @@
-import { useState, useEffect, useRef } from "react";
-import { Redirect } from 'react-router-dom'
-import './Timer.css'
+import React from "react";
+import { CountdownCircleTimer } from "react-countdown-circle-timer";
+import {Redirect} from 'react-router-dom'
 
-  const Timer = ({ finalTime }) => {
-    const [sec, setSec] = useState('');
-    const [min, setMin] = useState('');
-    const [hrs, setHrs] = useState('');
+const minuteSeconds = 60;
+const hourSeconds = 3600;
+const daySeconds = 86400;
 
-    const [seconds, setSeconds] = useState(0);
-    const [minutes, setMinutes] = useState(0);
-    const [hours, setHours] = useState(0);
-    
+const timerProps = {
+  isPlaying: true,
+  size: 65,
+  strokeWidth: 6
+};
 
-    let interval = useRef;
-    const startTimer = () => {
-      interval = setInterval(() => {
-      const now = new Date().getTime();
-      const gap = finalTime - now; 
-      var hour = Math.floor((gap % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minute = Math.floor((gap % (1000 * 60 * 60)) / (1000 * 60));
-      var second = Math.floor((gap % (1000 * 60)) / 1000);
-      setHours(hour);
-      setMinutes(minute);
-      setSeconds(second);
+const renderTime = (dimension, time) => {
+  if (dimension < 1) {
+    return (<Redirect push to="/result"/>)
+  }
+  return (
+    <div className="time-wrapper">
+      <div className="time">{time}</div>
+      <div>{dimension}</div>
+    </div>
+  );
+};
 
-        if (gap < 0) {
-          clearInterval(interval.current);
-        } else {
-          minute>=10 ? setMin(minute) : setMin(`0`+minute)
-          second >= 10 ? setSec(second) : setSec(`0` + second)
-          hour >= 10 ? setHrs(hours) : setHrs(`0` + hours)
-         
-        }
-      }, 1000);
-    };
+const getTimeSeconds = (time) => (minuteSeconds - time) | 0;
+const getTimeMinutes = (time) => ((time % hourSeconds) / minuteSeconds) | 0;
+const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
+const getTimeDays = (time) => (time / daySeconds) | 0;
 
-    useEffect(() => {
-
-      startTimer();
-      return () => {
-        clearInterval(interval.current);
-      };
-    }, [startTimer]);
-
-
+export default function Timer() {
+ 
+  var endTime = 1740; // This is the time allowed
+  var saved_countdown = localStorage.getItem('saved_countdown');
+  
+  if(saved_countdown == null) {
+      // Set the time we're counting down to using the time allowed
+      var new_countdown = Date.now() / 1000 + 1740;
+  
+      endTime = new_countdown;
+      localStorage.setItem('saved_countdown', new_countdown);
+  } else {
+      endTime = saved_countdown;
+  }
   
 
-  if(hours<0 && minutes<0 && seconds<0) return (<Redirect push to="/result"/>)
+// const stratTime = Date.now() / 1000; 
+// use UNIX timestamp in seconds
+
+  const remainingTime = endTime -  Date.now() / 1000;
+  const days = Math.ceil(remainingTime / daySeconds);
+  const daysDuration = days * daySeconds;
+
+
+
+  return (
+    <div className="countdown-circle">
       
-
-
-    return (
-      <div className="time">
-      {hrs} : {min} : {sec}
-  </div>
-    );
-  };
-
-  export default Timer;
+      <CountdownCircleTimer
+        {...timerProps}
+        colors={[["#fff"]]}
+        duration={hourSeconds}
+        initialRemainingTime={remainingTime % hourSeconds}
+        onComplete={(totalElapsedTime) => [
+          remainingTime - totalElapsedTime > minuteSeconds
+        ]}
+      >
+        {({ elapsedTime }) =>
+          renderTime( getTimeMinutes(hourSeconds - elapsedTime))
+        }
+      </CountdownCircleTimer>
+    
+    </div>
+  );
+}

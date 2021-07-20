@@ -5,7 +5,7 @@ import "./Navbar.css";
 import Timer from  "../Timer/Timer"
 import { useState } from "react";
 
-const Navbar = ({finalTime}) => {
+const Navbar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
@@ -34,7 +34,7 @@ const Navbar = ({finalTime}) => {
         </button>
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
         
-     
+     <Timer/>
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
