@@ -14,7 +14,9 @@ const timerProps = {
 
 const renderTime = (dimension, time) => {
   if (dimension < 1) {
-    return (<Redirect push to="/result"/>)
+    localStorage.removeItem('saved_countdown');
+    return (<Redirect push to="/result" />)
+    
   }
   return (
     <div className="time-wrapper">
