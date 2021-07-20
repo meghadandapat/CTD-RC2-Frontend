@@ -1,17 +1,17 @@
 import './CodeLoader.css';
 import React from 'react'
-
+import Preloader from "../Preloader/Preloader";
 const CodeLoader = () => {
     return (
         <React.Fragment>
-            <div class="spinner-box">
+            <Preloader/>
+            {/* <div class="spinner-box">
                 <div class="circle-border">
                     <div class="circle-core"></div>
                 </div>
                
-            </div>
-            <h5 style={{ color: "#AB5FC6", textAlign: "center" , 
-            lineHeight: "10vh"}}>Your code is being executed...</h5>
+            </div> */}
+            <p class="line1 anim-typewriter">Your code is being executed...</p>
         </React.Fragment>
     );
         
