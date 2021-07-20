@@ -1,4 +1,5 @@
 import "./Login.css";
+import {Alert} from 'react-bootstrap'
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import axiosInstance from "../../axios";
@@ -11,6 +12,7 @@ const Login = () => {
     password: "",
   });
 
+  const [isInvalidCreds, setIsInvalidCreds] = useState(false)
   const [formData, updateFormData] = useState(initialFormData);
 
   const handleChange = (e) => {
@@ -34,6 +36,11 @@ const Login = () => {
         axiosInstance.defaults.headers["Authorization"] =
           "JWT " + localStorage.getItem("access_token");
         history.push("/instructions");
+      }).catch( (err) => {
+        if (err.status !== 200) {
+          setIsInvalidCreds(true)
+          // alert('Wrong Credentials')
+        }
       });
   };
 
@@ -47,6 +54,9 @@ const Login = () => {
           <div className="card-body">
             <div className="wrapper">
               <h2 className="logintitle typing-demo">Reverse Coding 2.0</h2>
+              {isInvalidCreds && <Alert variant="danger">
+              Wrong Credentials!
+           </Alert>}
             </div>
             <form className="loginform">
               <div className="formField">
