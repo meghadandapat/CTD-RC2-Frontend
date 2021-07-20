@@ -3,13 +3,23 @@ import { NavLink, useLocation } from "react-router-dom";
 import Logout from "../Logout/Logout";
 import "./Navbar.css";
 import Timer from  "../Timer/Timer"
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axiosInstance from '../../axios';
 
 const Navbar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
-
+  const [userName,setUserName] = useState('');
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
   const location = useLocation();
+
+  useEffect(() => {
+    axiosInstance.get('leaderboard/').then((res) => {
+      
+      setUserName(res.data.username);
+      
+    })
+    
+  }, [setUserName])
  
   if (
     location.pathname === "/questionhub" ||
@@ -35,6 +45,7 @@ const Navbar = () => {
         <img className="logo pisb" alt="PISB Logo" src="../img/pisblogo.png" />
         
      <Timer/>
+     
         <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="navbarCollapse">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
@@ -67,6 +78,7 @@ const Navbar = () => {
   <li className="nav-item">
               <Logout />
             </li>
+            <li className="nav-item"><h6 className="navuser navbar-nav"><i class="fas fa-user"></i> {userName}</h6></li>
           </ul>
           <img className="logo ctd" alt="RC Logo" src="../img/rclogo.png" />
         </div>

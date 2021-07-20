@@ -9,6 +9,11 @@ nav {
   height: 10vh;
 }
 
+.navuser{
+  color: #ffffff;
+  margin-left: 1em;
+  margin-top: 0.5em;
+}
 .nav-item {
   margin-right: 3em;
 }

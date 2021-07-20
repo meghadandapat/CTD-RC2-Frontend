@@ -10,6 +10,7 @@ import { Button } from "react-bootstrap";
 import CodeLoader from "./CodeLoader";
 
 const Codingpage = () => {
+  const [isDisabled, setIsDisabled] = useState(false);
   const { id } = useParams();
   const [question, setQuestion] = useState({ data: null, loading: true });
   const [isSubmitted, setIsSubmitted] = useState(true);
@@ -22,6 +23,7 @@ const Codingpage = () => {
 
 
   const handleSubmit = (e) => {
+    setIsDisabled(true);
     axiosInstance
       .post("get_output/", {
         pk: id.toString(),
@@ -29,6 +31,7 @@ const Codingpage = () => {
       })
       .then((res) => {
         setRunCode({ output: res.data.output });
+        setIsDisabled(false);
       });
   };
 
@@ -101,6 +104,7 @@ const Codingpage = () => {
                 variant="outline-secondary"
                 className="editor-button movemoreup run"
                 onClick={handleSubmit}
+                disabled={isDisabled}
               >
                 Run Code
               </Button>
