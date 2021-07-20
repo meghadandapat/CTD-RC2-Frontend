@@ -10,6 +10,8 @@ import "brace/mode/c_cpp";
 import "brace/mode/python";
 import "brace/ext/modelist";
 import "brace/theme/dracula";
+import 'ace-builds/src-noconflict/ext-language_tools'
+import 'ace-builds/src-noconflict/ext-beautify'
 
 const CodeEditor = (props) => {
   const history = useHistory();
@@ -156,6 +158,9 @@ using namespace std;
               showLineNumbers: true,
               tabSize: 4,
               wrap: true,
+              enableBasicAutocompletion: true,
+              enableLiveAutocompletion: true,
+              enableSnippets: true,
             }}
           />
         </div>
