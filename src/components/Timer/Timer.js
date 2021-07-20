@@ -14,7 +14,7 @@ const timerProps = {
 
 const renderTime = (dimension, time) => {
   if (dimension < 1) {
-    localStorage.removeItem('saved_countdown');
+    
     return (<Redirect push to="/result" />)
     
   }
