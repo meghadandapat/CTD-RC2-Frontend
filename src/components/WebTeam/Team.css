@@ -122,6 +122,9 @@
     background-color: #f7f5ec;
   }
 
+  .spaceteam{
+    height:8vh;
+  }
   @media(max-width:425px){
 
     .our-team{
