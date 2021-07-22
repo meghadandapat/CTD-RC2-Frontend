@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
 @keyframes spin {
     from {
       transform: rotate(0);
@@ -17,8 +19,8 @@
   }
  
   .circle-border {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     padding: 3px;
     display: flex;
     justify-content: center;
@@ -35,3 +37,37 @@
     background-color: #1d2630;
     border-radius: 50%;
   }
+
+  /* Animation */
+  .line1{ 
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%); 
+    color: rgba(255,255,255,.75); 
+    font-family: 'Anonymous Pro', monospace;  
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.anim-typewriter{
+  animation: typewriter 2.5s steps(44) 0.1s 1 normal both,
+             blinkTextCursor 300ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 16.5em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
