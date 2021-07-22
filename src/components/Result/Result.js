@@ -9,6 +9,10 @@ import silver from "../svgs/Silver.svg";
 import bronze from "../svgs/Bronze.svg";
 
 const Result = () => {
+
+  localStorage.removeItem('saved_countdown');
+
+
   const [result, setResult] = useState({});
   const[topThree, setTopThree] = useState([
     {username: "Loading..."},
