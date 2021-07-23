@@ -5,3 +5,17 @@
     justify-content: center;
     height: 8vh;
 }
+.footerSize{
+    font-size: 1.2em;
+}
+
+@media(max-width:425px){
+    .footerSize{
+        font-size: 0.7em;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1366px){
+    .footerSize{
+        font-size: 1.2em;
+    }
+}

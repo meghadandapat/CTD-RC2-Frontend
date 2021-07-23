@@ -41,6 +41,7 @@ const Instructions = () => {
           }
         }>Proceed</Button>
       </div>
+      <div className="instrSpace"></div>
     </div>
   );
 };
