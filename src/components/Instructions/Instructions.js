@@ -12,7 +12,7 @@ const Instructions = () => {
           <li>There are 6 questions in the contest.
           </li>
           <li>You can use C/C++/Java/Python to submit the answer.</li>
-          <li>There are two boxes, one where you can type the input which is run against the correct code and the out put is displayed in the output box.</li>
+          <li>There are two boxes, one where you can type the input which is run against the correct code and the output is displayed in the output box.</li>
       
       <li>For every correct submission you get +100 score, and there is partial marking.</li>
       
