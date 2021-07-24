@@ -44,12 +44,12 @@ const Result = () => {
   return (
     <div className="fluid-container resultpage ">
       <div className="row" style={{ marginTop: "7vh" }}>
-        <div className="col-sm-4 ">
+        <div className="col-md-4 ">
           <div className="row justify-content-center">
             <Resultcards username={result.username} rank={result.rank} score={ result.score } firstchar={result.firstchar} />
           </div>
         </div>
-        <div className="col-sm-8">
+        <div className="col-md-8">
           <div className="row ">
             <div className="col text-center">
               <img className="svgs  svg-down" src={gold} alt="Rank 1" />
