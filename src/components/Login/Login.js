@@ -4,8 +4,7 @@ import React, { useState } from "react";
 const Login = () => {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
-  const [isFound, setIsFound] = useState("User Found");
-  const [isDuplicate, setIsDuplicate] = useState(false);
+ 
 
   return (
     <div className="login">
@@ -17,12 +16,6 @@ const Login = () => {
           <div className="card-body">
             <div className="wrapper">
               <h2 className="logintitle typing-demo">Reverse Coding 2.0</h2>
-            </div>
-            <div>
-              <h5 className="found">{isFound}</h5>
-              {isDuplicate && (
-                <div class="alert alert-warning">Duplicate User!</div>
-              )}
             </div>
             <form className="loginform">
               <div className="formField">
